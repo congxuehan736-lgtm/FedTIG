@@ -1,0 +1,80 @@
+# FedTIG Ablation Study
+
+
+dataset: cifar10
+
+num_classes: 10
+
+
+num_clients: 20
+
+num_online_clients: 8
+
+
+imb_factor: 0.01
+
+non_iid_alpha: 0.5
+
+rs_alpha: 0.5
+
+
+num_rounds: 200
+
+local_epochs: 10
+
+batch_size: 32
+
+lr: 0.1
+
+
+seed: 42
+
+
+variants:
+
+  fedlf:
+    S: false
+    C: false
+    A: false
+
+
+  S:
+    S: true
+    C: false
+    A: false
+
+
+  C:
+    S: false
+    C: true
+    A: false
+
+
+  A:
+    S: false
+    C: false
+    A: true
+
+
+  SC:
+    S: true
+    C: true
+    A: false
+
+
+  SA:
+    S: true
+    C: false
+    A: true
+
+
+  CA:
+    S: false
+    C: true
+    A: true
+
+
+  FULL:
+    S: true
+    C: true
+    A: true

@@ -1,0 +1,454 @@
+2026-08-31 01:47:34,647 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - ==========================================================================================
+2026-08-31 01:47:34,647 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - EXPERIMENT 12: A-BETA / HEAD-TAIL PARETO
+2026-08-31 01:47:34,647 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Run name: beta_cifar10_beta0p3_IF100_alpha0p5_seed42
+2026-08-31 01:47:34,647 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Mode: a | S=False C=False A=True
+2026-08-31 01:47:34,647 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - dataset:cifar10, num_classes:10
+2026-08-31 01:47:34,647 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - imb_factor:0.01 (IF=100), non_iid_alpha:0.5, rs_alpha:0.5
+2026-08-31 01:47:34,647 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - K=20, online=8, participation=0.4000
+2026-08-31 01:47:34,647 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - rounds=200, local_epochs=10, batch=32, base_lr=0.1, lr_schedule=fixed
+2026-08-31 01:47:34,647 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - S epsilon=0.7500 | C alpha=0.7000 warmup=30 | A tail_agg_weight=2.2000 beta=0.3000 residual_factor=1.3000
+2026-08-31 01:47:34,647 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - seed=42
+2026-08-31 01:47:34,647 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - test-set rollback enabled: False
+2026-08-31 01:47:34,651 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Log file: D:\Desktop\FedLF_project\FedLF\Logs\beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log
+2026-08-31 01:47:34,651 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Output directory: D:\Desktop\FedLF_project\FedLF\outputs\beta_cifar10_beta0p3_IF100_alpha0p5_seed42
+2026-08-31 01:47:34,651 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - ==========================================================================================
+2026-08-31 01:47:40,320 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Global class counts: [5000, 2997, 1796, 1077, 645, 387, 232, 139, 83, 50]
+2026-08-31 01:47:40,323 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Paper thresholds: Head > 1500, Tail < 200
+2026-08-31 01:47:40,323 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Tail classes (<200): [7, 8, 9]
+2026-08-31 01:47:40,323 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Client data sizes: [621, 621, 621, 621, 621, 621, 620, 620, 620, 620, 620, 620, 620, 620, 620, 620, 620, 620, 620, 620]
+2026-08-31 01:47:40,323 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Partition SHA256: 91fc508fdd8b116a19ca7809c6dfe5d6b9f4161086b898c272ecff4fedcd1acf
+2026-08-31 01:47:40,446 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 1 selected clients: [0, 1, 3, 5, 8, 11, 15, 17]
+2026-08-31 01:47:58,975 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 1 | Global 0.1901 | Head 0.6000 | Middle 0.0253 | Tail 0.0000 | Hmean 0.0000 | ExpEvent 1 | ExpMass 0.023973 | best_tail 0.0000@1
+2026-08-31 01:47:58,975 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 2 selected clients: [4, 5, 7, 12, 14, 15, 16, 19]
+2026-08-31 01:48:15,427 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 2 | Global 0.2105 | Head 0.6753 | Middle 0.0198 | Tail 0.0000 | Hmean 0.0000 | ExpEvent 1 | ExpMass 0.015921 | best_tail 0.0000@2
+2026-08-31 01:48:15,427 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 3 selected clients: [0, 2, 5, 7, 10, 12, 16, 18]
+2026-08-31 01:48:31,583 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 3 | Global 0.2605 | Head 0.7297 | Middle 0.1040 | Tail 0.0000 | Hmean 0.0000 | ExpEvent 1 | ExpMass 0.018940 | best_tail 0.0000@3
+2026-08-31 01:48:31,583 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 4 selected clients: [0, 4, 6, 8, 9, 11, 17, 18]
+2026-08-31 01:48:47,984 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 4 | Global 0.2661 | Head 0.7387 | Middle 0.1113 | Tail 0.0000 | Hmean 0.0000 | ExpEvent 1 | ExpMass 0.027408 | best_tail 0.0000@4
+2026-08-31 01:48:47,989 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 5 selected clients: [0, 2, 5, 9, 10, 12, 16, 19]
+2026-08-31 01:49:04,323 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 5 | Global 0.2954 | Head 0.7470 | Middle 0.1782 | Tail 0.0000 | Hmean 0.0000 | ExpEvent 1 | ExpMass 0.021560 | best_tail 0.0000@5
+2026-08-31 01:49:04,323 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 6 selected clients: [1, 3, 4, 5, 9, 10, 15, 16]
+2026-08-31 01:49:20,660 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 6 | Global 0.3092 | Head 0.7817 | Middle 0.1867 | Tail 0.0000 | Hmean 0.0000 | ExpEvent 1 | ExpMass 0.016317 | best_tail 0.0000@6
+2026-08-31 01:49:20,660 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 7 selected clients: [2, 3, 5, 9, 10, 12, 13, 16]
+2026-08-31 01:49:37,065 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 7 | Global 0.3331 | Head 0.7593 | Middle 0.2632 | Tail 0.0000 | Hmean 0.0000 | ExpEvent 1 | ExpMass 0.019948 | best_tail 0.0000@7
+2026-08-31 01:49:37,065 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 8 selected clients: [1, 3, 5, 7, 11, 15, 17, 18]
+2026-08-31 01:49:53,626 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 8 | Global 0.3711 | Head 0.7467 | Middle 0.3397 | Tail 0.0373 | Hmean 0.0711 | ExpEvent 1 | ExpMass 0.031433 | best_tail 0.0373@8
+2026-08-31 01:49:53,630 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 9 selected clients: [0, 4, 7, 8, 9, 11, 13, 17]
+2026-08-31 01:50:10,018 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 9 | Global 0.3580 | Head 0.7493 | Middle 0.2868 | Tail 0.0617 | Hmean 0.1140 | ExpEvent 1 | ExpMass 0.012092 | best_tail 0.0617@9
+2026-08-31 01:50:10,018 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 10 selected clients: [1, 2, 4, 5, 7, 9, 15, 16]
+2026-08-31 01:50:26,534 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 10 | Global 0.3706 | Head 0.7917 | Middle 0.3152 | Tail 0.0233 | Hmean 0.0453 | ExpEvent 1 | ExpMass 0.015310 | best_tail 0.0617@9
+2026-08-31 01:50:26,571 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Checkpoint @10 | Global 0.3706 | Head 0.7917 | Middle 0.3152 | Tail 0.0233 | Hmean 0.0453
+2026-08-31 01:50:26,571 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 11 selected clients: [1, 2, 4, 6, 12, 13, 16, 17]
+2026-08-31 01:50:42,953 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 11 | Global 0.4371 | Head 0.7753 | Middle 0.3817 | Tail 0.1727 | Hmean 0.2825 | ExpEvent 1 | ExpMass 0.023171 | best_tail 0.1727@11
+2026-08-31 01:50:42,953 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 12 selected clients: [3, 6, 8, 9, 11, 14, 17, 18]
+2026-08-31 01:50:59,437 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 12 | Global 0.4453 | Head 0.7683 | Middle 0.4150 | Tail 0.1627 | Hmean 0.2685 | ExpEvent 1 | ExpMass 0.033663 | best_tail 0.1727@11
+2026-08-31 01:50:59,442 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 13 selected clients: [2, 6, 8, 9, 12, 13, 14, 19]
+2026-08-31 01:51:15,800 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 13 | Global 0.4483 | Head 0.7487 | Middle 0.4030 | Tail 0.2083 | Hmean 0.3259 | ExpEvent 1 | ExpMass 0.023382 | best_tail 0.2083@13
+2026-08-31 01:51:15,800 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 14 selected clients: [1, 4, 5, 9, 10, 11, 12, 19]
+2026-08-31 01:51:32,147 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 14 | Global 0.4442 | Head 0.7353 | Middle 0.4602 | Tail 0.1317 | Hmean 0.2234 | ExpEvent 1 | ExpMass 0.016321 | best_tail 0.2083@13
+2026-08-31 01:51:32,147 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 15 selected clients: [4, 5, 7, 12, 13, 14, 16, 19]
+2026-08-31 01:51:48,453 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 15 | Global 0.4575 | Head 0.7413 | Middle 0.4325 | Tail 0.2070 | Hmean 0.3236 | ExpEvent 1 | ExpMass 0.014107 | best_tail 0.2083@13
+2026-08-31 01:51:48,453 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 16 selected clients: [1, 4, 6, 9, 11, 13, 14, 18]
+2026-08-31 01:52:04,807 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 16 | Global 0.4430 | Head 0.7417 | Middle 0.4243 | Tail 0.1693 | Hmean 0.2757 | ExpEvent 1 | ExpMass 0.017533 | best_tail 0.2083@13
+2026-08-31 01:52:04,807 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 17 selected clients: [4, 6, 7, 9, 11, 12, 14, 16]
+2026-08-31 01:52:21,087 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 17 | Global 0.4642 | Head 0.7870 | Middle 0.4305 | Tail 0.1863 | Hmean 0.3013 | ExpEvent 1 | ExpMass 0.010280 | best_tail 0.2083@13
+2026-08-31 01:52:21,087 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 18 selected clients: [1, 3, 4, 7, 8, 9, 12, 18]
+2026-08-31 01:52:38,481 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 18 | Global 0.4616 | Head 0.7510 | Middle 0.4698 | Tail 0.1613 | Hmean 0.2656 | ExpEvent 1 | ExpMass 0.016119 | best_tail 0.2083@13
+2026-08-31 01:52:38,491 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 19 selected clients: [1, 6, 7, 8, 9, 10, 11, 19]
+2026-08-31 01:52:56,729 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 19 | Global 0.5020 | Head 0.7420 | Middle 0.4597 | Tail 0.3183 | Hmean 0.4455 | ExpEvent 1 | ExpMass 0.017940 | best_tail 0.3183@19
+2026-08-31 01:52:56,731 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 20 selected clients: [3, 4, 6, 10, 11, 13, 14, 17]
+2026-08-31 01:53:15,075 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 20 | Global 0.4867 | Head 0.7397 | Middle 0.4390 | Tail 0.2973 | Hmean 0.4241 | ExpEvent 1 | ExpMass 0.023982 | best_tail 0.3183@19
+2026-08-31 01:53:15,105 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Checkpoint @20 | Global 0.4867 | Head 0.7397 | Middle 0.4390 | Tail 0.2973 | Hmean 0.4241
+2026-08-31 01:53:15,106 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 21 selected clients: [3, 4, 13, 14, 15, 17, 18, 19]
+2026-08-31 01:53:33,422 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 21 | Global 0.5135 | Head 0.7190 | Middle 0.5120 | Tail 0.3100 | Hmean 0.4332 | ExpEvent 1 | ExpMass 0.033253 | best_tail 0.3183@19
+2026-08-31 01:53:33,422 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 22 selected clients: [4, 5, 8, 10, 16, 17, 18, 19]
+2026-08-31 01:53:51,706 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 22 | Global 0.5132 | Head 0.7130 | Middle 0.4775 | Tail 0.3610 | Hmean 0.4793 | ExpEvent 1 | ExpMass 0.031237 | best_tail 0.3610@22
+2026-08-31 01:53:51,706 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 23 selected clients: [1, 2, 3, 6, 8, 13, 15, 19]
+2026-08-31 01:54:09,983 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 23 | Global 0.5457 | Head 0.6667 | Middle 0.5170 | Tail 0.4630 | Hmean 0.5465 | ExpEvent 1 | ExpMass 0.029015 | best_tail 0.4630@23
+2026-08-31 01:54:09,983 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 24 selected clients: [3, 4, 5, 8, 10, 13, 14, 17]
+2026-08-31 01:54:28,453 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 24 | Global 0.5356 | Head 0.7443 | Middle 0.5180 | Tail 0.3503 | Hmean 0.4764 | ExpEvent 1 | ExpMass 0.022164 | best_tail 0.4630@23
+2026-08-31 01:54:28,453 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 25 selected clients: [2, 3, 6, 9, 10, 12, 15, 18]
+2026-08-31 01:54:46,790 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 25 | Global 0.5747 | Head 0.5490 | Middle 0.5617 | Tail 0.6177 | Hmean 0.5813 | ExpEvent 1 | ExpMass 0.031036 | best_tail 0.6177@25
+2026-08-31 01:54:46,790 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 26 selected clients: [1, 2, 5, 6, 7, 8, 12, 16]
+2026-08-31 01:55:04,949 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 26 | Global 0.5659 | Head 0.6833 | Middle 0.5783 | Tail 0.4320 | Hmean 0.5293 | ExpEvent 1 | ExpMass 0.019343 | best_tail 0.6177@25
+2026-08-31 01:55:04,949 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 27 selected clients: [5, 6, 8, 10, 12, 13, 14, 17]
+2026-08-31 01:55:23,152 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 27 | Global 0.5404 | Head 0.7257 | Middle 0.5290 | Tail 0.3703 | Hmean 0.4904 | ExpEvent 1 | ExpMass 0.023987 | best_tail 0.6177@25
+2026-08-31 01:55:23,152 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 28 selected clients: [1, 3, 5, 6, 7, 8, 14, 19]
+2026-08-31 01:55:41,351 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 28 | Global 0.5805 | Head 0.7147 | Middle 0.5212 | Tail 0.5253 | Hmean 0.6055 | ExpEvent 1 | ExpMass 0.028007 | best_tail 0.6177@25
+2026-08-31 01:55:41,351 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 29 selected clients: [3, 4, 5, 8, 12, 14, 15, 16]
+2026-08-31 01:55:59,766 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 29 | Global 0.5618 | Head 0.7177 | Middle 0.5643 | Tail 0.4027 | Hmean 0.5159 | ExpEvent 1 | ExpMass 0.014306 | best_tail 0.6177@25
+2026-08-31 01:55:59,766 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 30 selected clients: [5, 6, 11, 13, 14, 15, 16, 19]
+2026-08-31 01:56:17,966 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 30 | Global 0.5789 | Head 0.7417 | Middle 0.5443 | Tail 0.4623 | Hmean 0.5696 | ExpEvent 1 | ExpMass 0.023584 | best_tail 0.6177@25
+2026-08-31 01:56:17,998 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Checkpoint @30 | Global 0.5789 | Head 0.7417 | Middle 0.5443 | Tail 0.4623 | Hmean 0.5696
+2026-08-31 01:56:17,998 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 31 selected clients: [1, 4, 6, 7, 9, 11, 14, 19]
+2026-08-31 01:56:36,299 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 31 | Global 0.5755 | Head 0.7300 | Middle 0.5385 | Tail 0.4703 | Hmean 0.5721 | ExpEvent 1 | ExpMass 0.017936 | best_tail 0.6177@25
+2026-08-31 01:56:36,299 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 32 selected clients: [0, 1, 5, 6, 7, 9, 12, 19]
+2026-08-31 01:56:54,523 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 32 | Global 0.5897 | Head 0.6983 | Middle 0.5125 | Tail 0.5840 | Hmean 0.6361 | ExpEvent 1 | ExpMass 0.024179 | best_tail 0.6177@25
+2026-08-31 01:56:54,523 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 33 selected clients: [3, 5, 7, 11, 14, 15, 16, 17]
+2026-08-31 01:57:12,760 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 33 | Global 0.5780 | Head 0.7693 | Middle 0.5327 | Tail 0.4470 | Hmean 0.5654 | ExpEvent 1 | ExpMass 0.023982 | best_tail 0.6177@25
+2026-08-31 01:57:12,760 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 34 selected clients: [6, 8, 9, 10, 13, 14, 16, 18]
+2026-08-31 01:57:29,307 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 34 | Global 0.5962 | Head 0.7330 | Middle 0.5423 | Tail 0.5313 | Hmean 0.6161 | ExpEvent 1 | ExpMass 0.017540 | best_tail 0.6177@25
+2026-08-31 01:57:29,307 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 35 selected clients: [0, 4, 5, 8, 10, 12, 13, 19]
+2026-08-31 01:57:45,566 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 35 | Global 0.5860 | Head 0.7690 | Middle 0.5475 | Tail 0.4543 | Hmean 0.5712 | ExpEvent 1 | ExpMass 0.014104 | best_tail 0.6177@25
+2026-08-31 01:57:45,566 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 36 selected clients: [1, 2, 3, 6, 7, 8, 10, 18]
+2026-08-31 01:58:01,851 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 36 | Global 0.6154 | Head 0.6687 | Middle 0.5785 | Tail 0.6113 | Hmean 0.6387 | ExpEvent 1 | ExpMass 0.026798 | best_tail 0.6177@25
+2026-08-31 01:58:01,851 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 37 selected clients: [1, 3, 7, 9, 10, 11, 15, 17]
+2026-08-31 01:58:18,114 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 37 | Global 0.6023 | Head 0.6997 | Middle 0.5950 | Tail 0.5147 | Hmean 0.5931 | ExpEvent 1 | ExpMass 0.020153 | best_tail 0.6177@25
+2026-08-31 01:58:18,114 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 38 selected clients: [1, 2, 6, 9, 12, 13, 14, 18]
+2026-08-31 01:58:34,407 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 38 | Global 0.6153 | Head 0.6963 | Middle 0.5857 | Tail 0.5737 | Hmean 0.6291 | ExpEvent 1 | ExpMass 0.022975 | best_tail 0.6177@25
+2026-08-31 01:58:34,407 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 39 selected clients: [0, 2, 3, 11, 12, 13, 15, 19]
+2026-08-31 01:58:50,627 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 39 | Global 0.6130 | Head 0.6843 | Middle 0.5960 | Tail 0.5643 | Hmean 0.6185 | ExpEvent 1 | ExpMass 0.021358 | best_tail 0.6177@25
+2026-08-31 01:58:50,627 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 40 selected clients: [3, 7, 9, 11, 13, 14, 15, 19]
+2026-08-31 01:59:06,797 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 40 | Global 0.6240 | Head 0.7427 | Middle 0.5887 | Tail 0.5523 | Hmean 0.6335 | ExpEvent 1 | ExpMass 0.018142 | best_tail 0.6177@25
+2026-08-31 01:59:06,829 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Checkpoint @40 | Global 0.6240 | Head 0.7427 | Middle 0.5887 | Tail 0.5523 | Hmean 0.6335
+2026-08-31 01:59:06,829 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 41 selected clients: [1, 5, 6, 7, 10, 11, 14, 15]
+2026-08-31 01:59:23,098 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 41 | Global 0.6137 | Head 0.7367 | Middle 0.5717 | Tail 0.5467 | Hmean 0.6276 | ExpEvent 1 | ExpMass 0.015719 | best_tail 0.6177@25
+2026-08-31 01:59:23,108 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 42 selected clients: [1, 3, 7, 9, 12, 14, 15, 19]
+2026-08-31 01:59:39,397 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 42 | Global 0.6100 | Head 0.6520 | Middle 0.5825 | Tail 0.6047 | Hmean 0.6275 | ExpEvent 1 | ExpMass 0.018339 | best_tail 0.6177@25
+2026-08-31 01:59:39,407 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 43 selected clients: [0, 4, 6, 7, 9, 11, 12, 14]
+2026-08-31 01:59:55,706 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 43 | Global 0.6069 | Head 0.7407 | Middle 0.6010 | Tail 0.4810 | Hmean 0.5832 | ExpEvent 1 | ExpMass 0.010278 | best_tail 0.6177@25
+2026-08-31 01:59:55,706 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 44 selected clients: [2, 6, 8, 10, 12, 13, 15, 17]
+2026-08-31 02:00:11,975 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 44 | Global 0.6164 | Head 0.7137 | Middle 0.6082 | Tail 0.5300 | Hmean 0.6083 | ExpEvent 1 | ExpMass 0.024995 | best_tail 0.6177@25
+2026-08-31 02:00:11,975 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 45 selected clients: [0, 1, 4, 5, 6, 11, 12, 17]
+2026-08-31 02:00:28,212 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 45 | Global 0.6037 | Head 0.7460 | Middle 0.6085 | Tail 0.4550 | Hmean 0.5652 | ExpEvent 1 | ExpMass 0.023973 | best_tail 0.6177@25
+2026-08-31 02:00:28,212 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 46 selected clients: [2, 3, 6, 7, 10, 12, 14, 16]
+2026-08-31 02:00:44,421 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 46 | Global 0.6242 | Head 0.7117 | Middle 0.5990 | Tail 0.5703 | Hmean 0.6332 | ExpEvent 1 | ExpMass 0.019549 | best_tail 0.6177@25
+2026-08-31 02:00:44,421 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 47 selected clients: [1, 4, 8, 10, 11, 13, 15, 18]
+2026-08-31 02:01:00,700 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 47 | Global 0.6226 | Head 0.7293 | Middle 0.5857 | Tail 0.5650 | Hmean 0.6367 | ExpEvent 1 | ExpMass 0.009270 | best_tail 0.6177@25
+2026-08-31 02:01:00,700 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 48 selected clients: [0, 3, 4, 6, 7, 8, 16, 17]
+2026-08-31 02:01:16,945 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 48 | Global 0.6257 | Head 0.7283 | Middle 0.6140 | Tail 0.5387 | Hmean 0.6193 | ExpEvent 1 | ExpMass 0.023977 | best_tail 0.6177@25
+2026-08-31 02:01:16,945 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 49 selected clients: [0, 4, 5, 7, 10, 15, 17, 18]
+2026-08-31 02:01:33,245 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 49 | Global 0.6351 | Head 0.6703 | Middle 0.6132 | Tail 0.6290 | Hmean 0.6490 | ExpEvent 1 | ExpMass 0.025186 | best_tail 0.6290@49
+2026-08-31 02:01:33,245 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 50 selected clients: [0, 2, 6, 11, 12, 13, 14, 17]
+2026-08-31 02:01:49,505 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 50 | Global 0.6233 | Head 0.7113 | Middle 0.6180 | Tail 0.5423 | Hmean 0.6154 | ExpEvent 1 | ExpMass 0.023176 | best_tail 0.6290@49
+2026-08-31 02:01:49,531 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Checkpoint @50 | Global 0.6233 | Head 0.7113 | Middle 0.6180 | Tail 0.5423 | Hmean 0.6154
+2026-08-31 02:01:49,531 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 51 selected clients: [0, 1, 9, 11, 13, 16, 17, 19]
+2026-08-31 02:02:07,087 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 51 | Global 0.6292 | Head 0.6897 | Middle 0.5867 | Tail 0.6253 | Hmean 0.6559 | ExpEvent 1 | ExpMass 0.019952 | best_tail 0.6290@49
+2026-08-31 02:02:07,087 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 52 selected clients: [0, 3, 6, 8, 12, 15, 17, 19]
+2026-08-31 02:02:25,307 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 52 | Global 0.6262 | Head 0.5747 | Middle 0.6098 | Tail 0.6997 | Hmean 0.6311 | ExpEvent 1 | ExpMass 0.033857 | best_tail 0.6997@52
+2026-08-31 02:02:25,307 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 53 selected clients: [1, 6, 7, 8, 9, 11, 12, 15]
+2026-08-31 02:02:43,516 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 53 | Global 0.6323 | Head 0.7050 | Middle 0.6182 | Tail 0.5783 | Hmean 0.6354 | ExpEvent 1 | ExpMass 0.012094 | best_tail 0.6997@52
+2026-08-31 02:02:43,516 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 54 selected clients: [3, 9, 11, 12, 13, 14, 16, 18]
+2026-08-31 02:03:01,713 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 54 | Global 0.6352 | Head 0.7650 | Middle 0.5988 | Tail 0.5540 | Hmean 0.6426 | ExpEvent 1 | ExpMass 0.016126 | best_tail 0.6997@52
+2026-08-31 02:03:01,713 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 55 selected clients: [3, 6, 9, 13, 14, 16, 17, 19]
+2026-08-31 02:03:20,034 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 55 | Global 0.6457 | Head 0.7090 | Middle 0.6170 | Tail 0.6207 | Hmean 0.6619 | ExpEvent 1 | ExpMass 0.034066 | best_tail 0.6997@52
+2026-08-31 02:03:20,045 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 56 selected clients: [0, 4, 5, 10, 14, 15, 17, 19]
+2026-08-31 02:03:38,091 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 56 | Global 0.6436 | Head 0.7160 | Middle 0.6235 | Tail 0.5980 | Hmean 0.6517 | ExpEvent 1 | ExpMass 0.025589 | best_tail 0.6997@52
+2026-08-31 02:03:38,091 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 57 selected clients: [0, 3, 4, 8, 9, 10, 15, 18]
+2026-08-31 02:03:56,378 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 57 | Global 0.6457 | Head 0.7143 | Middle 0.6010 | Tail 0.6367 | Hmean 0.6733 | ExpEvent 1 | ExpMass 0.017731 | best_tail 0.6997@52
+2026-08-31 02:03:56,378 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 58 selected clients: [2, 7, 8, 11, 12, 13, 14, 15]
+2026-08-31 02:04:14,734 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 58 | Global 0.6317 | Head 0.7243 | Middle 0.6345 | Tail 0.5353 | Hmean 0.6156 | ExpEvent 1 | ExpMass 0.007257 | best_tail 0.6997@52
+2026-08-31 02:04:14,734 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 59 selected clients: [0, 5, 6, 8, 13, 15, 16, 17]
+2026-08-31 02:04:32,752 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 59 | Global 0.6335 | Head 0.7403 | Middle 0.6008 | Tail 0.5703 | Hmean 0.6443 | ExpEvent 1 | ExpMass 0.025595 | best_tail 0.6997@52
+2026-08-31 02:04:32,752 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 60 selected clients: [0, 2, 3, 4, 8, 11, 13, 15]
+2026-08-31 02:04:50,853 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 60 | Global 0.6363 | Head 0.6840 | Middle 0.6432 | Tail 0.5793 | Hmean 0.6273 | ExpEvent 1 | ExpMass 0.013296 | best_tail 0.6997@52
+2026-08-31 02:04:50,887 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Checkpoint @60 | Global 0.6363 | Head 0.6840 | Middle 0.6432 | Tail 0.5793 | Hmean 0.6273
+2026-08-31 02:04:50,887 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 61 selected clients: [0, 1, 3, 6, 10, 13, 15, 19]
+2026-08-31 02:05:09,071 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 61 | Global 0.6397 | Head 0.6733 | Middle 0.6180 | Tail 0.6350 | Hmean 0.6536 | ExpEvent 1 | ExpMass 0.023776 | best_tail 0.6997@52
+2026-08-31 02:05:09,081 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 62 selected clients: [1, 2, 5, 6, 10, 12, 17, 18]
+2026-08-31 02:05:27,309 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 62 | Global 0.6460 | Head 0.6313 | Middle 0.6278 | Tail 0.6850 | Hmean 0.6571 | ExpEvent 1 | ExpMass 0.036671 | best_tail 0.6997@52
+2026-08-31 02:05:27,309 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 63 selected clients: [3, 4, 7, 8, 9, 11, 13, 16]
+2026-08-31 02:05:45,348 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 63 | Global 0.6529 | Head 0.7460 | Middle 0.6140 | Tail 0.6117 | Hmean 0.6722 | ExpEvent 1 | ExpMass 0.008464 | best_tail 0.6997@52
+2026-08-31 02:05:45,348 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 64 selected clients: [1, 2, 4, 9, 11, 12, 13, 18]
+2026-08-31 02:06:03,560 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 64 | Global 0.6558 | Head 0.7193 | Middle 0.6445 | Tail 0.6073 | Hmean 0.6586 | ExpEvent 1 | ExpMass 0.015112 | best_tail 0.6997@52
+2026-08-31 02:06:03,560 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 65 selected clients: [3, 4, 6, 8, 9, 11, 17, 19]
+2026-08-31 02:06:21,900 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 65 | Global 0.6571 | Head 0.6380 | Middle 0.6475 | Tail 0.6890 | Hmean 0.6625 | ExpEvent 1 | ExpMass 0.034059 | best_tail 0.6997@52
+2026-08-31 02:06:21,900 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 66 selected clients: [3, 4, 5, 7, 8, 12, 15, 16]
+2026-08-31 02:06:40,171 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 66 | Global 0.6571 | Head 0.7410 | Middle 0.6400 | Tail 0.5960 | Hmean 0.6606 | ExpEvent 1 | ExpMass 0.014306 | best_tail 0.6997@52
+2026-08-31 02:06:40,171 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 67 selected clients: [3, 5, 6, 8, 10, 13, 17, 18]
+2026-08-31 02:06:56,817 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 67 | Global 0.6616 | Head 0.6900 | Middle 0.6300 | Tail 0.6753 | Hmean 0.6826 | ExpEvent 1 | ExpMass 0.037485 | best_tail 0.6997@52
+2026-08-31 02:06:56,817 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 68 selected clients: [1, 5, 7, 8, 11, 12, 18, 19]
+2026-08-31 02:07:12,872 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 68 | Global 0.6605 | Head 0.6563 | Middle 0.6200 | Tail 0.7187 | Hmean 0.6861 | ExpEvent 1 | ExpMass 0.021564 | best_tail 0.7187@68
+2026-08-31 02:07:12,872 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 69 selected clients: [0, 7, 8, 12, 13, 15, 16, 17]
+2026-08-31 02:07:28,970 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 69 | Global 0.6607 | Head 0.7537 | Middle 0.6225 | Tail 0.6187 | Hmean 0.6796 | ExpEvent 1 | ExpMass 0.011893 | best_tail 0.7187@68
+2026-08-31 02:07:28,970 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 70 selected clients: [3, 4, 5, 10, 12, 15, 17, 19]
+2026-08-31 02:07:45,133 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 70 | Global 0.6581 | Head 0.6927 | Middle 0.6440 | Tail 0.6423 | Hmean 0.6665 | ExpEvent 1 | ExpMass 0.032037 | best_tail 0.7187@68
+2026-08-31 02:07:45,161 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Checkpoint @70 | Global 0.6581 | Head 0.6927 | Middle 0.6440 | Tail 0.6423 | Hmean 0.6665
+2026-08-31 02:07:45,161 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 71 selected clients: [0, 2, 6, 7, 11, 13, 16, 19]
+2026-08-31 02:08:01,398 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 71 | Global 0.6662 | Head 0.6907 | Middle 0.6318 | Tail 0.6877 | Hmean 0.6892 | ExpEvent 1 | ExpMass 0.020959 | best_tail 0.7187@68
+2026-08-31 02:08:01,398 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 72 selected clients: [2, 3, 10, 13, 15, 16, 17, 18]
+2026-08-31 02:08:17,592 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 72 | Global 0.6670 | Head 0.7230 | Middle 0.6280 | Tail 0.6630 | Hmean 0.6917 | ExpEvent 1 | ExpMass 0.030633 | best_tail 0.7187@68
+2026-08-31 02:08:17,603 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 73 selected clients: [1, 4, 5, 8, 9, 11, 12, 13]
+2026-08-31 02:08:33,866 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 73 | Global 0.6590 | Head 0.7417 | Middle 0.6440 | Tail 0.5963 | Hmean 0.6611 | ExpEvent 1 | ExpMass 0.008463 | best_tail 0.7187@68
+2026-08-31 02:08:33,876 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 74 selected clients: [4, 5, 6, 7, 9, 15, 17, 19]
+2026-08-31 02:08:50,068 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 74 | Global 0.6577 | Head 0.6507 | Middle 0.6573 | Tail 0.6653 | Hmean 0.6579 | ExpEvent 1 | ExpMass 0.035671 | best_tail 0.7187@68
+2026-08-31 02:08:50,078 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 75 selected clients: [0, 3, 8, 12, 16, 17, 18, 19]
+2026-08-31 02:09:06,369 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 75 | Global 0.6766 | Head 0.6683 | Middle 0.6448 | Tail 0.7273 | Hmean 0.6966 | ExpEvent 1 | ExpMass 0.031640 | best_tail 0.7273@75
+2026-08-31 02:09:06,371 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 76 selected clients: [1, 3, 5, 8, 10, 12, 15, 18]
+2026-08-31 02:09:22,691 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 76 | Global 0.6758 | Head 0.6730 | Middle 0.6472 | Tail 0.7167 | Hmean 0.6942 | ExpEvent 1 | ExpMass 0.021761 | best_tail 0.7273@75
+2026-08-31 02:09:22,691 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 77 selected clients: [1, 2, 3, 7, 10, 11, 17, 18]
+2026-08-31 02:09:38,990 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 77 | Global 0.6729 | Head 0.6867 | Middle 0.6382 | Tail 0.7053 | Hmean 0.6959 | ExpEvent 1 | ExpMass 0.028813 | best_tail 0.7273@75
+2026-08-31 02:09:38,990 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 78 selected clients: [3, 4, 5, 8, 11, 12, 13, 14]
+2026-08-31 02:09:55,226 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 78 | Global 0.6645 | Head 0.7287 | Middle 0.6435 | Tail 0.6283 | Hmean 0.6748 | ExpEvent 1 | ExpMass 0.012492 | best_tail 0.7273@75
+2026-08-31 02:09:55,226 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 79 selected clients: [2, 4, 9, 10, 13, 15, 17, 18]
+2026-08-31 02:10:11,453 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 79 | Global 0.6717 | Head 0.7113 | Middle 0.6520 | Tail 0.6583 | Hmean 0.6838 | ExpEvent 1 | ExpMass 0.026602 | best_tail 0.7273@75
+2026-08-31 02:10:11,453 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 80 selected clients: [5, 7, 8, 11, 13, 14, 15, 18]
+2026-08-31 02:10:27,746 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 80 | Global 0.6738 | Head 0.7177 | Middle 0.6438 | Tail 0.6700 | Hmean 0.6930 | ExpEvent 1 | ExpMass 0.015319 | best_tail 0.7273@75
+2026-08-31 02:10:27,763 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Checkpoint @80 | Global 0.6738 | Head 0.7177 | Middle 0.6438 | Tail 0.6700 | Hmean 0.6930
+2026-08-31 02:10:27,763 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 81 selected clients: [5, 8, 9, 10, 14, 15, 17, 19]
+2026-08-31 02:10:43,967 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 81 | Global 0.6659 | Head 0.7280 | Middle 0.6390 | Tail 0.6397 | Hmean 0.6810 | ExpEvent 1 | ExpMass 0.027817 | best_tail 0.7273@75
+2026-08-31 02:10:43,967 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 82 selected clients: [0, 2, 9, 12, 13, 15, 16, 19]
+2026-08-31 02:11:00,162 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 82 | Global 0.6714 | Head 0.7063 | Middle 0.6215 | Tail 0.7030 | Hmean 0.7046 | ExpEvent 1 | ExpMass 0.017332 | best_tail 0.7273@75
+2026-08-31 02:11:00,162 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 83 selected clients: [3, 4, 5, 6, 7, 11, 14, 15]
+2026-08-31 02:11:16,359 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 83 | Global 0.6801 | Head 0.7237 | Middle 0.6630 | Tail 0.6593 | Hmean 0.6900 | ExpEvent 1 | ExpMass 0.021963 | best_tail 0.7273@75
+2026-08-31 02:11:16,359 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 84 selected clients: [3, 4, 5, 6, 13, 14, 15, 18]
+2026-08-31 02:11:34,062 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 84 | Global 0.6749 | Head 0.7047 | Middle 0.6512 | Tail 0.6767 | Hmean 0.6904 | ExpEvent 1 | ExpMass 0.029418 | best_tail 0.7273@75
+2026-08-31 02:11:34,062 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 85 selected clients: [0, 5, 6, 9, 12, 15, 16, 18]
+2026-08-31 02:11:52,465 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 85 | Global 0.6733 | Head 0.6703 | Middle 0.6455 | Tail 0.7133 | Hmean 0.6911 | ExpEvent 1 | ExpMass 0.025595 | best_tail 0.7273@75
+2026-08-31 02:11:52,475 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 86 selected clients: [0, 2, 3, 6, 8, 11, 13, 16]
+2026-08-31 02:12:10,763 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 86 | Global 0.6704 | Head 0.7007 | Middle 0.6458 | Tail 0.6730 | Hmean 0.6866 | ExpEvent 1 | ExpMass 0.019343 | best_tail 0.7273@75
+2026-08-31 02:12:10,763 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 87 selected clients: [3, 4, 6, 8, 9, 11, 13, 15]
+2026-08-31 02:12:28,960 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 87 | Global 0.6630 | Head 0.7027 | Middle 0.6432 | Tail 0.6497 | Hmean 0.6752 | ExpEvent 1 | ExpMass 0.018138 | best_tail 0.7273@75
+2026-08-31 02:12:28,960 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 88 selected clients: [0, 1, 2, 7, 13, 15, 16, 18]
+2026-08-31 02:12:47,146 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 88 | Global 0.6529 | Head 0.6750 | Middle 0.6305 | Tail 0.6607 | Hmean 0.6678 | ExpEvent 1 | ExpMass 0.014507 | best_tail 0.7273@75
+2026-08-31 02:12:47,146 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 89 selected clients: [2, 4, 5, 7, 9, 10, 15, 18]
+2026-08-31 02:13:05,547 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 89 | Global 0.6648 | Head 0.6610 | Middle 0.6502 | Tail 0.6880 | Hmean 0.6742 | ExpEvent 1 | ExpMass 0.022768 | best_tail 0.7273@75
+2026-08-31 02:13:05,558 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 90 selected clients: [0, 2, 7, 10, 12, 14, 17, 19]
+2026-08-31 02:13:23,838 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 90 | Global 0.6756 | Head 0.6737 | Middle 0.6495 | Tail 0.7123 | Hmean 0.6925 | ExpEvent 1 | ExpMass 0.023176 | best_tail 0.7273@75
+2026-08-31 02:13:23,868 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Checkpoint @90 | Global 0.6756 | Head 0.6737 | Middle 0.6495 | Tail 0.7123 | Hmean 0.6925
+2026-08-31 02:13:23,868 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 91 selected clients: [1, 4, 5, 6, 7, 8, 17, 18]
+2026-08-31 02:13:42,266 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 91 | Global 0.6712 | Head 0.6327 | Middle 0.6555 | Tail 0.7307 | Hmean 0.6782 | ExpEvent 1 | ExpMass 0.031231 | best_tail 0.7307@91
+2026-08-31 02:13:42,266 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 92 selected clients: [4, 5, 7, 9, 11, 15, 17, 19]
+2026-08-31 02:14:00,512 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 92 | Global 0.6785 | Head 0.6757 | Middle 0.6528 | Tail 0.7157 | Hmean 0.6951 | ExpEvent 1 | ExpMass 0.027811 | best_tail 0.7307@91
+2026-08-31 02:14:00,513 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 93 selected clients: [0, 1, 6, 8, 9, 15, 17, 18]
+2026-08-31 02:14:18,820 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 93 | Global 0.6663 | Head 0.6710 | Middle 0.6262 | Tail 0.7150 | Hmean 0.6923 | ExpEvent 1 | ExpMass 0.029222 | best_tail 0.7307@91
+2026-08-31 02:14:18,820 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 94 selected clients: [3, 4, 6, 9, 10, 16, 18, 19]
+2026-08-31 02:14:37,174 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 94 | Global 0.6790 | Head 0.6700 | Middle 0.6320 | Tail 0.7507 | Hmean 0.7081 | ExpEvent 1 | ExpMass 0.031640 | best_tail 0.7507@94
+2026-08-31 02:14:37,174 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 95 selected clients: [1, 4, 5, 7, 9, 12, 16, 17]
+2026-08-31 02:14:55,427 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 95 | Global 0.6739 | Head 0.7350 | Middle 0.6350 | Tail 0.6647 | Hmean 0.6981 | ExpEvent 1 | ExpMass 0.018336 | best_tail 0.7507@94
+2026-08-31 02:14:55,437 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 96 selected clients: [2, 3, 6, 9, 11, 14, 15, 17]
+2026-08-31 02:15:13,443 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 96 | Global 0.6823 | Head 0.6940 | Middle 0.6627 | Tail 0.6967 | Hmean 0.6953 | ExpEvent 1 | ExpMass 0.033253 | best_tail 0.7507@94
+2026-08-31 02:15:13,453 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 97 selected clients: [1, 2, 4, 6, 9, 10, 12, 19]
+2026-08-31 02:15:31,733 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 97 | Global 0.6358 | Head 0.4940 | Middle 0.6512 | Tail 0.7570 | Hmean 0.5979 | ExpEvent 1 | ExpMass 0.023373 | best_tail 0.7570@97
+2026-08-31 02:15:31,734 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 98 selected clients: [2, 4, 7, 10, 14, 15, 17, 19]
+2026-08-31 02:15:49,898 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 98 | Global 0.6811 | Head 0.6857 | Middle 0.6448 | Tail 0.7250 | Hmean 0.7048 | ExpEvent 1 | ExpMass 0.024788 | best_tail 0.7570@97
+2026-08-31 02:15:49,898 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 99 selected clients: [0, 3, 4, 9, 13, 14, 16, 19]
+2026-08-31 02:16:08,093 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 99 | Global 0.6650 | Head 0.7280 | Middle 0.6078 | Tail 0.6783 | Hmean 0.7023 | ExpEvent 1 | ExpMass 0.016321 | best_tail 0.7570@97
+2026-08-31 02:16:08,093 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 100 selected clients: [0, 4, 6, 7, 10, 11, 12, 17]
+2026-08-31 02:16:25,171 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 100 | Global 0.6815 | Head 0.7753 | Middle 0.6235 | Tail 0.6650 | Hmean 0.7159 | ExpEvent 1 | ExpMass 0.017936 | best_tail 0.7570@97
+2026-08-31 02:16:25,198 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Checkpoint @100 | Global 0.6815 | Head 0.7753 | Middle 0.6235 | Tail 0.6650 | Hmean 0.7159
+2026-08-31 02:16:25,198 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 101 selected clients: [0, 8, 9, 10, 11, 14, 15, 17]
+2026-08-31 02:16:41,386 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 101 | Global 0.6702 | Head 0.7437 | Middle 0.6432 | Tail 0.6327 | Hmean 0.6837 | ExpEvent 1 | ExpMass 0.013908 | best_tail 0.7570@97
+2026-08-31 02:16:41,386 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 102 selected clients: [1, 5, 8, 10, 12, 13, 16, 17]
+2026-08-31 02:16:57,634 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 102 | Global 0.6755 | Head 0.7560 | Middle 0.6395 | Tail 0.6430 | Hmean 0.6949 | ExpEvent 1 | ExpMass 0.016123 | best_tail 0.7570@97
+2026-08-31 02:16:57,634 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 103 selected clients: [0, 4, 7, 9, 10, 11, 12, 19]
+2026-08-31 02:17:13,742 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 103 | Global 0.6781 | Head 0.7603 | Middle 0.6312 | Tail 0.6583 | Hmean 0.7056 | ExpEvent 1 | ExpMass 0.010278 | best_tail 0.7570@97
+2026-08-31 02:17:13,742 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 104 selected clients: [4, 5, 8, 10, 12, 13, 15, 16]
+2026-08-31 02:17:29,874 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 104 | Global 0.6710 | Head 0.7603 | Middle 0.6262 | Tail 0.6413 | Hmean 0.6957 | ExpEvent 1 | ExpMass 0.008061 | best_tail 0.7570@97
+2026-08-31 02:17:29,879 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 105 selected clients: [3, 4, 7, 9, 12, 15, 18, 19]
+2026-08-31 02:17:45,990 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 105 | Global 0.6824 | Head 0.6940 | Middle 0.6478 | Tail 0.7170 | Hmean 0.7053 | ExpEvent 1 | ExpMass 0.025796 | best_tail 0.7570@97
+2026-08-31 02:17:46,001 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 106 selected clients: [1, 3, 6, 7, 11, 15, 16, 18]
+2026-08-31 02:18:02,092 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 106 | Global 0.6806 | Head 0.6873 | Middle 0.6408 | Tail 0.7270 | Hmean 0.7066 | ExpEvent 1 | ExpMass 0.023378 | best_tail 0.7570@97
+2026-08-31 02:18:02,092 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 107 selected clients: [1, 2, 6, 8, 9, 12, 17, 19]
+2026-08-31 02:18:18,242 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 107 | Global 0.6822 | Head 0.6580 | Middle 0.6540 | Tail 0.7440 | Hmean 0.6984 | ExpEvent 1 | ExpMass 0.033253 | best_tail 0.7570@97
+2026-08-31 02:18:18,242 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 108 selected clients: [1, 6, 7, 8, 11, 13, 14, 17]
+2026-08-31 02:18:34,491 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 108 | Global 0.6799 | Head 0.7267 | Middle 0.6330 | Tail 0.6957 | Hmean 0.7109 | ExpEvent 1 | ExpMass 0.017738 | best_tail 0.7570@97
+2026-08-31 02:18:34,501 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 109 selected clients: [0, 2, 4, 7, 8, 9, 12, 16]
+2026-08-31 02:18:50,834 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 109 | Global 0.6841 | Head 0.7403 | Middle 0.6492 | Tail 0.6743 | Hmean 0.7058 | ExpEvent 1 | ExpMass 0.007657 | best_tail 0.7570@97
+2026-08-31 02:18:50,834 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 110 selected clients: [2, 3, 7, 8, 12, 16, 18, 19]
+2026-08-31 02:19:07,095 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 110 | Global 0.6671 | Head 0.6960 | Middle 0.6180 | Tail 0.7037 | Hmean 0.6998 | ExpEvent 1 | ExpMass 0.027005 | best_tail 0.7570@97
+2026-08-31 02:19:07,112 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Checkpoint @110 | Global 0.6671 | Head 0.6960 | Middle 0.6180 | Tail 0.7037 | Hmean 0.6998
+2026-08-31 02:19:07,112 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 111 selected clients: [5, 6, 7, 10, 11, 15, 16, 18]
+2026-08-31 02:19:23,278 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 111 | Global 0.6921 | Head 0.6957 | Middle 0.6540 | Tail 0.7393 | Hmean 0.7168 | ExpEvent 1 | ExpMass 0.023181 | best_tail 0.7570@97
+2026-08-31 02:19:23,278 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 112 selected clients: [0, 4, 6, 7, 9, 13, 15, 16]
+2026-08-31 02:19:39,320 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 112 | Global 0.6831 | Head 0.7393 | Middle 0.6412 | Tail 0.6827 | Hmean 0.7099 | ExpEvent 1 | ExpMass 0.011890 | best_tail 0.7570@97
+2026-08-31 02:19:39,320 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 113 selected clients: [1, 3, 5, 7, 13, 15, 18, 19]
+2026-08-31 02:19:55,454 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 113 | Global 0.6857 | Head 0.6857 | Middle 0.6412 | Tail 0.7450 | Hmean 0.7141 | ExpEvent 1 | ExpMass 0.029418 | best_tail 0.7570@97
+2026-08-31 02:19:55,454 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 114 selected clients: [0, 3, 6, 12, 15, 17, 18, 19]
+2026-08-31 02:20:11,650 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 114 | Global 0.6847 | Head 0.6507 | Middle 0.6420 | Tail 0.7757 | Hmean 0.7077 | ExpEvent 1 | ExpMass 0.041314 | best_tail 0.7757@114
+2026-08-31 02:20:11,650 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 115 selected clients: [0, 2, 7, 8, 9, 12, 13, 16]
+2026-08-31 02:20:27,799 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 115 | Global 0.6846 | Head 0.7307 | Middle 0.6385 | Tail 0.7000 | Hmean 0.7150 | ExpEvent 1 | ExpMass 0.007658 | best_tail 0.7757@114
+2026-08-31 02:20:27,807 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 116 selected clients: [0, 6, 7, 8, 9, 11, 12, 19]
+2026-08-31 02:20:44,200 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 116 | Global 0.6864 | Head 0.6943 | Middle 0.6548 | Tail 0.7207 | Hmean 0.7073 | ExpEvent 1 | ExpMass 0.018142 | best_tail 0.7757@114
+2026-08-31 02:20:44,200 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 117 selected clients: [4, 5, 6, 10, 11, 12, 18, 19]
+2026-08-31 02:21:01,332 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 117 | Global 0.6871 | Head 0.6990 | Middle 0.6360 | Tail 0.7433 | Hmean 0.7205 | ExpEvent 1 | ExpMass 0.029424 | best_tail 0.7757@114
+2026-08-31 02:21:01,332 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 118 selected clients: [1, 2, 4, 8, 10, 12, 15, 18]
+2026-08-31 02:21:19,579 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 118 | Global 0.6851 | Head 0.6780 | Middle 0.6502 | Tail 0.7387 | Hmean 0.7070 | ExpEvent 1 | ExpMass 0.014709 | best_tail 0.7757@114
+2026-08-31 02:21:19,579 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 119 selected clients: [1, 2, 3, 4, 5, 6, 11, 13]
+2026-08-31 02:21:37,910 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 119 | Global 0.6839 | Head 0.6763 | Middle 0.6558 | Tail 0.7290 | Hmean 0.7017 | ExpEvent 1 | ExpMass 0.025378 | best_tail 0.7757@114
+2026-08-31 02:21:37,910 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 120 selected clients: [5, 7, 8, 10, 11, 13, 15, 16]
+2026-08-31 02:21:56,114 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 120 | Global 0.6874 | Head 0.7617 | Middle 0.6495 | Tail 0.6637 | Hmean 0.7093 | ExpEvent 1 | ExpMass 0.007861 | best_tail 0.7757@114
+2026-08-31 02:21:56,147 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Checkpoint @120 | Global 0.6874 | Head 0.7617 | Middle 0.6495 | Tail 0.6637 | Hmean 0.7093
+2026-08-31 02:21:56,151 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 121 selected clients: [0, 3, 4, 5, 7, 16, 17, 18]
+2026-08-31 02:22:14,204 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 121 | Global 0.6939 | Head 0.7223 | Middle 0.6558 | Tail 0.7163 | Hmean 0.7193 | ExpEvent 1 | ExpMass 0.029613 | best_tail 0.7757@114
+2026-08-31 02:22:14,204 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 122 selected clients: [0, 1, 4, 12, 13, 14, 17, 18]
+2026-08-31 02:22:32,403 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 122 | Global 0.6490 | Head 0.6607 | Middle 0.6325 | Tail 0.6593 | Hmean 0.6600 | ExpEvent 1 | ExpMass 0.017530 | best_tail 0.7757@114
+2026-08-31 02:22:32,403 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 123 selected clients: [2, 10, 13, 14, 15, 16, 17, 19]
+2026-08-31 02:22:50,694 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 123 | Global 0.6954 | Head 0.7260 | Middle 0.6488 | Tail 0.7270 | Hmean 0.7265 | ExpEvent 1 | ExpMass 0.024793 | best_tail 0.7757@114
+2026-08-31 02:22:50,705 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 124 selected clients: [4, 8, 9, 10, 12, 13, 14, 16]
+2026-08-31 02:23:09,093 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 124 | Global 0.6863 | Head 0.7867 | Middle 0.6320 | Tail 0.6583 | Hmean 0.7168 | ExpEvent 1 | ExpMass 0.002419 | best_tail 0.7757@114
+2026-08-31 02:23:09,093 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 125 selected clients: [1, 4, 5, 8, 12, 13, 17, 19]
+2026-08-31 02:23:27,286 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 125 | Global 0.6815 | Head 0.7250 | Middle 0.6482 | Tail 0.6823 | Hmean 0.7030 | ExpEvent 1 | ExpMass 0.023977 | best_tail 0.7757@114
+2026-08-31 02:23:27,286 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 126 selected clients: [2, 8, 9, 12, 13, 14, 15, 16]
+2026-08-31 02:23:45,608 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 126 | Global 0.6904 | Head 0.7363 | Middle 0.6680 | Tail 0.6743 | Hmean 0.7039 | ExpEvent 1 | ExpMass 0.009474 | best_tail 0.7757@114
+2026-08-31 02:23:45,608 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 127 selected clients: [4, 5, 7, 11, 15, 16, 17, 18]
+2026-08-31 02:24:03,703 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 127 | Global 0.6961 | Head 0.7363 | Middle 0.6625 | Tail 0.7007 | Hmean 0.7181 | ExpEvent 1 | ExpMass 0.025191 | best_tail 0.7757@114
+2026-08-31 02:24:03,713 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 128 selected clients: [3, 6, 8, 10, 12, 15, 17, 19]
+2026-08-31 02:24:21,977 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 128 | Global 0.6964 | Head 0.6960 | Middle 0.6613 | Tail 0.7437 | Hmean 0.7191 | ExpEvent 1 | ExpMass 0.033864 | best_tail 0.7757@114
+2026-08-31 02:24:21,977 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 129 selected clients: [4, 6, 7, 10, 11, 15, 16, 17]
+2026-08-31 02:24:40,287 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 129 | Global 0.6854 | Head 0.7447 | Middle 0.6455 | Tail 0.6793 | Hmean 0.7105 | ExpEvent 1 | ExpMass 0.019553 | best_tail 0.7757@114
+2026-08-31 02:24:40,287 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 130 selected clients: [0, 3, 6, 9, 10, 14, 15, 17]
+2026-08-31 02:24:58,814 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 130 | Global 0.6866 | Head 0.7217 | Middle 0.6567 | Tail 0.6913 | Hmean 0.7062 | ExpEvent 1 | ExpMass 0.028013 | best_tail 0.7757@114
+2026-08-31 02:24:58,841 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Checkpoint @130 | Global 0.6866 | Head 0.7217 | Middle 0.6567 | Tail 0.6913 | Hmean 0.7062
+2026-08-31 02:24:58,841 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 131 selected clients: [0, 3, 7, 8, 9, 12, 14, 18]
+2026-08-31 02:25:17,310 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 131 | Global 0.6876 | Head 0.7150 | Middle 0.6460 | Tail 0.7157 | Hmean 0.7153 | ExpEvent 1 | ExpMass 0.016123 | best_tail 0.7757@114
+2026-08-31 02:25:17,310 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 132 selected clients: [1, 5, 7, 10, 12, 13, 15, 19]
+2026-08-31 02:25:35,635 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 132 | Global 0.6884 | Head 0.7237 | Middle 0.6495 | Tail 0.7050 | Hmean 0.7142 | ExpEvent 1 | ExpMass 0.015921 | best_tail 0.7757@114
+2026-08-31 02:25:35,635 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 133 selected clients: [0, 1, 7, 8, 9, 11, 15, 16]
+2026-08-31 02:25:53,645 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 133 | Global 0.6778 | Head 0.7547 | Middle 0.6265 | Tail 0.6693 | Hmean 0.7094 | ExpEvent 1 | ExpMass 0.004031 | best_tail 0.7757@114
+2026-08-31 02:25:53,655 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 134 selected clients: [2, 3, 7, 8, 10, 16, 18, 19]
+2026-08-31 02:26:09,850 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 134 | Global 0.6995 | Head 0.7167 | Middle 0.6495 | Tail 0.7490 | Hmean 0.7325 | ExpEvent 1 | ExpMass 0.026804 | best_tail 0.7757@114
+2026-08-31 02:26:09,856 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 135 selected clients: [0, 6, 9, 12, 13, 14, 16, 19]
+2026-08-31 02:26:26,195 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 135 | Global 0.6904 | Head 0.7300 | Middle 0.6250 | Tail 0.7380 | Hmean 0.7340 | ExpEvent 1 | ExpMass 0.018142 | best_tail 0.7757@114
+2026-08-31 02:26:26,195 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 136 selected clients: [2, 3, 5, 6, 10, 13, 15, 18]
+2026-08-31 02:26:42,486 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 136 | Global 0.6894 | Head 0.6433 | Middle 0.6562 | Tail 0.7797 | Hmean 0.7050 | ExpEvent 1 | ExpMass 0.034656 | best_tail 0.7797@136
+2026-08-31 02:26:42,486 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 137 selected clients: [1, 2, 3, 5, 9, 10, 13, 19]
+2026-08-31 02:26:58,714 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 137 | Global 0.6830 | Head 0.6433 | Middle 0.6555 | Tail 0.7593 | Hmean 0.6965 | ExpEvent 1 | ExpMass 0.027599 | best_tail 0.7797@136
+2026-08-31 02:26:58,714 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 138 selected clients: [0, 1, 5, 7, 8, 12, 16, 18]
+2026-08-31 02:27:14,804 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 138 | Global 0.6955 | Head 0.7253 | Middle 0.6448 | Tail 0.7333 | Hmean 0.7293 | ExpEvent 1 | ExpMass 0.013701 | best_tail 0.7797@136
+2026-08-31 02:27:14,814 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 139 selected clients: [4, 5, 6, 10, 11, 12, 14, 18]
+2026-08-31 02:27:30,908 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 139 | Global 0.6948 | Head 0.7277 | Middle 0.6550 | Tail 0.7150 | Hmean 0.7213 | ExpEvent 1 | ExpMass 0.021564 | best_tail 0.7797@136
+2026-08-31 02:27:30,908 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 140 selected clients: [2, 6, 8, 12, 14, 15, 16, 19]
+2026-08-31 02:27:47,029 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 140 | Global 0.7004 | Head 0.7073 | Middle 0.6530 | Tail 0.7567 | Hmean 0.7312 | ExpEvent 1 | ExpMass 0.022979 | best_tail 0.7797@136
+2026-08-31 02:27:47,056 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Checkpoint @140 | Global 0.7004 | Head 0.7073 | Middle 0.6530 | Tail 0.7567 | Hmean 0.7312
+2026-08-31 02:27:47,056 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 141 selected clients: [1, 3, 5, 10, 12, 14, 15, 19]
+2026-08-31 02:28:03,369 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 141 | Global 0.6850 | Head 0.6440 | Middle 0.6655 | Tail 0.7520 | Hmean 0.6938 | ExpEvent 1 | ExpMass 0.022164 | best_tail 0.7797@136
+2026-08-31 02:28:03,373 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 142 selected clients: [0, 1, 2, 3, 4, 9, 14, 17]
+2026-08-31 02:28:19,554 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 142 | Global 0.6859 | Head 0.7017 | Middle 0.6667 | Tail 0.6957 | Hmean 0.6987 | ExpEvent 1 | ExpMass 0.023565 | best_tail 0.7797@136
+2026-08-31 02:28:19,565 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 143 selected clients: [1, 3, 6, 8, 9, 13, 15, 16]
+2026-08-31 02:28:35,605 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 143 | Global 0.6916 | Head 0.7247 | Middle 0.6528 | Tail 0.7103 | Hmean 0.7174 | ExpEvent 1 | ExpMass 0.018138 | best_tail 0.7797@136
+2026-08-31 02:28:35,605 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 144 selected clients: [1, 5, 6, 8, 10, 12, 15, 18]
+2026-08-31 02:28:51,796 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 144 | Global 0.6973 | Head 0.6887 | Middle 0.6713 | Tail 0.7407 | Hmean 0.7138 | ExpEvent 1 | ExpMass 0.023378 | best_tail 0.7797@136
+2026-08-31 02:28:51,796 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 145 selected clients: [0, 2, 4, 7, 11, 17, 18, 19]
+2026-08-31 02:29:07,943 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 145 | Global 0.6968 | Head 0.7007 | Middle 0.6613 | Tail 0.7403 | Hmean 0.7200 | ExpEvent 1 | ExpMass 0.030425 | best_tail 0.7797@136
+2026-08-31 02:29:07,943 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 146 selected clients: [0, 1, 6, 8, 12, 13, 14, 16]
+2026-08-31 02:29:24,115 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 146 | Global 0.6945 | Head 0.7447 | Middle 0.6470 | Tail 0.7077 | Hmean 0.7257 | ExpEvent 1 | ExpMass 0.008061 | best_tail 0.7797@136
+2026-08-31 02:29:24,115 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 147 selected clients: [1, 2, 4, 10, 12, 15, 16, 19]
+2026-08-31 02:29:40,284 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 147 | Global 0.6987 | Head 0.7327 | Middle 0.6567 | Tail 0.7207 | Hmean 0.7267 | ExpEvent 1 | ExpMass 0.015112 | best_tail 0.7797@136
+2026-08-31 02:29:40,284 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 148 selected clients: [0, 6, 8, 10, 11, 15, 17, 18]
+2026-08-31 02:29:56,427 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 148 | Global 0.6980 | Head 0.7173 | Middle 0.6585 | Tail 0.7313 | Hmean 0.7242 | ExpEvent 1 | ExpMass 0.027011 | best_tail 0.7797@136
+2026-08-31 02:29:56,437 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 149 selected clients: [1, 2, 3, 4, 6, 7, 12, 14]
+2026-08-31 02:30:12,479 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 149 | Global 0.7007 | Head 0.7263 | Middle 0.6640 | Tail 0.7240 | Hmean 0.7251 | ExpEvent 1 | ExpMass 0.019541 | best_tail 0.7797@136
+2026-08-31 02:30:12,479 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 150 selected clients: [5, 7, 11, 12, 14, 17, 18, 19]
+2026-08-31 02:30:28,540 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 150 | Global 0.7048 | Head 0.7107 | Middle 0.6663 | Tail 0.7503 | Hmean 0.7300 | ExpEvent 1 | ExpMass 0.031445 | best_tail 0.7797@136
+2026-08-31 02:30:28,570 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Checkpoint @150 | Global 0.7048 | Head 0.7107 | Middle 0.6663 | Tail 0.7503 | Hmean 0.7300
+2026-08-31 02:30:28,570 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 151 selected clients: [1, 5, 6, 7, 8, 10, 14, 15]
+2026-08-31 02:30:46,762 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 151 | Global 0.7006 | Head 0.7237 | Middle 0.6660 | Tail 0.7237 | Hmean 0.7237 | ExpEvent 1 | ExpMass 0.015719 | best_tail 0.7797@136
+2026-08-31 02:30:46,772 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 152 selected clients: [1, 4, 9, 10, 15, 16, 18, 19]
+2026-08-31 02:31:04,889 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 152 | Global 0.6908 | Head 0.7140 | Middle 0.6465 | Tail 0.7267 | Hmean 0.7203 | ExpEvent 1 | ExpMass 0.019347 | best_tail 0.7797@136
+2026-08-31 02:31:04,889 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 153 selected clients: [0, 1, 4, 10, 11, 17, 18, 19]
+2026-08-31 02:31:23,248 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 153 | Global 0.6921 | Head 0.7053 | Middle 0.6430 | Tail 0.7443 | Hmean 0.7243 | ExpEvent 1 | ExpMass 0.025186 | best_tail 0.7797@136
+2026-08-31 02:31:23,248 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 154 selected clients: [2, 4, 8, 9, 11, 13, 15, 18]
+2026-08-31 02:31:41,422 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 154 | Global 0.7013 | Head 0.7200 | Middle 0.6633 | Tail 0.7333 | Hmean 0.7266 | ExpEvent 1 | ExpMass 0.016727 | best_tail 0.7797@136
+2026-08-31 02:31:41,422 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 155 selected clients: [1, 3, 5, 11, 12, 13, 14, 15]
+2026-08-31 02:31:59,643 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 155 | Global 0.6964 | Head 0.7323 | Middle 0.6630 | Tail 0.7050 | Hmean 0.7184 | ExpEvent 1 | ExpMass 0.014306 | best_tail 0.7797@136
+2026-08-31 02:31:59,643 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 156 selected clients: [2, 4, 5, 10, 11, 14, 15, 19]
+2026-08-31 02:32:17,905 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 156 | Global 0.7001 | Head 0.7387 | Middle 0.6535 | Tail 0.7237 | Hmean 0.7311 | ExpEvent 1 | ExpMass 0.020955 | best_tail 0.7797@136
+2026-08-31 02:32:17,905 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 157 selected clients: [3, 7, 10, 11, 13, 14, 16, 18]
+2026-08-31 02:32:36,049 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 157 | Global 0.6571 | Head 0.7250 | Middle 0.6410 | Tail 0.6107 | Hmean 0.6630 | ExpEvent 1 | ExpMass 0.013707 | best_tail 0.7797@136
+2026-08-31 02:32:36,049 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 158 selected clients: [0, 1, 2, 8, 9, 10, 11, 17]
+2026-08-31 02:32:54,129 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 158 | Global 0.6928 | Head 0.7380 | Middle 0.6603 | Tail 0.6910 | Hmean 0.7137 | ExpEvent 1 | ExpMass 0.017328 | best_tail 0.7797@136
+2026-08-31 02:32:54,129 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 159 selected clients: [4, 8, 10, 13, 14, 15, 18, 19]
+2026-08-31 02:33:12,325 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 159 | Global 0.6981 | Head 0.7393 | Middle 0.6482 | Tail 0.7233 | Hmean 0.7312 | ExpEvent 1 | ExpMass 0.017134 | best_tail 0.7797@136
+2026-08-31 02:33:12,325 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 160 selected clients: [0, 1, 2, 5, 6, 12, 14, 19]
+2026-08-31 02:33:30,630 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 160 | Global 0.6901 | Head 0.6660 | Middle 0.6605 | Tail 0.7537 | Hmean 0.7071 | ExpEvent 1 | ExpMass 0.027196 | best_tail 0.7797@136
+2026-08-31 02:33:30,648 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Checkpoint @160 | Global 0.6901 | Head 0.6660 | Middle 0.6605 | Tail 0.7537 | Hmean 0.7071
+2026-08-31 02:33:30,648 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 161 selected clients: [3, 4, 8, 9, 11, 14, 17, 18]
+2026-08-31 02:33:49,289 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 161 | Global 0.6991 | Head 0.7230 | Middle 0.6695 | Tail 0.7147 | Hmean 0.7188 | ExpEvent 1 | ExpMass 0.025796 | best_tail 0.7797@136
+2026-08-31 02:33:49,289 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 162 selected clients: [1, 2, 7, 14, 15, 16, 18, 19]
+2026-08-31 02:34:07,694 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 162 | Global 0.6959 | Head 0.6863 | Middle 0.6552 | Tail 0.7597 | Hmean 0.7211 | ExpEvent 1 | ExpMass 0.022370 | best_tail 0.7797@136
+2026-08-31 02:34:07,694 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 163 selected clients: [5, 6, 7, 10, 11, 12, 13, 17]
+2026-08-31 02:34:25,956 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 163 | Global 0.7051 | Head 0.7333 | Middle 0.6685 | Tail 0.7257 | Hmean 0.7295 | ExpEvent 1 | ExpMass 0.023987 | best_tail 0.7797@136
+2026-08-31 02:34:25,956 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 164 selected clients: [0, 3, 6, 10, 12, 13, 15, 16]
+2026-08-31 02:34:44,227 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 164 | Global 0.6962 | Head 0.7587 | Middle 0.6480 | Tail 0.6980 | Hmean 0.7271 | ExpEvent 1 | ExpMass 0.016123 | best_tail 0.7797@136
+2026-08-31 02:34:44,227 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 165 selected clients: [3, 7, 9, 11, 13, 15, 17, 19]
+2026-08-31 02:35:02,715 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 165 | Global 0.6970 | Head 0.7360 | Middle 0.6558 | Tail 0.7130 | Hmean 0.7243 | ExpEvent 1 | ExpMass 0.028019 | best_tail 0.7797@136
+2026-08-31 02:35:02,715 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 166 selected clients: [1, 10, 11, 12, 13, 14, 16, 17]
+2026-08-31 02:35:20,821 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 166 | Global 0.6956 | Head 0.7877 | Middle 0.6442 | Tail 0.6720 | Hmean 0.7253 | ExpEvent 1 | ExpMass 0.010079 | best_tail 0.7797@136
+2026-08-31 02:35:20,821 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 167 selected clients: [3, 4, 7, 9, 10, 13, 14, 18]
+2026-08-31 02:35:37,161 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 167 | Global 0.6953 | Head 0.7847 | Middle 0.6440 | Tail 0.6743 | Hmean 0.7253 | ExpEvent 1 | ExpMass 0.015921 | best_tail 0.7797@136
+2026-08-31 02:35:37,161 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 168 selected clients: [0, 1, 3, 4, 10, 11, 14, 15]
+2026-08-31 02:35:53,514 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 168 | Global 0.6858 | Head 0.7583 | Middle 0.6460 | Tail 0.6663 | Hmean 0.7093 | ExpEvent 1 | ExpMass 0.008058 | best_tail 0.7797@136
+2026-08-31 02:35:53,514 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 169 selected clients: [0, 1, 4, 5, 7, 9, 16, 18]
+2026-08-31 02:36:09,794 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 169 | Global 0.6881 | Head 0.7500 | Middle 0.6345 | Tail 0.6977 | Hmean 0.7229 | ExpEvent 1 | ExpMass 0.015713 | best_tail 0.7797@136
+2026-08-31 02:36:09,794 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 170 selected clients: [1, 5, 6, 9, 11, 14, 15, 18]
+2026-08-31 02:36:26,162 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 170 | Global 0.6896 | Head 0.7180 | Middle 0.6570 | Tail 0.7047 | Hmean 0.7113 | ExpEvent 1 | ExpMass 0.025393 | best_tail 0.7797@136
+2026-08-31 02:36:26,181 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Checkpoint @170 | Global 0.6896 | Head 0.7180 | Middle 0.6570 | Tail 0.7047 | Hmean 0.7113
+2026-08-31 02:36:26,181 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 171 selected clients: [0, 5, 6, 7, 8, 9, 12, 17]
+2026-08-31 02:36:42,463 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 171 | Global 0.6995 | Head 0.7303 | Middle 0.6765 | Tail 0.6993 | Hmean 0.7145 | ExpEvent 1 | ExpMass 0.026199 | best_tail 0.7797@136
+2026-08-31 02:36:42,463 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 172 selected clients: [4, 9, 10, 11, 13, 15, 17, 18]
+2026-08-31 02:36:58,546 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 172 | Global 0.6993 | Head 0.7447 | Middle 0.6607 | Tail 0.7053 | Hmean 0.7245 | ExpEvent 1 | ExpMass 0.021367 | best_tail 0.7797@136
+2026-08-31 02:36:58,546 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 173 selected clients: [0, 4, 7, 8, 9, 10, 13, 16]
+2026-08-31 02:37:14,894 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 173 | Global 0.6790 | Head 0.7967 | Middle 0.6182 | Tail 0.6423 | Hmean 0.7112 | ExpEvent 1 | ExpMass 0.002217 | best_tail 0.7797@136
+2026-08-31 02:37:14,894 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 174 selected clients: [1, 3, 4, 6, 12, 13, 15, 18]
+2026-08-31 02:37:31,084 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 174 | Global 0.6966 | Head 0.7383 | Middle 0.6508 | Tail 0.7160 | Hmean 0.7270 | ExpEvent 1 | ExpMass 0.023574 | best_tail 0.7797@136
+2026-08-31 02:37:31,084 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 175 selected clients: [1, 2, 4, 6, 8, 9, 11, 14]
+2026-08-31 02:37:47,386 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 175 | Global 0.6981 | Head 0.7410 | Middle 0.6577 | Tail 0.7090 | Hmean 0.7246 | ExpEvent 1 | ExpMass 0.015313 | best_tail 0.7797@136
+2026-08-31 02:37:47,397 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 176 selected clients: [1, 3, 5, 11, 12, 13, 14, 19]
+2026-08-31 02:38:03,553 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 176 | Global 0.7030 | Head 0.7390 | Middle 0.6593 | Tail 0.7253 | Hmean 0.7321 | ExpEvent 1 | ExpMass 0.020351 | best_tail 0.7797@136
+2026-08-31 02:38:03,553 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 177 selected clients: [1, 3, 5, 6, 8, 9, 10, 18]
+2026-08-31 02:38:19,764 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 177 | Global 0.6979 | Head 0.6890 | Middle 0.6542 | Tail 0.7650 | Hmean 0.7250 | ExpEvent 1 | ExpMass 0.029821 | best_tail 0.7797@136
+2026-08-31 02:38:19,764 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 178 selected clients: [2, 4, 5, 6, 7, 8, 9, 11]
+2026-08-31 02:38:35,897 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 178 | Global 0.6998 | Head 0.7287 | Middle 0.6713 | Tail 0.7090 | Hmean 0.7187 | ExpEvent 1 | ExpMass 0.021358 | best_tail 0.7797@136
+2026-08-31 02:38:35,897 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 179 selected clients: [0, 3, 4, 5, 7, 13, 15, 19]
+2026-08-31 02:38:52,235 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 179 | Global 0.6904 | Head 0.7073 | Middle 0.6550 | Tail 0.7207 | Hmean 0.7139 | ExpEvent 1 | ExpMass 0.021958 | best_tail 0.7797@136
+2026-08-31 02:38:52,245 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 180 selected clients: [3, 4, 6, 9, 10, 12, 14, 17]
+2026-08-31 02:39:08,560 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 180 | Global 0.6972 | Head 0.7397 | Middle 0.6532 | Tail 0.7133 | Hmean 0.7263 | ExpEvent 1 | ExpMass 0.026401 | best_tail 0.7797@136
+2026-08-31 02:39:08,583 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Checkpoint @180 | Global 0.6972 | Head 0.7397 | Middle 0.6532 | Tail 0.7133 | Hmean 0.7263
+2026-08-31 02:39:08,583 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 181 selected clients: [0, 7, 11, 13, 14, 15, 16, 18]
+2026-08-31 02:39:24,815 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 181 | Global 0.6963 | Head 0.7663 | Middle 0.6445 | Tail 0.6953 | Hmean 0.7291 | ExpEvent 1 | ExpMass 0.009272 | best_tail 0.7797@136
+2026-08-31 02:39:24,815 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 182 selected clients: [2, 5, 8, 9, 14, 16, 17, 18]
+2026-08-31 02:39:41,090 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 182 | Global 0.7048 | Head 0.7287 | Middle 0.6595 | Tail 0.7413 | Hmean 0.7349 | ExpEvent 1 | ExpMass 0.030834 | best_tail 0.7797@136
+2026-08-31 02:39:41,090 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 183 selected clients: [1, 3, 6, 7, 8, 12, 18, 19]
+2026-08-31 02:39:57,257 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 183 | Global 0.7023 | Head 0.6970 | Middle 0.6508 | Tail 0.7763 | Hmean 0.7345 | ExpEvent 1 | ExpMass 0.029625 | best_tail 0.7797@136
+2026-08-31 02:39:57,268 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 184 selected clients: [0, 1, 6, 8, 9, 11, 15, 18]
+2026-08-31 02:40:15,148 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 184 | Global 0.7012 | Head 0.7087 | Middle 0.6555 | Tail 0.7547 | Hmean 0.7310 | ExpEvent 1 | ExpMass 0.019347 | best_tail 0.7797@136
+2026-08-31 02:40:15,148 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 185 selected clients: [0, 7, 8, 10, 12, 13, 15, 19]
+2026-08-31 02:40:33,260 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 185 | Global 0.7024 | Head 0.7473 | Middle 0.6532 | Tail 0.7230 | Hmean 0.7349 | ExpEvent 1 | ExpMass 0.009877 | best_tail 0.7797@136
+2026-08-31 02:40:33,260 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 186 selected clients: [2, 6, 7, 9, 10, 11, 14, 17]
+2026-08-31 02:40:51,599 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 186 | Global 0.7039 | Head 0.7277 | Middle 0.6783 | Tail 0.7143 | Hmean 0.7209 | ExpEvent 1 | ExpMass 0.025197 | best_tail 0.7797@136
+2026-08-31 02:40:51,599 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 187 selected clients: [0, 1, 5, 7, 8, 9, 17, 19]
+2026-08-31 02:41:09,931 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 187 | Global 0.7005 | Head 0.7123 | Middle 0.6620 | Tail 0.7400 | Hmean 0.7259 | ExpEvent 1 | ExpMass 0.025992 | best_tail 0.7797@136
+2026-08-31 02:41:09,931 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 188 selected clients: [0, 4, 6, 12, 14, 15, 18, 19]
+2026-08-31 02:41:28,233 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 188 | Global 0.7045 | Head 0.6963 | Middle 0.6693 | Tail 0.7597 | Hmean 0.7266 | ExpEvent 1 | ExpMass 0.025191 | best_tail 0.7797@136
+2026-08-31 02:41:28,233 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 189 selected clients: [0, 2, 7, 8, 9, 16, 17, 19]
+2026-08-31 02:41:46,499 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 189 | Global 0.7026 | Head 0.7073 | Middle 0.6552 | Tail 0.7610 | Hmean 0.7332 | ExpEvent 1 | ExpMass 0.025191 | best_tail 0.7797@136
+2026-08-31 02:41:46,499 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 190 selected clients: [1, 2, 4, 7, 8, 10, 12, 17]
+2026-08-31 02:42:04,686 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 190 | Global 0.6857 | Head 0.7193 | Middle 0.6653 | Tail 0.6793 | Hmean 0.6987 | ExpEvent 1 | ExpMass 0.015313 | best_tail 0.7797@136
+2026-08-31 02:42:04,703 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Checkpoint @190 | Global 0.6857 | Head 0.7193 | Middle 0.6653 | Tail 0.6793 | Hmean 0.6987
+2026-08-31 02:42:04,703 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 191 selected clients: [0, 1, 4, 5, 9, 10, 11, 12]
+2026-08-31 02:42:22,972 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 191 | Global 0.6938 | Head 0.7580 | Middle 0.6593 | Tail 0.6757 | Hmean 0.7145 | ExpEvent 1 | ExpMass 0.008461 | best_tail 0.7797@136
+2026-08-31 02:42:22,972 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 192 selected clients: [0, 3, 7, 8, 9, 11, 15, 17]
+2026-08-31 02:42:41,236 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 192 | Global 0.6906 | Head 0.7523 | Middle 0.6508 | Tail 0.6820 | Hmean 0.7154 | ExpEvent 1 | ExpMass 0.020153 | best_tail 0.7797@136
+2026-08-31 02:42:41,236 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 193 selected clients: [1, 4, 5, 8, 10, 11, 13, 15]
+2026-08-31 02:42:59,558 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 193 | Global 0.6799 | Head 0.7963 | Middle 0.6395 | Tail 0.6173 | Hmean 0.6955 | ExpEvent 1 | ExpMass 0.007858 | best_tail 0.7797@136
+2026-08-31 02:42:59,558 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 194 selected clients: [4, 9, 10, 11, 12, 13, 16, 18]
+2026-08-31 02:43:17,670 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 194 | Global 0.6992 | Head 0.8067 | Middle 0.6410 | Tail 0.6693 | Hmean 0.7316 | ExpEvent 1 | ExpMass 0.009877 | best_tail 0.7797@136
+2026-08-31 02:43:17,680 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 195 selected clients: [2, 3, 4, 8, 10, 13, 14, 18]
+2026-08-31 02:43:35,970 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 195 | Global 0.7047 | Head 0.7710 | Middle 0.6567 | Tail 0.7023 | Hmean 0.7350 | ExpEvent 1 | ExpMass 0.018940 | best_tail 0.7797@136
+2026-08-31 02:43:35,970 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 196 selected clients: [1, 3, 5, 9, 14, 16, 18, 19]
+2026-08-31 02:43:54,213 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 196 | Global 0.7058 | Head 0.7573 | Middle 0.6438 | Tail 0.7370 | Hmean 0.7470 | ExpEvent 1 | ExpMass 0.029821 | best_tail 0.7797@136
+2026-08-31 02:43:54,213 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 197 selected clients: [0, 2, 6, 8, 10, 11, 15, 18]
+2026-08-31 02:44:12,530 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 197 | Global 0.7067 | Head 0.7017 | Middle 0.6685 | Tail 0.7627 | Hmean 0.7309 | ExpEvent 1 | ExpMass 0.022370 | best_tail 0.7797@136
+2026-08-31 02:44:12,530 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 198 selected clients: [2, 3, 4, 5, 6, 9, 12, 16]
+2026-08-31 02:44:30,855 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 198 | Global 0.7059 | Head 0.7157 | Middle 0.6680 | Tail 0.7467 | Hmean 0.7309 | ExpEvent 1 | ExpMass 0.027800 | best_tail 0.7797@136
+2026-08-31 02:44:30,855 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 199 selected clients: [1, 2, 3, 6, 9, 13, 14, 18]
+2026-08-31 02:44:49,105 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 199 | Global 0.6996 | Head 0.6977 | Middle 0.6723 | Tail 0.7380 | Hmean 0.7173 | ExpEvent 1 | ExpMass 0.029015 | best_tail 0.7797@136
+2026-08-31 02:44:49,105 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 200 selected clients: [1, 3, 8, 10, 13, 14, 17, 19]
+2026-08-31 02:45:05,383 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Round 200 | Global 0.7032 | Head 0.7403 | Middle 0.6542 | Tail 0.7313 | Hmean 0.7358 | ExpEvent 1 | ExpMass 0.023982 | best_tail 0.7797@136
+2026-08-31 02:45:05,411 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Checkpoint @200 | Global 0.7032 | Head 0.7403 | Middle 0.6542 | Tail 0.7313 | Hmean 0.7358
+2026-08-31 02:45:05,435 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - ==========================================================================================
+2026-08-31 02:45:05,436 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - FINISHED BETA PARETO | beta=0.300
+2026-08-31 02:45:05,436 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Final Global: 0.7032
+2026-08-31 02:45:05,436 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Final Head: 0.7403
+2026-08-31 02:45:05,436 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Final Middle: 0.6542
+2026-08-31 02:45:05,436 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Final Tail: 0.7313
+2026-08-31 02:45:05,437 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Final Hmean: 0.7358
+2026-08-31 02:45:05,437 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Best Tail (diagnostic only; NOT fixed-round main result): 0.7797 @ round 136
+2026-08-31 02:45:05,437 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Metrics CSV: D:\Desktop\FedLF_project\FedLF\outputs\beta_cifar10_beta0p3_IF100_alpha0p5_seed42\metrics.csv
+2026-08-31 02:45:05,437 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - History file: D:\Desktop\FedLF_project\FedLF\outputs\beta_cifar10_beta0p3_IF100_alpha0p5_seed42\head_tail_history.pkl
+2026-08-31 02:45:05,437 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Checkpoint file: D:\Desktop\FedLF_project\FedLF\outputs\beta_cifar10_beta0p3_IF100_alpha0p5_seed42\checkpoint.pth
+2026-08-31 02:45:05,437 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Final model file: D:\Desktop\FedLF_project\FedLF\outputs\beta_cifar10_beta0p3_IF100_alpha0p5_seed42\final_model.pth
+2026-08-31 02:45:05,437 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Config file: D:\Desktop\FedLF_project\FedLF\outputs\beta_cifar10_beta0p3_IF100_alpha0p5_seed42\config.json
+2026-08-31 02:45:05,437 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - Partition SHA256: 91fc508fdd8b116a19ca7809c6dfe5d6b9f4161086b898c272ecff4fedcd1acf
+2026-08-31 02:45:05,437 - beta_cifar10_beta0p3_IF100_alpha0p5_seed42.log - INFO - ==========================================================================================

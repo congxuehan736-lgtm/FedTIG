@@ -1,0 +1,44 @@
+# Sensitivity experiment
+
+
+dataset: cifar10
+
+num_classes: 10
+
+
+num_clients: 20
+
+num_online_clients: 8
+
+
+imb_factor: 0.01
+
+non_iid_alpha: 0.5
+
+rs_alpha: 0.5
+
+
+num_rounds: 200
+
+local_epochs: 10
+
+batch_size: 32
+
+lr: 0.1
+
+
+seed: 42
+
+
+beta_values:
+
+  - 0.0
+  - 0.05
+  - 0.125
+  - 0.2
+  - 0.3
+
+
+module:
+
+  tail_boost: true

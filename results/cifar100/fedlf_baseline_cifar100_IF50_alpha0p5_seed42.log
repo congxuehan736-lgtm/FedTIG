@@ -1,0 +1,462 @@
+2026-08-29 15:18:33,357 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - ================================================================================
+2026-08-29 15:18:33,357 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - CIFAR-100-LT SAME-PROTOCOL FedLF BASELINE
+2026-08-29 15:18:33,357 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Run name: fedlf_baseline_cifar100_IF50_alpha0p5_seed42
+2026-08-29 15:18:33,357 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - dataset:cifar100, num_classes:100
+2026-08-29 15:18:33,358 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - imb_factor:0.02 (IF=50), non_iid_alpha:0.5, rs_alpha:0.25
+2026-08-29 15:18:33,358 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - num_clients:20
+2026-08-29 15:18:33,358 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - num_online_clients:8
+2026-08-29 15:18:33,358 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - participation_rate:0.4000
+2026-08-29 15:18:33,358 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - num_rounds:200
+2026-08-29 15:18:33,359 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - local_epochs:5
+2026-08-29 15:18:33,359 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - batch_size:32
+2026-08-29 15:18:33,359 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - base_lr:0.1
+2026-08-29 15:18:33,359 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - late_lr_schedule: SHARED WITH CURRENT FedTIG (0.1 -> 0.05)
+2026-08-29 15:18:33,359 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - seed:42
+2026-08-29 15:18:33,359 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - FedLF local learner: L_A + 0.01 L_C + 0.01 L_D
+2026-08-29 15:18:33,359 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - S / semantic client sampling: DISABLED
+2026-08-29 15:18:33,359 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - C / confidence-tail reweighting: DISABLED
+2026-08-29 15:18:33,359 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - A / tail residual aggregation: DISABLED
+2026-08-29 15:18:33,359 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - client selection: UNIFORM RANDOM WITHOUT REPLACEMENT
+2026-08-29 15:18:33,359 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - server aggregation: STANDARD SAMPLE-WEIGHTED FedAvg
+2026-08-29 15:18:33,359 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - test-set rollback enabled: False
+2026-08-29 15:18:33,360 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Log file: D:\Desktop\FedLF_project\FedLF\Logs\fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log
+2026-08-29 15:18:33,360 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Output directory: D:\Desktop\FedLF_project\FedLF\outputs\fedlf_baseline_cifar100_IF50_alpha0p5_seed42
+2026-08-29 15:18:33,360 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - ================================================================================
+2026-08-29 15:18:39,019 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Global class counts: [500, 480, 462, 444, 426, 410, 394, 379, 364, 350, 336, 323, 311, 299, 287, 276, 265, 255, 245, 235, 226, 218, 209, 201, 193, 186, 178, 172, 165, 158, 152, 146, 141, 135, 130, 125, 120, 115, 111, 107, 102, 98, 95, 91, 87, 84, 81, 78, 75, 72, 69, 66, 64, 61, 59, 56, 54, 52, 50, 48, 46, 44, 43, 41, 39, 38, 36, 35, 34, 32, 31, 30, 29, 27, 26, 25, 24, 23, 22, 22, 21, 20, 19, 18, 18, 17, 16, 16, 15, 14, 14, 13, 13, 12, 12, 11, 11, 10, 10, 10]
+2026-08-29 15:18:39,019 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Paper thresholds: Head > 200, Tail < 20
+2026-08-29 15:18:39,019 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Tail classes (<20): [82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]
+2026-08-29 15:18:39,020 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Client data sizes: [631, 631, 631, 631, 631, 631, 631, 631, 630, 630, 630, 630, 630, 630, 630, 630, 630, 630, 630, 630]
+2026-08-29 15:18:39,020 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Partition SHA256: 36481a5ca0f0a9f5014989846f7bd1f28e1010b3592656a550212443365c8a05
+2026-08-29 15:18:39,156 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 1 selected clients: [0, 1, 3, 5, 8, 11, 15, 17]
+2026-08-29 15:18:51,183 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 1 | Global 0.0266 | Head 0.0946 | Tail 0.0000 | Many 0.0946 | Medium 0.0067 | Few 0.0000 | best_tail 0.0000@1
+2026-08-29 15:18:51,183 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 2 selected clients: [4, 5, 7, 12, 14, 15, 16, 19]
+2026-08-29 15:19:02,549 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 2 | Global 0.0490 | Head 0.1492 | Tail 0.0000 | Many 0.1492 | Medium 0.0228 | Few 0.0000 | best_tail 0.0000@2
+2026-08-29 15:19:02,549 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 3 selected clients: [0, 2, 5, 7, 10, 12, 16, 18]
+2026-08-29 15:19:14,288 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 3 | Global 0.0552 | Head 0.1642 | Tail 0.0000 | Many 0.1642 | Medium 0.0272 | Few 0.0000 | best_tail 0.0000@3
+2026-08-29 15:19:14,288 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 4 selected clients: [0, 4, 6, 8, 9, 11, 17, 18]
+2026-08-29 15:19:25,995 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 4 | Global 0.0595 | Head 0.1883 | Tail 0.0000 | Many 0.1883 | Medium 0.0247 | Few 0.0000 | best_tail 0.0000@4
+2026-08-29 15:19:25,996 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 5 selected clients: [0, 2, 5, 9, 10, 12, 16, 19]
+2026-08-29 15:19:37,705 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 5 | Global 0.0649 | Head 0.2029 | Tail 0.0000 | Many 0.2029 | Medium 0.0279 | Few 0.0000 | best_tail 0.0000@5
+2026-08-29 15:19:37,705 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 6 selected clients: [1, 3, 4, 5, 9, 10, 15, 16]
+2026-08-29 15:19:49,666 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 6 | Global 0.0740 | Head 0.2229 | Tail 0.0000 | Many 0.2229 | Medium 0.0353 | Few 0.0000 | best_tail 0.0000@6
+2026-08-29 15:19:49,666 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 7 selected clients: [2, 3, 5, 9, 10, 12, 13, 16]
+2026-08-29 15:20:00,774 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 7 | Global 0.0792 | Head 0.2367 | Tail 0.0000 | Many 0.2367 | Medium 0.0386 | Few 0.0000 | best_tail 0.0000@7
+2026-08-29 15:20:00,775 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 8 selected clients: [1, 3, 5, 7, 11, 15, 17, 18]
+2026-08-29 15:20:12,344 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 8 | Global 0.0826 | Head 0.2375 | Tail 0.0000 | Many 0.2375 | Medium 0.0441 | Few 0.0000 | best_tail 0.0000@8
+2026-08-29 15:20:12,345 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 9 selected clients: [0, 4, 7, 8, 9, 11, 13, 17]
+2026-08-29 15:20:23,619 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 9 | Global 0.0874 | Head 0.2846 | Tail 0.0000 | Many 0.2846 | Medium 0.0329 | Few 0.0000 | best_tail 0.0000@9
+2026-08-29 15:20:23,620 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 10 selected clients: [1, 2, 4, 5, 7, 9, 15, 16]
+2026-08-29 15:20:34,834 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 10 | Global 0.0994 | Head 0.3075 | Tail 0.0000 | Many 0.3075 | Medium 0.0441 | Few 0.0000 | best_tail 0.0000@10
+2026-08-29 15:20:34,855 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Checkpoint @10 | Global 0.0994 | Head 0.3075 | Middle 0.0441 | Tail 0.0000
+2026-08-29 15:20:34,856 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 11 selected clients: [1, 2, 4, 6, 12, 13, 16, 17]
+2026-08-29 15:20:46,036 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 11 | Global 0.1067 | Head 0.3304 | Tail 0.0000 | Many 0.3304 | Medium 0.0472 | Few 0.0000 | best_tail 0.0000@11
+2026-08-29 15:20:46,037 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 12 selected clients: [3, 6, 8, 9, 11, 14, 17, 18]
+2026-08-29 15:20:57,311 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 12 | Global 0.1089 | Head 0.3042 | Tail 0.0000 | Many 0.3042 | Medium 0.0619 | Few 0.0000 | best_tail 0.0000@12
+2026-08-29 15:20:57,311 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 13 selected clients: [2, 6, 8, 9, 12, 13, 14, 19]
+2026-08-29 15:21:08,429 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 13 | Global 0.1045 | Head 0.3092 | Tail 0.0000 | Many 0.3092 | Medium 0.0522 | Few 0.0000 | best_tail 0.0000@12
+2026-08-29 15:21:08,430 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 14 selected clients: [1, 4, 5, 9, 10, 11, 12, 19]
+2026-08-29 15:21:19,520 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 14 | Global 0.1185 | Head 0.3212 | Tail 0.0000 | Many 0.3212 | Medium 0.0714 | Few 0.0000 | best_tail 0.0000@14
+2026-08-29 15:21:19,520 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 15 selected clients: [4, 5, 7, 12, 13, 14, 16, 19]
+2026-08-29 15:21:30,602 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 15 | Global 0.1174 | Head 0.3550 | Tail 0.0000 | Many 0.3550 | Medium 0.0555 | Few 0.0000 | best_tail 0.0000@14
+2026-08-29 15:21:30,602 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 16 selected clients: [1, 4, 6, 9, 11, 13, 14, 18]
+2026-08-29 15:21:41,723 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 16 | Global 0.1249 | Head 0.3667 | Tail 0.0000 | Many 0.3667 | Medium 0.0636 | Few 0.0000 | best_tail 0.0000@16
+2026-08-29 15:21:41,724 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 17 selected clients: [4, 6, 7, 9, 11, 12, 14, 16]
+2026-08-29 15:21:52,706 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 17 | Global 0.1221 | Head 0.3542 | Tail 0.0000 | Many 0.3542 | Medium 0.0640 | Few 0.0000 | best_tail 0.0000@16
+2026-08-29 15:21:52,707 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 18 selected clients: [1, 3, 4, 7, 8, 9, 12, 18]
+2026-08-29 15:22:02,949 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 18 | Global 0.1342 | Head 0.3708 | Tail 0.0000 | Many 0.3708 | Medium 0.0779 | Few 0.0000 | best_tail 0.0000@18
+2026-08-29 15:22:02,949 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 19 selected clients: [1, 6, 7, 8, 9, 10, 11, 19]
+2026-08-29 15:22:13,079 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 19 | Global 0.1347 | Head 0.3446 | Tail 0.0000 | Many 0.3446 | Medium 0.0897 | Few 0.0000 | best_tail 0.0000@19
+2026-08-29 15:22:13,079 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 20 selected clients: [3, 4, 6, 10, 11, 13, 14, 17]
+2026-08-29 15:22:23,336 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 20 | Global 0.1432 | Head 0.3846 | Tail 0.0000 | Many 0.3846 | Medium 0.0878 | Few 0.0000 | best_tail 0.0000@20
+2026-08-29 15:22:23,357 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Checkpoint @20 | Global 0.1432 | Head 0.3846 | Middle 0.0878 | Tail 0.0000
+2026-08-29 15:22:23,358 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 21 selected clients: [3, 4, 13, 14, 15, 17, 18, 19]
+2026-08-29 15:22:33,501 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 21 | Global 0.1489 | Head 0.3912 | Tail 0.0000 | Many 0.3912 | Medium 0.0948 | Few 0.0000 | best_tail 0.0000@21
+2026-08-29 15:22:33,501 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 22 selected clients: [4, 5, 8, 10, 16, 17, 18, 19]
+2026-08-29 15:22:43,634 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 22 | Global 0.1495 | Head 0.3750 | Tail 0.0000 | Many 0.3750 | Medium 0.1026 | Few 0.0000 | best_tail 0.0000@22
+2026-08-29 15:22:43,634 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 23 selected clients: [1, 2, 3, 6, 8, 13, 15, 19]
+2026-08-29 15:22:53,840 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 23 | Global 0.1666 | Head 0.4163 | Tail 0.0000 | Many 0.4163 | Medium 0.1150 | Few 0.0000 | best_tail 0.0000@23
+2026-08-29 15:22:53,841 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 24 selected clients: [3, 4, 5, 8, 10, 13, 14, 17]
+2026-08-29 15:23:04,018 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 24 | Global 0.1668 | Head 0.4308 | Tail 0.0000 | Many 0.4308 | Medium 0.1093 | Few 0.0000 | best_tail 0.0000@24
+2026-08-29 15:23:04,018 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 25 selected clients: [2, 3, 6, 9, 10, 12, 15, 18]
+2026-08-29 15:23:14,251 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 25 | Global 0.1739 | Head 0.3979 | Tail 0.0000 | Many 0.3979 | Medium 0.1352 | Few 0.0000 | best_tail 0.0000@25
+2026-08-29 15:23:14,251 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 26 selected clients: [1, 2, 5, 6, 7, 8, 12, 16]
+2026-08-29 15:23:24,463 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 26 | Global 0.1790 | Head 0.4271 | Tail 0.0000 | Many 0.4271 | Medium 0.1319 | Few 0.0000 | best_tail 0.0000@26
+2026-08-29 15:23:24,464 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 27 selected clients: [5, 6, 8, 10, 12, 13, 14, 17]
+2026-08-29 15:23:34,666 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 27 | Global 0.1750 | Head 0.4325 | Tail 0.0000 | Many 0.4325 | Medium 0.1228 | Few 0.0000 | best_tail 0.0000@26
+2026-08-29 15:23:34,666 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 28 selected clients: [1, 3, 5, 6, 7, 8, 14, 19]
+2026-08-29 15:23:44,939 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 28 | Global 0.1774 | Head 0.4229 | Tail 0.0000 | Many 0.4229 | Medium 0.1309 | Few 0.0000 | best_tail 0.0000@26
+2026-08-29 15:23:44,940 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 29 selected clients: [3, 4, 5, 8, 12, 14, 15, 16]
+2026-08-29 15:23:55,135 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 29 | Global 0.1824 | Head 0.4462 | Tail 0.0000 | Many 0.4462 | Medium 0.1298 | Few 0.0000 | best_tail 0.0000@29
+2026-08-29 15:23:55,136 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 30 selected clients: [5, 6, 11, 13, 14, 15, 16, 19]
+2026-08-29 15:24:05,350 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 30 | Global 0.1742 | Head 0.4108 | Tail 0.0000 | Many 0.4108 | Medium 0.1303 | Few 0.0000 | best_tail 0.0000@29
+2026-08-29 15:24:05,372 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Checkpoint @30 | Global 0.1742 | Head 0.4108 | Middle 0.1303 | Tail 0.0000
+2026-08-29 15:24:05,373 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 31 selected clients: [1, 4, 6, 7, 9, 11, 14, 19]
+2026-08-29 15:24:15,554 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 31 | Global 0.1774 | Head 0.4208 | Tail 0.0000 | Many 0.4208 | Medium 0.1317 | Few 0.0000 | best_tail 0.0000@29
+2026-08-29 15:24:15,554 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 32 selected clients: [0, 1, 5, 6, 7, 9, 12, 19]
+2026-08-29 15:24:25,723 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 32 | Global 0.1852 | Head 0.4500 | Tail 0.0000 | Many 0.4500 | Medium 0.1331 | Few 0.0000 | best_tail 0.0000@32
+2026-08-29 15:24:25,723 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 33 selected clients: [3, 5, 7, 11, 14, 15, 16, 17]
+2026-08-29 15:24:36,058 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 33 | Global 0.1968 | Head 0.4462 | Tail 0.0000 | Many 0.4462 | Medium 0.1547 | Few 0.0000 | best_tail 0.0000@33
+2026-08-29 15:24:36,058 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 34 selected clients: [6, 8, 9, 10, 13, 14, 16, 18]
+2026-08-29 15:24:46,273 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 34 | Global 0.1946 | Head 0.4592 | Tail 0.0000 | Many 0.4592 | Medium 0.1455 | Few 0.0000 | best_tail 0.0000@33
+2026-08-29 15:24:46,273 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 35 selected clients: [0, 4, 5, 8, 10, 12, 13, 19]
+2026-08-29 15:24:56,448 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 35 | Global 0.1961 | Head 0.4863 | Tail 0.0006 | Many 0.4863 | Medium 0.1367 | Few 0.0006 | best_tail 0.0006@35
+2026-08-29 15:24:56,448 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 36 selected clients: [1, 2, 3, 6, 7, 8, 10, 18]
+2026-08-29 15:25:06,627 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 36 | Global 0.2018 | Head 0.4504 | Tail 0.0044 | Many 0.4504 | Medium 0.1602 | Few 0.0044 | best_tail 0.0044@36
+2026-08-29 15:25:06,628 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 37 selected clients: [1, 3, 7, 9, 10, 11, 15, 17]
+2026-08-29 15:25:16,811 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 37 | Global 0.2113 | Head 0.4571 | Tail 0.0028 | Many 0.4571 | Medium 0.1743 | Few 0.0028 | best_tail 0.0044@36
+2026-08-29 15:25:16,811 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 38 selected clients: [1, 2, 6, 9, 12, 13, 14, 18]
+2026-08-29 15:25:27,012 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 38 | Global 0.2129 | Head 0.4688 | Tail 0.0022 | Many 0.4688 | Medium 0.1724 | Few 0.0022 | best_tail 0.0044@36
+2026-08-29 15:25:27,014 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 39 selected clients: [0, 2, 3, 11, 12, 13, 15, 19]
+2026-08-29 15:25:37,236 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 39 | Global 0.2127 | Head 0.4983 | Tail 0.0022 | Many 0.4983 | Medium 0.1598 | Few 0.0022 | best_tail 0.0044@36
+2026-08-29 15:25:37,237 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 40 selected clients: [3, 7, 9, 11, 13, 14, 15, 19]
+2026-08-29 15:25:47,398 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 40 | Global 0.2075 | Head 0.4754 | Tail 0.0000 | Many 0.4754 | Medium 0.1610 | Few 0.0000 | best_tail 0.0044@36
+2026-08-29 15:25:47,420 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Checkpoint @40 | Global 0.2075 | Head 0.4754 | Middle 0.1610 | Tail 0.0000
+2026-08-29 15:25:47,420 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 41 selected clients: [1, 5, 6, 7, 10, 11, 14, 15]
+2026-08-29 15:25:57,521 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 41 | Global 0.2187 | Head 0.4567 | Tail 0.0017 | Many 0.4567 | Medium 0.1876 | Few 0.0017 | best_tail 0.0044@36
+2026-08-29 15:25:57,522 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 42 selected clients: [1, 3, 7, 9, 12, 14, 15, 19]
+2026-08-29 15:26:07,694 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 42 | Global 0.2197 | Head 0.4771 | Tail 0.0017 | Many 0.4771 | Medium 0.1809 | Few 0.0017 | best_tail 0.0044@36
+2026-08-29 15:26:07,694 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 43 selected clients: [0, 4, 6, 7, 9, 11, 12, 14]
+2026-08-29 15:26:17,866 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 43 | Global 0.2122 | Head 0.4842 | Tail 0.0006 | Many 0.4842 | Medium 0.1653 | Few 0.0006 | best_tail 0.0044@36
+2026-08-29 15:26:17,867 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 44 selected clients: [2, 6, 8, 10, 12, 13, 15, 17]
+2026-08-29 15:26:28,065 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 44 | Global 0.2276 | Head 0.5075 | Tail 0.0022 | Many 0.5075 | Medium 0.1817 | Few 0.0022 | best_tail 0.0044@36
+2026-08-29 15:26:28,065 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 45 selected clients: [0, 1, 4, 5, 6, 11, 12, 17]
+2026-08-29 15:26:38,263 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 45 | Global 0.2346 | Head 0.5188 | Tail 0.0033 | Many 0.5188 | Medium 0.1888 | Few 0.0033 | best_tail 0.0044@36
+2026-08-29 15:26:38,264 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 46 selected clients: [2, 3, 6, 7, 10, 12, 14, 16]
+2026-08-29 15:26:48,476 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 46 | Global 0.2339 | Head 0.5079 | Tail 0.0028 | Many 0.5079 | Medium 0.1922 | Few 0.0028 | best_tail 0.0044@36
+2026-08-29 15:26:48,476 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 47 selected clients: [1, 4, 8, 10, 11, 13, 15, 18]
+2026-08-29 15:26:58,666 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 47 | Global 0.2414 | Head 0.5200 | Tail 0.0083 | Many 0.5200 | Medium 0.1984 | Few 0.0083 | best_tail 0.0083@47
+2026-08-29 15:26:58,667 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 48 selected clients: [0, 3, 4, 6, 7, 8, 16, 17]
+2026-08-29 15:27:09,190 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 48 | Global 0.2384 | Head 0.5329 | Tail 0.0033 | Many 0.5329 | Medium 0.1895 | Few 0.0033 | best_tail 0.0083@47
+2026-08-29 15:27:09,191 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 49 selected clients: [0, 4, 5, 7, 10, 15, 17, 18]
+2026-08-29 15:27:20,319 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 49 | Global 0.2290 | Head 0.5108 | Tail 0.0028 | Many 0.5108 | Medium 0.1826 | Few 0.0028 | best_tail 0.0083@47
+2026-08-29 15:27:20,320 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 50 selected clients: [0, 2, 6, 11, 12, 13, 14, 17]
+2026-08-29 15:27:31,583 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 50 | Global 0.2319 | Head 0.5250 | Tail 0.0000 | Many 0.5250 | Medium 0.1826 | Few 0.0000 | best_tail 0.0083@47
+2026-08-29 15:27:31,605 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Checkpoint @50 | Global 0.2319 | Head 0.5250 | Middle 0.1826 | Tail 0.0000
+2026-08-29 15:27:31,606 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 51 selected clients: [0, 1, 9, 11, 13, 16, 17, 19]
+2026-08-29 15:27:42,701 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 51 | Global 0.2354 | Head 0.5500 | Tail 0.0022 | Many 0.5500 | Medium 0.1776 | Few 0.0022 | best_tail 0.0083@47
+2026-08-29 15:27:42,702 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 52 selected clients: [0, 3, 6, 8, 12, 15, 17, 19]
+2026-08-29 15:27:53,871 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 52 | Global 0.2504 | Head 0.5162 | Tail 0.0017 | Many 0.5162 | Medium 0.2176 | Few 0.0017 | best_tail 0.0083@47
+2026-08-29 15:27:53,871 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 53 selected clients: [1, 6, 7, 8, 9, 11, 12, 15]
+2026-08-29 15:28:05,018 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 53 | Global 0.2558 | Head 0.5258 | Tail 0.0022 | Many 0.5258 | Medium 0.2228 | Few 0.0022 | best_tail 0.0083@47
+2026-08-29 15:28:05,019 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 54 selected clients: [3, 9, 11, 12, 13, 14, 16, 18]
+2026-08-29 15:28:16,210 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 54 | Global 0.2543 | Head 0.5467 | Tail 0.0000 | Many 0.5467 | Medium 0.2122 | Few 0.0000 | best_tail 0.0083@47
+2026-08-29 15:28:16,211 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 55 selected clients: [3, 6, 9, 13, 14, 16, 17, 19]
+2026-08-29 15:28:27,304 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 55 | Global 0.2436 | Head 0.5354 | Tail 0.0006 | Many 0.5354 | Medium 0.1983 | Few 0.0006 | best_tail 0.0083@47
+2026-08-29 15:28:27,304 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 56 selected clients: [0, 4, 5, 10, 14, 15, 17, 19]
+2026-08-29 15:28:38,442 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 56 | Global 0.2563 | Head 0.5262 | Tail 0.0028 | Many 0.5262 | Medium 0.2233 | Few 0.0028 | best_tail 0.0083@47
+2026-08-29 15:28:38,442 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 57 selected clients: [0, 3, 4, 8, 9, 10, 15, 18]
+2026-08-29 15:28:49,574 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 57 | Global 0.2647 | Head 0.5250 | Tail 0.0106 | Many 0.5250 | Medium 0.2359 | Few 0.0106 | best_tail 0.0106@57
+2026-08-29 15:28:49,574 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 58 selected clients: [2, 7, 8, 11, 12, 13, 14, 15]
+2026-08-29 15:29:00,748 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 58 | Global 0.2575 | Head 0.5442 | Tail 0.0022 | Many 0.5442 | Medium 0.2181 | Few 0.0022 | best_tail 0.0106@57
+2026-08-29 15:29:00,748 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 59 selected clients: [0, 5, 6, 8, 13, 15, 16, 17]
+2026-08-29 15:29:11,881 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 59 | Global 0.2572 | Head 0.5575 | Tail 0.0017 | Many 0.5575 | Medium 0.2122 | Few 0.0017 | best_tail 0.0106@57
+2026-08-29 15:29:11,881 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 60 selected clients: [0, 2, 3, 4, 8, 11, 13, 15]
+2026-08-29 15:29:23,038 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 60 | Global 0.2634 | Head 0.5646 | Tail 0.0022 | Many 0.5646 | Medium 0.2198 | Few 0.0022 | best_tail 0.0106@57
+2026-08-29 15:29:23,064 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Checkpoint @60 | Global 0.2634 | Head 0.5646 | Middle 0.2198 | Tail 0.0022
+2026-08-29 15:29:23,065 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 61 selected clients: [0, 1, 3, 6, 10, 13, 15, 19]
+2026-08-29 15:29:34,220 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 61 | Global 0.2736 | Head 0.5529 | Tail 0.0133 | Many 0.5529 | Medium 0.2388 | Few 0.0133 | best_tail 0.0133@61
+2026-08-29 15:29:34,220 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 62 selected clients: [1, 2, 5, 6, 10, 12, 17, 18]
+2026-08-29 15:29:45,403 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 62 | Global 0.2759 | Head 0.5417 | Tail 0.0144 | Many 0.5417 | Medium 0.2471 | Few 0.0144 | best_tail 0.0144@62
+2026-08-29 15:29:45,403 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 63 selected clients: [3, 4, 7, 8, 9, 11, 13, 16]
+2026-08-29 15:29:56,661 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 63 | Global 0.2656 | Head 0.5787 | Tail 0.0044 | Many 0.5787 | Medium 0.2171 | Few 0.0044 | best_tail 0.0144@62
+2026-08-29 15:29:56,662 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 64 selected clients: [1, 2, 4, 9, 11, 12, 13, 18]
+2026-08-29 15:30:07,838 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 64 | Global 0.2724 | Head 0.5763 | Tail 0.0061 | Many 0.5763 | Medium 0.2293 | Few 0.0061 | best_tail 0.0144@62
+2026-08-29 15:30:07,838 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 65 selected clients: [3, 4, 6, 8, 9, 11, 17, 19]
+2026-08-29 15:30:19,026 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 65 | Global 0.2771 | Head 0.5446 | Tail 0.0067 | Many 0.5446 | Medium 0.2503 | Few 0.0067 | best_tail 0.0144@62
+2026-08-29 15:30:19,026 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 66 selected clients: [3, 4, 5, 7, 8, 12, 15, 16]
+2026-08-29 15:30:30,322 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 66 | Global 0.2691 | Head 0.5579 | Tail 0.0044 | Many 0.5579 | Medium 0.2317 | Few 0.0044 | best_tail 0.0144@62
+2026-08-29 15:30:30,322 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 67 selected clients: [3, 5, 6, 8, 10, 13, 17, 18]
+2026-08-29 15:30:41,769 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 67 | Global 0.2786 | Head 0.5663 | Tail 0.0144 | Many 0.5663 | Medium 0.2416 | Few 0.0144 | best_tail 0.0144@67
+2026-08-29 15:30:41,769 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 68 selected clients: [1, 5, 7, 8, 11, 12, 18, 19]
+2026-08-29 15:30:53,894 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 68 | Global 0.2861 | Head 0.5567 | Tail 0.0111 | Many 0.5567 | Medium 0.2595 | Few 0.0111 | best_tail 0.0144@67
+2026-08-29 15:30:53,894 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 69 selected clients: [0, 7, 8, 12, 13, 15, 16, 17]
+2026-08-29 15:31:05,958 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 69 | Global 0.2668 | Head 0.5813 | Tail 0.0028 | Many 0.5813 | Medium 0.2186 | Few 0.0028 | best_tail 0.0144@67
+2026-08-29 15:31:05,958 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 70 selected clients: [3, 4, 5, 10, 12, 15, 17, 19]
+2026-08-29 15:31:17,661 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 70 | Global 0.2774 | Head 0.5504 | Tail 0.0083 | Many 0.5504 | Medium 0.2479 | Few 0.0083 | best_tail 0.0144@67
+2026-08-29 15:31:17,685 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Checkpoint @70 | Global 0.2774 | Head 0.5504 | Middle 0.2479 | Tail 0.0083
+2026-08-29 15:31:17,686 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 71 selected clients: [0, 2, 6, 7, 11, 13, 16, 19]
+2026-08-29 15:31:29,169 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 71 | Global 0.2693 | Head 0.5771 | Tail 0.0033 | Many 0.5771 | Medium 0.2245 | Few 0.0033 | best_tail 0.0144@67
+2026-08-29 15:31:29,169 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 72 selected clients: [2, 3, 10, 13, 15, 16, 17, 18]
+2026-08-29 15:31:40,678 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 72 | Global 0.2741 | Head 0.5567 | Tail 0.0100 | Many 0.5567 | Medium 0.2391 | Few 0.0100 | best_tail 0.0144@67
+2026-08-29 15:31:40,679 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 73 selected clients: [1, 4, 5, 8, 9, 11, 12, 13]
+2026-08-29 15:31:51,773 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 73 | Global 0.2869 | Head 0.5975 | Tail 0.0117 | Many 0.5975 | Medium 0.2438 | Few 0.0117 | best_tail 0.0144@67
+2026-08-29 15:31:51,774 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 74 selected clients: [4, 5, 6, 7, 9, 15, 17, 19]
+2026-08-29 15:32:02,887 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 74 | Global 0.2841 | Head 0.5679 | Tail 0.0039 | Many 0.5679 | Medium 0.2536 | Few 0.0039 | best_tail 0.0144@67
+2026-08-29 15:32:02,887 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 75 selected clients: [0, 3, 8, 12, 16, 17, 18, 19]
+2026-08-29 15:32:14,287 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 75 | Global 0.2891 | Head 0.5792 | Tail 0.0061 | Many 0.5792 | Medium 0.2569 | Few 0.0061 | best_tail 0.0144@67
+2026-08-29 15:32:14,287 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 76 selected clients: [1, 3, 5, 8, 10, 12, 15, 18]
+2026-08-29 15:32:25,585 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 76 | Global 0.3023 | Head 0.5579 | Tail 0.0389 | Many 0.5579 | Medium 0.2783 | Few 0.0389 | best_tail 0.0389@76
+2026-08-29 15:32:25,585 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 77 selected clients: [1, 2, 3, 7, 10, 11, 17, 18]
+2026-08-29 15:32:36,714 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 77 | Global 0.3035 | Head 0.5413 | Tail 0.0406 | Many 0.5413 | Medium 0.2867 | Few 0.0406 | best_tail 0.0406@77
+2026-08-29 15:32:36,714 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 78 selected clients: [3, 4, 5, 8, 11, 12, 13, 14]
+2026-08-29 15:32:48,259 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 78 | Global 0.2912 | Head 0.5887 | Tail 0.0161 | Many 0.5887 | Medium 0.2534 | Few 0.0161 | best_tail 0.0406@77
+2026-08-29 15:32:48,259 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 79 selected clients: [2, 4, 9, 10, 13, 15, 17, 18]
+2026-08-29 15:32:59,629 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 79 | Global 0.2948 | Head 0.5829 | Tail 0.0289 | Many 0.5829 | Medium 0.2581 | Few 0.0289 | best_tail 0.0406@77
+2026-08-29 15:32:59,629 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 80 selected clients: [5, 7, 8, 11, 13, 14, 15, 18]
+2026-08-29 15:33:12,702 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 80 | Global 0.2955 | Head 0.5683 | Tail 0.0111 | Many 0.5683 | Medium 0.2709 | Few 0.0111 | best_tail 0.0406@77
+2026-08-29 15:33:12,725 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Checkpoint @80 | Global 0.2955 | Head 0.5683 | Middle 0.2709 | Tail 0.0111
+2026-08-29 15:33:12,726 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 81 selected clients: [5, 8, 9, 10, 14, 15, 17, 19]
+2026-08-29 15:33:24,218 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 81 | Global 0.2985 | Head 0.5521 | Tail 0.0228 | Many 0.5521 | Medium 0.2791 | Few 0.0228 | best_tail 0.0406@77
+2026-08-29 15:33:24,219 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 82 selected clients: [0, 2, 9, 12, 13, 15, 16, 19]
+2026-08-29 15:33:35,564 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 82 | Global 0.2854 | Head 0.5750 | Tail 0.0100 | Many 0.5750 | Medium 0.2510 | Few 0.0100 | best_tail 0.0406@77
+2026-08-29 15:33:35,564 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 83 selected clients: [3, 4, 5, 6, 7, 11, 14, 15]
+2026-08-29 15:33:45,819 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 83 | Global 0.2955 | Head 0.5537 | Tail 0.0044 | Many 0.5537 | Medium 0.2790 | Few 0.0044 | best_tail 0.0406@77
+2026-08-29 15:33:45,819 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 84 selected clients: [3, 4, 5, 6, 13, 14, 15, 18]
+2026-08-29 15:33:56,126 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 84 | Global 0.2886 | Head 0.5717 | Tail 0.0083 | Many 0.5717 | Medium 0.2584 | Few 0.0083 | best_tail 0.0406@77
+2026-08-29 15:33:56,127 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 85 selected clients: [0, 5, 6, 9, 12, 15, 16, 18]
+2026-08-29 15:34:06,382 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 85 | Global 0.2933 | Head 0.5829 | Tail 0.0033 | Many 0.5829 | Medium 0.2634 | Few 0.0033 | best_tail 0.0406@77
+2026-08-29 15:34:06,382 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 86 selected clients: [0, 2, 3, 6, 8, 11, 13, 16]
+2026-08-29 15:34:16,623 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 86 | Global 0.3048 | Head 0.5938 | Tail 0.0089 | Many 0.5938 | Medium 0.2771 | Few 0.0089 | best_tail 0.0406@77
+2026-08-29 15:34:16,623 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 87 selected clients: [3, 4, 6, 8, 9, 11, 13, 15]
+2026-08-29 15:34:26,791 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 87 | Global 0.3070 | Head 0.5804 | Tail 0.0150 | Many 0.5804 | Medium 0.2845 | Few 0.0150 | best_tail 0.0406@77
+2026-08-29 15:34:26,791 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 88 selected clients: [0, 1, 2, 7, 13, 15, 16, 18]
+2026-08-29 15:34:36,988 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 88 | Global 0.2996 | Head 0.5996 | Tail 0.0106 | Many 0.5996 | Medium 0.2652 | Few 0.0106 | best_tail 0.0406@77
+2026-08-29 15:34:36,988 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 89 selected clients: [2, 4, 5, 7, 9, 10, 15, 18]
+2026-08-29 15:34:47,234 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 89 | Global 0.3046 | Head 0.5604 | Tail 0.0222 | Many 0.5604 | Medium 0.2864 | Few 0.0222 | best_tail 0.0406@77
+2026-08-29 15:34:47,235 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 90 selected clients: [0, 2, 7, 10, 12, 14, 17, 19]
+2026-08-29 15:34:57,495 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 90 | Global 0.3022 | Head 0.5896 | Tail 0.0189 | Many 0.5896 | Medium 0.2712 | Few 0.0189 | best_tail 0.0406@77
+2026-08-29 15:34:57,513 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Checkpoint @90 | Global 0.3022 | Head 0.5896 | Middle 0.2712 | Tail 0.0189
+2026-08-29 15:34:57,513 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 91 selected clients: [1, 4, 5, 6, 7, 8, 17, 18]
+2026-08-29 15:35:07,747 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 91 | Global 0.3043 | Head 0.5783 | Tail 0.0183 | Many 0.5783 | Medium 0.2797 | Few 0.0183 | best_tail 0.0406@77
+2026-08-29 15:35:07,747 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 92 selected clients: [4, 5, 7, 9, 11, 15, 17, 19]
+2026-08-29 15:35:18,185 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 92 | Global 0.3070 | Head 0.5658 | Tail 0.0111 | Many 0.5658 | Medium 0.2917 | Few 0.0111 | best_tail 0.0406@77
+2026-08-29 15:35:18,186 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 93 selected clients: [0, 1, 6, 8, 9, 15, 17, 18]
+2026-08-29 15:35:28,463 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 93 | Global 0.3185 | Head 0.5729 | Tail 0.0272 | Many 0.5729 | Medium 0.3036 | Few 0.0272 | best_tail 0.0406@77
+2026-08-29 15:35:28,464 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 94 selected clients: [3, 4, 6, 9, 10, 16, 18, 19]
+2026-08-29 15:35:38,576 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 94 | Global 0.3226 | Head 0.5725 | Tail 0.0456 | Many 0.5725 | Medium 0.3052 | Few 0.0456 | best_tail 0.0456@94
+2026-08-29 15:35:38,576 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 95 selected clients: [1, 4, 5, 7, 9, 12, 16, 17]
+2026-08-29 15:35:48,931 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 95 | Global 0.3051 | Head 0.6008 | Tail 0.0161 | Many 0.6008 | Medium 0.2724 | Few 0.0161 | best_tail 0.0456@94
+2026-08-29 15:35:48,932 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 96 selected clients: [2, 3, 6, 9, 11, 14, 15, 17]
+2026-08-29 15:35:59,206 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 96 | Global 0.3169 | Head 0.5729 | Tail 0.0144 | Many 0.5729 | Medium 0.3048 | Few 0.0144 | best_tail 0.0456@94
+2026-08-29 15:35:59,206 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 97 selected clients: [1, 2, 4, 6, 9, 10, 12, 19]
+2026-08-29 15:36:09,378 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 97 | Global 0.3244 | Head 0.5875 | Tail 0.0317 | Many 0.5875 | Medium 0.3064 | Few 0.0317 | best_tail 0.0456@94
+2026-08-29 15:36:09,379 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 98 selected clients: [2, 4, 7, 10, 14, 15, 17, 19]
+2026-08-29 15:36:19,578 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 98 | Global 0.3100 | Head 0.5729 | Tail 0.0206 | Many 0.5729 | Medium 0.2910 | Few 0.0206 | best_tail 0.0456@94
+2026-08-29 15:36:19,578 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 99 selected clients: [0, 3, 4, 9, 13, 14, 16, 19]
+2026-08-29 15:36:29,803 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 99 | Global 0.3051 | Head 0.6021 | Tail 0.0200 | Many 0.6021 | Medium 0.2707 | Few 0.0200 | best_tail 0.0456@94
+2026-08-29 15:36:29,804 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 100 selected clients: [0, 4, 6, 7, 10, 11, 12, 17]
+2026-08-29 15:36:40,028 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 100 | Global 0.3116 | Head 0.5892 | Tail 0.0228 | Many 0.5892 | Medium 0.2864 | Few 0.0228 | best_tail 0.0456@94
+2026-08-29 15:36:40,045 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Checkpoint @100 | Global 0.3116 | Head 0.5892 | Middle 0.2864 | Tail 0.0228
+2026-08-29 15:36:40,045 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 101 selected clients: [0, 8, 9, 10, 11, 14, 15, 17]
+2026-08-29 15:36:50,297 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 101 | Global 0.3228 | Head 0.5908 | Tail 0.0378 | Many 0.5908 | Medium 0.3003 | Few 0.0378 | best_tail 0.0456@94
+2026-08-29 15:36:50,298 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 102 selected clients: [1, 5, 8, 10, 12, 13, 16, 17]
+2026-08-29 15:37:00,568 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 102 | Global 0.3193 | Head 0.6021 | Tail 0.0544 | Many 0.6021 | Medium 0.2845 | Few 0.0544 | best_tail 0.0544@102
+2026-08-29 15:37:00,568 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 103 selected clients: [0, 4, 7, 9, 10, 11, 12, 19]
+2026-08-29 15:37:10,775 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 103 | Global 0.3234 | Head 0.5971 | Tail 0.0472 | Many 0.5971 | Medium 0.2959 | Few 0.0472 | best_tail 0.0544@102
+2026-08-29 15:37:10,776 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 104 selected clients: [4, 5, 8, 10, 12, 13, 15, 16]
+2026-08-29 15:37:20,999 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 104 | Global 0.3147 | Head 0.6092 | Tail 0.0461 | Many 0.6092 | Medium 0.2762 | Few 0.0461 | best_tail 0.0544@102
+2026-08-29 15:37:20,999 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 105 selected clients: [3, 4, 7, 9, 12, 15, 18, 19]
+2026-08-29 15:37:32,092 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 105 | Global 0.3223 | Head 0.5792 | Tail 0.0339 | Many 0.5792 | Medium 0.3055 | Few 0.0339 | best_tail 0.0544@102
+2026-08-29 15:37:32,093 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 106 selected clients: [1, 3, 6, 7, 11, 15, 16, 18]
+2026-08-29 15:37:43,239 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 106 | Global 0.3334 | Head 0.5758 | Tail 0.0378 | Many 0.5758 | Medium 0.3248 | Few 0.0378 | best_tail 0.0544@102
+2026-08-29 15:37:43,240 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 107 selected clients: [1, 2, 6, 8, 9, 12, 17, 19]
+2026-08-29 15:37:54,459 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 107 | Global 0.3260 | Head 0.5925 | Tail 0.0389 | Many 0.5925 | Medium 0.3048 | Few 0.0389 | best_tail 0.0544@102
+2026-08-29 15:37:54,460 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 108 selected clients: [1, 6, 7, 8, 11, 13, 14, 17]
+2026-08-29 15:38:05,701 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 108 | Global 0.3208 | Head 0.6125 | Tail 0.0311 | Many 0.6125 | Medium 0.2900 | Few 0.0311 | best_tail 0.0544@102
+2026-08-29 15:38:05,701 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 109 selected clients: [0, 2, 4, 7, 8, 9, 12, 16]
+2026-08-29 15:38:16,925 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 109 | Global 0.3239 | Head 0.6142 | Tail 0.0261 | Many 0.6142 | Medium 0.2962 | Few 0.0261 | best_tail 0.0544@102
+2026-08-29 15:38:16,925 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 110 selected clients: [2, 3, 7, 8, 12, 16, 18, 19]
+2026-08-29 15:38:28,147 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 110 | Global 0.3296 | Head 0.6046 | Tail 0.0322 | Many 0.6046 | Medium 0.3081 | Few 0.0322 | best_tail 0.0544@102
+2026-08-29 15:38:28,164 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Checkpoint @110 | Global 0.3296 | Head 0.6046 | Middle 0.3081 | Tail 0.0322
+2026-08-29 15:38:28,164 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 111 selected clients: [5, 6, 7, 10, 11, 15, 16, 18]
+2026-08-29 15:38:39,223 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 111 | Global 0.3324 | Head 0.5792 | Tail 0.0417 | Many 0.5792 | Medium 0.3205 | Few 0.0417 | best_tail 0.0544@102
+2026-08-29 15:38:39,223 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 112 selected clients: [0, 4, 6, 7, 9, 13, 15, 16]
+2026-08-29 15:38:50,382 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 112 | Global 0.3205 | Head 0.6112 | Tail 0.0267 | Many 0.6112 | Medium 0.2914 | Few 0.0267 | best_tail 0.0544@102
+2026-08-29 15:38:50,383 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 113 selected clients: [1, 3, 5, 7, 13, 15, 18, 19]
+2026-08-29 15:39:01,572 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 113 | Global 0.3320 | Head 0.6021 | Tail 0.0311 | Many 0.6021 | Medium 0.3136 | Few 0.0311 | best_tail 0.0544@102
+2026-08-29 15:39:01,573 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 114 selected clients: [0, 3, 6, 12, 15, 17, 18, 19]
+2026-08-29 15:39:12,706 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 114 | Global 0.3320 | Head 0.5917 | Tail 0.0300 | Many 0.5917 | Medium 0.3183 | Few 0.0300 | best_tail 0.0544@102
+2026-08-29 15:39:12,706 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 115 selected clients: [0, 2, 7, 8, 9, 12, 13, 16]
+2026-08-29 15:39:23,829 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 115 | Global 0.3245 | Head 0.6317 | Tail 0.0228 | Many 0.6317 | Medium 0.2910 | Few 0.0228 | best_tail 0.0544@102
+2026-08-29 15:39:23,830 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 116 selected clients: [0, 6, 7, 8, 9, 11, 12, 19]
+2026-08-29 15:39:34,957 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 116 | Global 0.3318 | Head 0.5967 | Tail 0.0283 | Many 0.5967 | Medium 0.3164 | Few 0.0283 | best_tail 0.0544@102
+2026-08-29 15:39:34,958 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 117 selected clients: [4, 5, 6, 10, 11, 12, 18, 19]
+2026-08-29 15:39:46,165 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 117 | Global 0.3366 | Head 0.5938 | Tail 0.0433 | Many 0.5938 | Medium 0.3212 | Few 0.0433 | best_tail 0.0544@102
+2026-08-29 15:39:46,165 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 118 selected clients: [1, 2, 4, 8, 10, 12, 15, 18]
+2026-08-29 15:39:57,349 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 118 | Global 0.3455 | Head 0.5971 | Tail 0.0806 | Many 0.5971 | Medium 0.3236 | Few 0.0806 | best_tail 0.0806@118
+2026-08-29 15:39:57,350 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 119 selected clients: [1, 2, 3, 4, 5, 6, 11, 13]
+2026-08-29 15:40:08,364 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 119 | Global 0.3418 | Head 0.5950 | Tail 0.0556 | Many 0.5950 | Medium 0.3259 | Few 0.0556 | best_tail 0.0806@118
+2026-08-29 15:40:08,365 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 120 selected clients: [5, 7, 8, 10, 11, 13, 15, 16]
+2026-08-29 15:40:19,628 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 120 | Global 0.3388 | Head 0.6025 | Tail 0.0578 | Many 0.6025 | Medium 0.3169 | Few 0.0578 | best_tail 0.0806@118
+2026-08-29 15:40:19,652 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Checkpoint @120 | Global 0.3388 | Head 0.6025 | Middle 0.3169 | Tail 0.0578
+2026-08-29 15:40:19,652 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 121 selected clients: [0, 3, 4, 5, 7, 16, 17, 18]
+2026-08-29 15:40:31,014 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 121 | Global 0.3320 | Head 0.6071 | Tail 0.0411 | Many 0.6071 | Medium 0.3084 | Few 0.0411 | best_tail 0.0806@118
+2026-08-29 15:40:31,015 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 122 selected clients: [0, 1, 4, 12, 13, 14, 17, 18]
+2026-08-29 15:40:42,151 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 122 | Global 0.3297 | Head 0.6167 | Tail 0.0472 | Many 0.6167 | Medium 0.2986 | Few 0.0472 | best_tail 0.0806@118
+2026-08-29 15:40:42,151 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 123 selected clients: [2, 10, 13, 14, 15, 16, 17, 19]
+2026-08-29 15:40:53,147 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 123 | Global 0.3236 | Head 0.6054 | Tail 0.0394 | Many 0.6054 | Medium 0.2952 | Few 0.0394 | best_tail 0.0806@118
+2026-08-29 15:40:53,148 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 124 selected clients: [4, 8, 9, 10, 12, 13, 14, 16]
+2026-08-29 15:41:04,299 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 124 | Global 0.3291 | Head 0.6246 | Tail 0.0561 | Many 0.6246 | Medium 0.2916 | Few 0.0561 | best_tail 0.0806@118
+2026-08-29 15:41:04,300 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 125 selected clients: [1, 4, 5, 8, 12, 13, 17, 19]
+2026-08-29 15:41:15,361 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 125 | Global 0.3333 | Head 0.6225 | Tail 0.0522 | Many 0.6225 | Medium 0.3009 | Few 0.0522 | best_tail 0.0806@118
+2026-08-29 15:41:15,362 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 126 selected clients: [2, 8, 9, 12, 13, 14, 15, 16]
+2026-08-29 15:41:26,506 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 126 | Global 0.3317 | Head 0.6162 | Tail 0.0422 | Many 0.6162 | Medium 0.3038 | Few 0.0422 | best_tail 0.0806@118
+2026-08-29 15:41:26,506 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 127 selected clients: [4, 5, 7, 11, 15, 16, 17, 18]
+2026-08-29 15:41:37,524 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 127 | Global 0.3379 | Head 0.6096 | Tail 0.0339 | Many 0.6096 | Medium 0.3198 | Few 0.0339 | best_tail 0.0806@118
+2026-08-29 15:41:37,524 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 128 selected clients: [3, 6, 8, 10, 12, 15, 17, 19]
+2026-08-29 15:41:48,563 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 128 | Global 0.3468 | Head 0.6071 | Tail 0.0617 | Many 0.6071 | Medium 0.3276 | Few 0.0617 | best_tail 0.0806@118
+2026-08-29 15:41:48,565 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 129 selected clients: [4, 6, 7, 10, 11, 15, 16, 17]
+2026-08-29 15:41:59,630 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 129 | Global 0.3349 | Head 0.5979 | Tail 0.0450 | Many 0.5979 | Medium 0.3160 | Few 0.0450 | best_tail 0.0806@118
+2026-08-29 15:41:59,630 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 130 selected clients: [0, 3, 6, 9, 10, 14, 15, 17]
+2026-08-29 15:42:10,871 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 130 | Global 0.3431 | Head 0.5962 | Tail 0.0694 | Many 0.5962 | Medium 0.3233 | Few 0.0694 | best_tail 0.0806@118
+2026-08-29 15:42:10,891 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Checkpoint @130 | Global 0.3431 | Head 0.5962 | Middle 0.3233 | Tail 0.0694
+2026-08-29 15:42:10,892 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 131 selected clients: [0, 3, 7, 8, 9, 12, 14, 18]
+2026-08-29 15:42:22,036 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 131 | Global 0.3448 | Head 0.6008 | Tail 0.0678 | Many 0.6008 | Medium 0.3248 | Few 0.0678 | best_tail 0.0806@118
+2026-08-29 15:42:22,036 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 132 selected clients: [1, 5, 7, 10, 12, 13, 15, 19]
+2026-08-29 15:42:33,004 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 132 | Global 0.3464 | Head 0.5996 | Tail 0.0739 | Many 0.5996 | Medium 0.3262 | Few 0.0739 | best_tail 0.0806@118
+2026-08-29 15:42:33,004 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 133 selected clients: [0, 1, 7, 8, 9, 11, 15, 16]
+2026-08-29 15:42:44,064 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 133 | Global 0.3506 | Head 0.6071 | Tail 0.0711 | Many 0.6071 | Medium 0.3312 | Few 0.0711 | best_tail 0.0806@118
+2026-08-29 15:42:44,065 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 134 selected clients: [2, 3, 7, 8, 10, 16, 18, 19]
+2026-08-29 15:42:54,247 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 134 | Global 0.3577 | Head 0.6008 | Tail 0.0983 | Many 0.6008 | Medium 0.3376 | Few 0.0983 | best_tail 0.0983@134
+2026-08-29 15:42:54,247 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 135 selected clients: [0, 6, 9, 12, 13, 14, 16, 19]
+2026-08-29 15:43:04,401 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 135 | Global 0.3397 | Head 0.6271 | Tail 0.0533 | Many 0.6271 | Medium 0.3097 | Few 0.0533 | best_tail 0.0983@134
+2026-08-29 15:43:04,401 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 136 selected clients: [2, 3, 5, 6, 10, 13, 15, 18]
+2026-08-29 15:43:14,480 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 136 | Global 0.3504 | Head 0.6004 | Tail 0.0772 | Many 0.6004 | Medium 0.3317 | Few 0.0772 | best_tail 0.0983@134
+2026-08-29 15:43:14,480 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 137 selected clients: [1, 2, 3, 5, 9, 10, 13, 19]
+2026-08-29 15:43:24,611 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 137 | Global 0.3591 | Head 0.6046 | Tail 0.0983 | Many 0.6046 | Medium 0.3384 | Few 0.0983 | best_tail 0.0983@137
+2026-08-29 15:43:24,611 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 138 selected clients: [0, 1, 5, 7, 8, 12, 16, 18]
+2026-08-29 15:43:34,859 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 138 | Global 0.3527 | Head 0.6079 | Tail 0.0850 | Many 0.6079 | Medium 0.3302 | Few 0.0850 | best_tail 0.0983@137
+2026-08-29 15:43:34,860 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 139 selected clients: [4, 5, 6, 10, 11, 12, 14, 18]
+2026-08-29 15:43:44,976 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 139 | Global 0.3498 | Head 0.5946 | Tail 0.0828 | Many 0.5946 | Medium 0.3314 | Few 0.0828 | best_tail 0.0983@137
+2026-08-29 15:43:44,977 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 140 selected clients: [2, 6, 8, 12, 14, 15, 16, 19]
+2026-08-29 15:43:55,186 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 140 | Global 0.3410 | Head 0.6012 | Tail 0.0511 | Many 0.6012 | Medium 0.3233 | Few 0.0511 | best_tail 0.0983@137
+2026-08-29 15:43:55,204 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Checkpoint @140 | Global 0.3410 | Head 0.6012 | Middle 0.3233 | Tail 0.0511
+2026-08-29 15:43:55,205 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 141 selected clients: [1, 3, 5, 10, 12, 14, 15, 19]
+2026-08-29 15:44:05,428 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 141 | Global 0.3529 | Head 0.5992 | Tail 0.0789 | Many 0.5992 | Medium 0.3360 | Few 0.0789 | best_tail 0.0983@137
+2026-08-29 15:44:05,429 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 142 selected clients: [0, 1, 2, 3, 4, 9, 14, 17]
+2026-08-29 15:44:15,672 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 142 | Global 0.3452 | Head 0.6104 | Tail 0.0711 | Many 0.6104 | Medium 0.3205 | Few 0.0711 | best_tail 0.0983@137
+2026-08-29 15:44:15,673 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 143 selected clients: [1, 3, 6, 8, 9, 13, 15, 16]
+2026-08-29 15:44:25,939 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 143 | Global 0.3576 | Head 0.6125 | Tail 0.0917 | Many 0.6125 | Medium 0.3347 | Few 0.0917 | best_tail 0.0983@137
+2026-08-29 15:44:25,940 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 144 selected clients: [1, 5, 6, 8, 10, 12, 15, 18]
+2026-08-29 15:44:36,104 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 144 | Global 0.3639 | Head 0.5979 | Tail 0.1106 | Many 0.5979 | Medium 0.3457 | Few 0.1106 | best_tail 0.1106@144
+2026-08-29 15:44:36,104 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 145 selected clients: [0, 2, 4, 7, 11, 17, 18, 19]
+2026-08-29 15:44:46,301 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 145 | Global 0.3524 | Head 0.6050 | Tail 0.0656 | Many 0.6050 | Medium 0.3369 | Few 0.0656 | best_tail 0.1106@144
+2026-08-29 15:44:46,301 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 146 selected clients: [0, 1, 6, 8, 12, 13, 14, 16]
+2026-08-29 15:44:56,457 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 146 | Global 0.3498 | Head 0.6283 | Tail 0.0722 | Many 0.6283 | Medium 0.3207 | Few 0.0722 | best_tail 0.1106@144
+2026-08-29 15:44:56,457 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 147 selected clients: [1, 2, 4, 10, 12, 15, 16, 19]
+2026-08-29 15:45:06,697 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 147 | Global 0.3516 | Head 0.6167 | Tail 0.0800 | Many 0.6167 | Medium 0.3262 | Few 0.0800 | best_tail 0.1106@144
+2026-08-29 15:45:06,697 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 148 selected clients: [0, 6, 8, 10, 11, 15, 17, 18]
+2026-08-29 15:45:16,840 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 148 | Global 0.3640 | Head 0.6008 | Tail 0.1072 | Many 0.6008 | Medium 0.3457 | Few 0.1072 | best_tail 0.1106@144
+2026-08-29 15:45:16,841 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 149 selected clients: [1, 2, 3, 4, 6, 7, 12, 14]
+2026-08-29 15:45:27,158 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 149 | Global 0.3540 | Head 0.6104 | Tail 0.0744 | Many 0.6104 | Medium 0.3347 | Few 0.0744 | best_tail 0.1106@144
+2026-08-29 15:45:27,159 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 150 selected clients: [5, 7, 11, 12, 14, 17, 18, 19]
+2026-08-29 15:45:37,496 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 150 | Global 0.3516 | Head 0.6067 | Tail 0.0544 | Many 0.6067 | Medium 0.3383 | Few 0.0544 | best_tail 0.1106@144
+2026-08-29 15:45:37,514 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Checkpoint @150 | Global 0.3516 | Head 0.6067 | Middle 0.3383 | Tail 0.0544
+2026-08-29 15:45:37,514 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 151 selected clients: [1, 5, 6, 7, 8, 10, 14, 15]
+2026-08-29 15:45:47,796 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 151 | Global 0.3598 | Head 0.6000 | Tail 0.0878 | Many 0.6000 | Medium 0.3448 | Few 0.0878 | best_tail 0.1106@144
+2026-08-29 15:45:47,796 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 152 selected clients: [1, 4, 9, 10, 15, 16, 18, 19]
+2026-08-29 15:45:58,205 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 152 | Global 0.3632 | Head 0.6058 | Tail 0.1028 | Many 0.6058 | Medium 0.3436 | Few 0.1028 | best_tail 0.1106@144
+2026-08-29 15:45:58,205 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 153 selected clients: [0, 1, 4, 10, 11, 17, 18, 19]
+2026-08-29 15:46:08,516 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 153 | Global 0.3661 | Head 0.6004 | Tail 0.1150 | Many 0.6004 | Medium 0.3471 | Few 0.1150 | best_tail 0.1150@153
+2026-08-29 15:46:08,517 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 154 selected clients: [2, 4, 8, 9, 11, 13, 15, 18]
+2026-08-29 15:46:18,796 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 154 | Global 0.3603 | Head 0.6033 | Tail 0.0883 | Many 0.6033 | Medium 0.3441 | Few 0.0883 | best_tail 0.1150@153
+2026-08-29 15:46:18,797 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 155 selected clients: [1, 3, 5, 11, 12, 13, 14, 15]
+2026-08-29 15:46:29,108 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 155 | Global 0.3612 | Head 0.6133 | Tail 0.0839 | Many 0.6133 | Medium 0.3429 | Few 0.0839 | best_tail 0.1150@153
+2026-08-29 15:46:29,109 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 156 selected clients: [2, 4, 5, 10, 11, 14, 15, 19]
+2026-08-29 15:46:39,426 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 156 | Global 0.3599 | Head 0.5954 | Tail 0.0822 | Many 0.5954 | Medium 0.3486 | Few 0.0822 | best_tail 0.1150@153
+2026-08-29 15:46:39,427 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 157 selected clients: [3, 7, 10, 11, 13, 14, 16, 18]
+2026-08-29 15:46:49,630 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 157 | Global 0.3585 | Head 0.6054 | Tail 0.0878 | Many 0.6054 | Medium 0.3403 | Few 0.0878 | best_tail 0.1150@153
+2026-08-29 15:46:49,630 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 158 selected clients: [0, 1, 2, 8, 9, 10, 11, 17]
+2026-08-29 15:46:59,986 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 158 | Global 0.3642 | Head 0.6042 | Tail 0.1117 | Many 0.6042 | Medium 0.3433 | Few 0.1117 | best_tail 0.1150@153
+2026-08-29 15:46:59,986 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 159 selected clients: [4, 8, 10, 13, 14, 15, 18, 19]
+2026-08-29 15:47:10,295 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 159 | Global 0.3651 | Head 0.6112 | Tail 0.1172 | Many 0.6112 | Medium 0.3402 | Few 0.1172 | best_tail 0.1172@159
+2026-08-29 15:47:10,295 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 160 selected clients: [0, 1, 2, 5, 6, 12, 14, 19]
+2026-08-29 15:47:20,642 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 160 | Global 0.3567 | Head 0.6071 | Tail 0.0867 | Many 0.6071 | Medium 0.3369 | Few 0.0867 | best_tail 0.1172@159
+2026-08-29 15:47:20,663 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Checkpoint @160 | Global 0.3567 | Head 0.6071 | Middle 0.3369 | Tail 0.0867
+2026-08-29 15:47:20,664 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 161 selected clients: [3, 4, 8, 9, 11, 14, 17, 18]
+2026-08-29 15:47:30,991 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 161 | Global 0.3620 | Head 0.6067 | Tail 0.0889 | Many 0.6067 | Medium 0.3455 | Few 0.0889 | best_tail 0.1172@159
+2026-08-29 15:47:30,992 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 162 selected clients: [1, 2, 7, 14, 15, 16, 18, 19]
+2026-08-29 15:47:41,481 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 162 | Global 0.3553 | Head 0.6033 | Tail 0.0711 | Many 0.6033 | Medium 0.3409 | Few 0.0711 | best_tail 0.1172@159
+2026-08-29 15:47:41,481 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 163 selected clients: [5, 6, 7, 10, 11, 12, 13, 17]
+2026-08-29 15:47:52,100 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 163 | Global 0.3539 | Head 0.6188 | Tail 0.0800 | Many 0.6188 | Medium 0.3293 | Few 0.0800 | best_tail 0.1172@159
+2026-08-29 15:47:52,100 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 164 selected clients: [0, 3, 6, 10, 12, 13, 15, 16]
+2026-08-29 15:48:02,875 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 164 | Global 0.3564 | Head 0.6138 | Tail 0.0861 | Many 0.6138 | Medium 0.3338 | Few 0.0861 | best_tail 0.1172@159
+2026-08-29 15:48:02,876 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 165 selected clients: [3, 7, 9, 11, 13, 15, 17, 19]
+2026-08-29 15:48:14,208 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 165 | Global 0.3543 | Head 0.6046 | Tail 0.0611 | Many 0.6046 | Medium 0.3417 | Few 0.0611 | best_tail 0.1172@159
+2026-08-29 15:48:14,208 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 166 selected clients: [1, 10, 11, 12, 13, 14, 16, 17]
+2026-08-29 15:48:25,532 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 166 | Global 0.3588 | Head 0.6242 | Tail 0.0800 | Many 0.6242 | Medium 0.3355 | Few 0.0800 | best_tail 0.1172@159
+2026-08-29 15:48:25,532 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 167 selected clients: [3, 4, 7, 9, 10, 13, 14, 18]
+2026-08-29 15:48:36,716 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 167 | Global 0.3621 | Head 0.6117 | Tail 0.1017 | Many 0.6117 | Medium 0.3397 | Few 0.1017 | best_tail 0.1172@159
+2026-08-29 15:48:36,716 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 168 selected clients: [0, 1, 3, 4, 10, 11, 14, 15]
+2026-08-29 15:48:48,000 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 168 | Global 0.3707 | Head 0.5996 | Tail 0.1222 | Many 0.5996 | Medium 0.3531 | Few 0.1222 | best_tail 0.1222@168
+2026-08-29 15:48:48,000 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 169 selected clients: [0, 1, 4, 5, 7, 9, 16, 18]
+2026-08-29 15:48:59,081 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 169 | Global 0.3599 | Head 0.6138 | Tail 0.0972 | Many 0.6138 | Medium 0.3364 | Few 0.0972 | best_tail 0.1222@168
+2026-08-29 15:48:59,082 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 170 selected clients: [1, 5, 6, 9, 11, 14, 15, 18]
+2026-08-29 15:49:10,272 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 170 | Global 0.3701 | Head 0.5967 | Tail 0.0900 | Many 0.5967 | Medium 0.3633 | Few 0.0900 | best_tail 0.1222@168
+2026-08-29 15:49:10,295 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Checkpoint @170 | Global 0.3701 | Head 0.5967 | Middle 0.3633 | Tail 0.0900
+2026-08-29 15:49:10,295 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 171 selected clients: [0, 5, 6, 7, 8, 9, 12, 17]
+2026-08-29 15:49:21,411 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 171 | Global 0.3574 | Head 0.6146 | Tail 0.0728 | Many 0.6146 | Medium 0.3393 | Few 0.0728 | best_tail 0.1222@168
+2026-08-29 15:49:21,411 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 172 selected clients: [4, 9, 10, 11, 13, 15, 17, 18]
+2026-08-29 15:49:32,774 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 172 | Global 0.3664 | Head 0.6088 | Tail 0.0956 | Many 0.6088 | Medium 0.3502 | Few 0.0956 | best_tail 0.1222@168
+2026-08-29 15:49:32,775 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 173 selected clients: [0, 4, 7, 8, 9, 10, 13, 16]
+2026-08-29 15:49:43,912 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 173 | Global 0.3608 | Head 0.6204 | Tail 0.1050 | Many 0.6204 | Medium 0.3328 | Few 0.1050 | best_tail 0.1222@168
+2026-08-29 15:49:43,912 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 174 selected clients: [1, 3, 4, 6, 12, 13, 15, 18]
+2026-08-29 15:49:54,959 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 174 | Global 0.3656 | Head 0.6125 | Tail 0.1067 | Many 0.6125 | Medium 0.3438 | Few 0.1067 | best_tail 0.1222@168
+2026-08-29 15:49:54,959 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 175 selected clients: [1, 2, 4, 6, 8, 9, 11, 14]
+2026-08-29 15:50:06,279 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 175 | Global 0.3686 | Head 0.6079 | Tail 0.0917 | Many 0.6079 | Medium 0.3555 | Few 0.0917 | best_tail 0.1222@168
+2026-08-29 15:50:06,280 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 176 selected clients: [1, 3, 5, 11, 12, 13, 14, 19]
+2026-08-29 15:50:17,522 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 176 | Global 0.3678 | Head 0.6158 | Tail 0.0833 | Many 0.6158 | Medium 0.3534 | Few 0.0833 | best_tail 0.1222@168
+2026-08-29 15:50:17,522 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 177 selected clients: [1, 3, 5, 6, 8, 9, 10, 18]
+2026-08-29 15:50:28,704 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 177 | Global 0.3815 | Head 0.5967 | Tail 0.1328 | Many 0.5967 | Medium 0.3697 | Few 0.1328 | best_tail 0.1328@177
+2026-08-29 15:50:28,705 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 178 selected clients: [2, 4, 5, 6, 7, 8, 9, 11]
+2026-08-29 15:50:39,774 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 178 | Global 0.3695 | Head 0.6150 | Tail 0.0883 | Many 0.6150 | Medium 0.3552 | Few 0.0883 | best_tail 0.1328@177
+2026-08-29 15:50:39,775 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 179 selected clients: [0, 3, 4, 5, 7, 13, 15, 19]
+2026-08-29 15:50:50,803 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 179 | Global 0.3623 | Head 0.6146 | Tail 0.0806 | Many 0.6146 | Medium 0.3453 | Few 0.0806 | best_tail 0.1328@177
+2026-08-29 15:50:50,803 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 180 selected clients: [3, 4, 6, 9, 10, 12, 14, 17]
+2026-08-29 15:51:01,961 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 180 | Global 0.3621 | Head 0.6208 | Tail 0.0900 | Many 0.6208 | Medium 0.3395 | Few 0.0900 | best_tail 0.1328@177
+2026-08-29 15:51:01,979 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Checkpoint @180 | Global 0.3621 | Head 0.6208 | Middle 0.3395 | Tail 0.0900
+2026-08-29 15:51:01,979 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 181 selected clients: [0, 7, 11, 13, 14, 15, 16, 18]
+2026-08-29 15:51:13,080 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 181 | Global 0.3597 | Head 0.6167 | Tail 0.0700 | Many 0.6167 | Medium 0.3433 | Few 0.0700 | best_tail 0.1328@177
+2026-08-29 15:51:13,080 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 182 selected clients: [2, 5, 8, 9, 14, 16, 17, 18]
+2026-08-29 15:51:24,150 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 182 | Global 0.3577 | Head 0.6188 | Tail 0.0728 | Many 0.6188 | Medium 0.3381 | Few 0.0728 | best_tail 0.1328@177
+2026-08-29 15:51:24,151 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 183 selected clients: [1, 3, 6, 7, 8, 12, 18, 19]
+2026-08-29 15:51:35,280 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 183 | Global 0.3695 | Head 0.6062 | Tail 0.0939 | Many 0.6062 | Medium 0.3571 | Few 0.0939 | best_tail 0.1328@177
+2026-08-29 15:51:35,280 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 184 selected clients: [0, 1, 6, 8, 9, 11, 15, 18]
+2026-08-29 15:51:46,223 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 184 | Global 0.3745 | Head 0.5975 | Tail 0.1006 | Many 0.5975 | Medium 0.3672 | Few 0.1006 | best_tail 0.1328@177
+2026-08-29 15:51:46,223 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 185 selected clients: [0, 7, 8, 10, 12, 13, 15, 19]
+2026-08-29 15:51:57,464 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 185 | Global 0.3675 | Head 0.6108 | Tail 0.1039 | Many 0.6108 | Medium 0.3486 | Few 0.1039 | best_tail 0.1328@177
+2026-08-29 15:51:57,464 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 186 selected clients: [2, 6, 7, 9, 10, 11, 14, 17]
+2026-08-29 15:52:08,673 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 186 | Global 0.3643 | Head 0.6129 | Tail 0.0811 | Many 0.6129 | Medium 0.3493 | Few 0.0811 | best_tail 0.1328@177
+2026-08-29 15:52:08,674 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 187 selected clients: [0, 1, 5, 7, 8, 9, 17, 19]
+2026-08-29 15:52:19,732 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 187 | Global 0.3670 | Head 0.6188 | Tail 0.0961 | Many 0.6188 | Medium 0.3469 | Few 0.0961 | best_tail 0.1328@177
+2026-08-29 15:52:19,732 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 188 selected clients: [0, 4, 6, 12, 14, 15, 18, 19]
+2026-08-29 15:52:30,811 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 188 | Global 0.3662 | Head 0.6108 | Tail 0.0833 | Many 0.6108 | Medium 0.3528 | Few 0.0833 | best_tail 0.1328@177
+2026-08-29 15:52:30,812 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 189 selected clients: [0, 2, 7, 8, 9, 16, 17, 19]
+2026-08-29 15:52:42,121 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 189 | Global 0.3612 | Head 0.6329 | Tail 0.0744 | Many 0.6329 | Medium 0.3378 | Few 0.0744 | best_tail 0.1328@177
+2026-08-29 15:52:42,121 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 190 selected clients: [1, 2, 4, 7, 8, 10, 12, 17]
+2026-08-29 15:52:53,387 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 190 | Global 0.3659 | Head 0.6204 | Tail 0.1011 | Many 0.6204 | Medium 0.3428 | Few 0.1011 | best_tail 0.1328@177
+2026-08-29 15:52:53,409 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Checkpoint @190 | Global 0.3659 | Head 0.6204 | Middle 0.3428 | Tail 0.1011
+2026-08-29 15:52:53,410 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 191 selected clients: [0, 1, 4, 5, 9, 10, 11, 12]
+2026-08-29 15:53:04,574 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 191 | Global 0.3722 | Head 0.6075 | Tail 0.1050 | Many 0.6075 | Medium 0.3578 | Few 0.1050 | best_tail 0.1328@177
+2026-08-29 15:53:04,575 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 192 selected clients: [0, 3, 7, 8, 9, 11, 15, 17]
+2026-08-29 15:53:15,681 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 192 | Global 0.3721 | Head 0.6083 | Tail 0.0994 | Many 0.6083 | Medium 0.3590 | Few 0.0994 | best_tail 0.1328@177
+2026-08-29 15:53:15,681 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 193 selected clients: [1, 4, 5, 8, 10, 11, 13, 15]
+2026-08-29 15:53:26,798 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 193 | Global 0.3758 | Head 0.6083 | Tail 0.1200 | Many 0.6083 | Medium 0.3590 | Few 0.1200 | best_tail 0.1328@177
+2026-08-29 15:53:26,799 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 194 selected clients: [4, 9, 10, 11, 12, 13, 16, 18]
+2026-08-29 15:53:37,438 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 194 | Global 0.3718 | Head 0.6162 | Tail 0.1117 | Many 0.6162 | Medium 0.3514 | Few 0.1117 | best_tail 0.1328@177
+2026-08-29 15:53:37,439 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 195 selected clients: [2, 3, 4, 8, 10, 13, 14, 18]
+2026-08-29 15:53:47,638 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 195 | Global 0.3734 | Head 0.6188 | Tail 0.1206 | Many 0.6188 | Medium 0.3503 | Few 0.1206 | best_tail 0.1328@177
+2026-08-29 15:53:47,639 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 196 selected clients: [1, 3, 5, 9, 14, 16, 18, 19]
+2026-08-29 15:53:57,776 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 196 | Global 0.3749 | Head 0.6067 | Tail 0.1206 | Many 0.6067 | Medium 0.3579 | Few 0.1206 | best_tail 0.1328@177
+2026-08-29 15:53:57,777 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 197 selected clients: [0, 2, 6, 8, 10, 11, 15, 18]
+2026-08-29 15:54:07,908 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 197 | Global 0.3780 | Head 0.6000 | Tail 0.1261 | Many 0.6000 | Medium 0.3643 | Few 0.1261 | best_tail 0.1328@177
+2026-08-29 15:54:07,909 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 198 selected clients: [2, 3, 4, 5, 6, 9, 12, 16]
+2026-08-29 15:54:18,132 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 198 | Global 0.3726 | Head 0.6104 | Tail 0.1006 | Many 0.6104 | Medium 0.3586 | Few 0.1006 | best_tail 0.1328@177
+2026-08-29 15:54:18,133 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 199 selected clients: [1, 2, 3, 6, 9, 13, 14, 18]
+2026-08-29 15:54:28,263 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 199 | Global 0.3749 | Head 0.6017 | Tail 0.1067 | Many 0.6017 | Medium 0.3643 | Few 0.1067 | best_tail 0.1328@177
+2026-08-29 15:54:28,264 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 200 selected clients: [1, 3, 8, 10, 13, 14, 17, 19]
+2026-08-29 15:54:38,386 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Round 200 | Global 0.3786 | Head 0.6179 | Tail 0.1333 | Many 0.6179 | Medium 0.3557 | Few 0.1333 | best_tail 0.1333@200
+2026-08-29 15:54:38,407 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Checkpoint @200 | Global 0.3786 | Head 0.6179 | Middle 0.3557 | Tail 0.1333
+2026-08-29 15:54:38,423 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - ================================================================================
+2026-08-29 15:54:38,423 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - FINISHED SAME-PROTOCOL FedLF BASELINE
+2026-08-29 15:54:38,423 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Final Global: 0.3786
+2026-08-29 15:54:38,423 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Final Head: 0.6179
+2026-08-29 15:54:38,423 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Final Middle: 0.3557
+2026-08-29 15:54:38,424 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Final Tail: 0.1333
+2026-08-29 15:54:38,424 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Best Tail (diagnostic only; NOT the fixed Round-200 main result): 0.1333 @ round 200
+2026-08-29 15:54:38,424 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - History file: D:\Desktop\FedLF_project\FedLF\outputs\fedlf_baseline_cifar100_IF50_alpha0p5_seed42\head_tail_history.pkl
+2026-08-29 15:54:38,424 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Checkpoint file: D:\Desktop\FedLF_project\FedLF\outputs\fedlf_baseline_cifar100_IF50_alpha0p5_seed42\checkpoint.pth
+2026-08-29 15:54:38,424 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Final model file: D:\Desktop\FedLF_project\FedLF\outputs\fedlf_baseline_cifar100_IF50_alpha0p5_seed42\final_model.pth
+2026-08-29 15:54:38,424 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Config file: D:\Desktop\FedLF_project\FedLF\outputs\fedlf_baseline_cifar100_IF50_alpha0p5_seed42\config.json
+2026-08-29 15:54:38,424 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - Partition SHA256: 36481a5ca0f0a9f5014989846f7bd1f28e1010b3592656a550212443365c8a05
+2026-08-29 15:54:38,424 - fedlf_baseline_cifar100_IF50_alpha0p5_seed42.log - INFO - ================================================================================

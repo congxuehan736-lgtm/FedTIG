@@ -1,0 +1,31 @@
+
+================================================================================
+START: FedAvg
+time: 2026-08-27 11:02:24
+algorithm: fedavg
+dataset: CIFAR-10-LT
+IF: 100
+imb_factor: 0.01
+clients: 20
+online_clients: 8
+alpha: 0.5
+rounds: 200
+local_epochs: 5
+batch_size: 32
+lr: 0.1
+seed: 42
+log: D:\Desktop\FedLF_project\FedLF\Logs\cifar10_fedavg_seed42.log
+================================================================================
+COMMAND:
+D:\Desktop\FedLF_project\fedlf_env\Scripts\python.exe D:\Desktop\FedLF_project\FedLF\main.py --algorithm fedavg --dataset cifar10 --num_clients 20 --num_rounds 200 --num_channels 3 --num_epochs_local_training 5 --batch_size_local_training 32 --num_online_clients 8 --num_classes 10 --batch_size_test 500 --lr_local_training 0.1 --non_iid_alpha 0.5 --seed 42 --imb_type exp --imb_factor 0.01 --mu 0.01 --rs_alpha 0.25 --alpha 0.25 --gamma 2.0 --match_epoch 100 --crt_epoch 300 --batch_real 32 --num_of_feature 100 --lr_feature 0.1 --lr_net 0.01 --method DSA --dsa_strategy color_crop_cutout_flip_scale_rotate
+
+Traceback (most recent call last):
+  File "D:\Desktop\FedLF_project\FedLF\main.py", line 15, in <module>
+    raise ValueError("Unknow algoruithm:", args.algorithm)
+ValueError: ('Unknow algoruithm:', 'fedavg')
+
+================================================================================
+END: FedAvg
+time: 2026-08-27 11:02:34
+return_code: 1
+================================================================================

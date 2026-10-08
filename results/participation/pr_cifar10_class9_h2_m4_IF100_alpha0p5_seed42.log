@@ -1,0 +1,439 @@
+2026-08-30 15:38:08,142 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - ==========================================================================================
+2026-08-30 15:38:08,142 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - FIXED-h / VARIED-PARTICIPATION CONTROLLED EXPERIMENT
+2026-08-30 15:38:08,142 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - algorithm: pure FedLF | S=OFF C=OFF A=OFF
+2026-08-30 15:38:08,144 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - dataset:CIFAR-10-LT IF=100 imb_factor=0.01 alpha=0.5
+2026-08-30 15:38:08,144 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - K=20 m=4 participation=0.2000
+2026-08-30 15:38:08,145 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - rounds=200 E=10 batch=32 fixed_lr=0.1 seed=42
+2026-08-30 15:38:08,145 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - target_class=9 fixed_host_count=2 varied_m=4
+2026-08-30 15:38:08,146 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - client_sampling=PAIRED NESTED SAMPLING; original m=8 draw preserved
+2026-08-30 15:38:08,146 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - aggregation=STANDARD SAMPLE-WEIGHTED FedAvg
+2026-08-30 15:38:08,146 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - test rollback=False
+2026-08-30 15:38:08,146 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Log: D:\Desktop\FedLF_project\FedLF\Logs\pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log
+2026-08-30 15:38:08,146 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Output: D:\Desktop\FedLF_project\FedLF\outputs\pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42
+2026-08-30 15:38:08,146 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - ==========================================================================================
+2026-08-30 15:38:14,807 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Global class counts: [5000, 2997, 1796, 1077, 645, 387, 232, 139, 83, 50]
+2026-08-30 15:38:14,808 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Target class 9 N=50 (FIXED)
+2026-08-30 15:38:14,808 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Host order (nested across h): [6, 4, 7, 12, 9, 13, 3, 14, 19, 11, 10, 17, 15, 18, 5, 0, 16, 8, 1, 2]
+2026-08-30 15:38:14,808 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Actual host clients: [4, 6]
+2026-08-30 15:38:14,808 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Target samples per active host: {6: 25, 4: 25}
+2026-08-30 15:38:14,808 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Actual h=2 | m=4 | participation=0.2000 | theoretical P_exp=0.368421
+2026-08-30 15:38:14,809 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Base partition SHA256: 91fc508fdd8b116a19ca7809c6dfe5d6b9f4161086b898c272ecff4fedcd1acf
+2026-08-30 15:38:14,809 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Controlled partition SHA256: 3239af1f32e2f8eb835b2750615bde3424bff7c575ad6f7be96c35d7d67dab7c
+2026-08-30 15:38:14,809 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Client sizes after target redistribution: [621, 621, 621, 605, 646, 620, 643, 620, 620, 614, 620, 620, 620, 620, 620, 613, 620, 620, 612, 610]
+2026-08-30 15:38:14,809 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Paper thresholds: Head > 1500, Tail < 200; Tail classes=[7, 8, 9]
+2026-08-30 15:38:14,931 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 1 selected clients: [0, 1, 15, 17] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.000000 theory_P=0.368421
+2026-08-30 15:38:24,940 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 1 | Global 0.1600 | Head 0.4157 | Middle 0.0882 | Tail 0.0000 | Class-9 0.0000 | best_class9 0.0000@1
+2026-08-30 15:38:24,942 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 2 selected clients: [5, 15, 16, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.000000 theory_P=0.368421
+2026-08-30 15:38:34,309 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 2 | Global 0.2128 | Head 0.6703 | Middle 0.0293 | Tail 0.0000 | Class-9 0.0000 | best_class9 0.0000@1
+2026-08-30 15:38:34,310 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 3 selected clients: [0, 2, 7, 10] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.000000 theory_P=0.368421
+2026-08-30 15:38:43,465 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 3 | Global 0.1799 | Head 0.4173 | Middle 0.1368 | Tail 0.0000 | Class-9 0.0000 | best_class9 0.0000@1
+2026-08-30 15:38:43,467 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 4 selected clients: [0, 6, 8, 18] | target exposure=1 samples=25 mass=0.010016 empirical_P=0.250000 theory_P=0.368421
+2026-08-30 15:38:52,923 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 4 | Global 0.2362 | Head 0.5603 | Middle 0.1703 | Tail 0.0000 | Class-9 0.0000 | best_class9 0.0000@1
+2026-08-30 15:38:52,926 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 5 selected clients: [2, 5, 10, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.200000 theory_P=0.368421
+2026-08-30 15:39:02,553 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 5 | Global 0.3039 | Head 0.6013 | Middle 0.3088 | Tail 0.0000 | Class-9 0.0000 | best_class9 0.0000@1
+2026-08-30 15:39:02,556 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 6 selected clients: [1, 3, 4, 5] | target exposure=1 samples=25 mass=0.010032 empirical_P=0.333333 theory_P=0.368421
+2026-08-30 15:39:11,856 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 6 | Global 0.3174 | Head 0.6717 | Middle 0.2898 | Tail 0.0000 | Class-9 0.0000 | best_class9 0.0000@1
+2026-08-30 15:39:11,857 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 7 selected clients: [10, 12, 13, 16] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.285714 theory_P=0.368421
+2026-08-30 15:39:20,897 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 7 | Global 0.3102 | Head 0.7737 | Middle 0.1953 | Tail 0.0000 | Class-9 0.0000 | best_class9 0.0000@1
+2026-08-30 15:39:20,899 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 8 selected clients: [1, 5, 17, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.250000 theory_P=0.368421
+2026-08-30 15:39:30,196 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 8 | Global 0.2852 | Head 0.7673 | Middle 0.1340 | Tail 0.0047 | Class-9 0.0000 | best_class9 0.0000@1
+2026-08-30 15:39:30,197 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 9 selected clients: [7, 11, 13, 17] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.222222 theory_P=0.368421
+2026-08-30 15:39:39,991 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 9 | Global 0.3401 | Head 0.7897 | Middle 0.2057 | Tail 0.0697 | Class-9 0.0000 | best_class9 0.0000@1
+2026-08-30 15:39:39,992 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 10 selected clients: [1, 4, 9, 15] | target exposure=1 samples=25 mass=0.010024 empirical_P=0.300000 theory_P=0.368421
+2026-08-30 15:39:50,020 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 10 | Global 0.3310 | Head 0.7687 | Middle 0.2510 | Tail 0.0000 | Class-9 0.0000 | best_class9 0.0000@1
+2026-08-30 15:39:50,037 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 11 selected clients: [2, 4, 6, 16] | target exposure=1 samples=50 mass=0.019763 empirical_P=0.363636 theory_P=0.368421
+2026-08-30 15:40:00,404 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 11 | Global 0.3613 | Head 0.8237 | Middle 0.2820 | Tail 0.0047 | Class-9 0.0000 | best_class9 0.0000@1
+2026-08-30 15:40:00,404 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 12 selected clients: [3, 9, 14, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.333333 theory_P=0.368421
+2026-08-30 15:40:10,490 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 12 | Global 0.3126 | Head 0.7303 | Middle 0.2310 | Tail 0.0037 | Class-9 0.0000 | best_class9 0.0000@1
+2026-08-30 15:40:10,492 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 13 selected clients: [6, 8, 9, 14] | target exposure=1 samples=25 mass=0.010012 empirical_P=0.384615 theory_P=0.368421
+2026-08-30 15:40:20,611 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 13 | Global 0.3758 | Head 0.6467 | Middle 0.4270 | Tail 0.0367 | Class-9 0.0000 | best_class9 0.0000@1
+2026-08-30 15:40:20,612 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 14 selected clients: [4, 5, 11, 19] | target exposure=1 samples=25 mass=0.010016 empirical_P=0.428571 theory_P=0.368421
+2026-08-30 15:40:30,310 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 14 | Global 0.3475 | Head 0.6420 | Middle 0.3608 | Tail 0.0353 | Class-9 0.0000 | best_class9 0.0000@1
+2026-08-30 15:40:30,312 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 15 selected clients: [13, 14, 16, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.400000 theory_P=0.368421
+2026-08-30 15:40:40,173 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 15 | Global 0.2844 | Head 0.6860 | Middle 0.1575 | Tail 0.0520 | Class-9 0.0000 | best_class9 0.0000@1
+2026-08-30 15:40:40,175 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 16 selected clients: [1, 4, 6, 11] | target exposure=1 samples=50 mass=0.019763 empirical_P=0.437500 theory_P=0.368421
+2026-08-30 15:40:50,257 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 16 | Global 0.3767 | Head 0.7410 | Middle 0.3230 | Tail 0.0840 | Class-9 0.0430 | best_class9 0.0430@16
+2026-08-30 15:40:50,259 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 17 selected clients: [6, 7, 12, 14] | target exposure=1 samples=25 mass=0.009988 empirical_P=0.470588 theory_P=0.368421
+2026-08-30 15:41:00,475 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 17 | Global 0.3176 | Head 0.6187 | Middle 0.2983 | Tail 0.0423 | Class-9 0.0020 | best_class9 0.0430@16
+2026-08-30 15:41:00,476 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 18 selected clients: [3, 4, 7, 18] | target exposure=1 samples=25 mass=0.010068 empirical_P=0.500000 theory_P=0.368421
+2026-08-30 15:41:09,974 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 18 | Global 0.4049 | Head 0.7410 | Middle 0.3922 | Tail 0.0857 | Class-9 0.0290 | best_class9 0.0430@16
+2026-08-30 15:41:09,977 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 19 selected clients: [1, 6, 7, 8] | target exposure=1 samples=25 mass=0.009984 empirical_P=0.526316 theory_P=0.368421
+2026-08-30 15:41:20,750 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 19 | Global 0.4021 | Head 0.7127 | Middle 0.3440 | Tail 0.1690 | Class-9 0.0660 | best_class9 0.0660@19
+2026-08-30 15:41:20,751 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 20 selected clients: [3, 4, 10, 17] | target exposure=1 samples=25 mass=0.010036 empirical_P=0.550000 theory_P=0.368421
+2026-08-30 15:41:30,466 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 20 | Global 0.4270 | Head 0.7540 | Middle 0.4582 | Tail 0.0583 | Class-9 0.0080 | best_class9 0.0660@19
+2026-08-30 15:41:30,483 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 21 selected clients: [13, 14, 15, 17] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.523810 theory_P=0.368421
+2026-08-30 15:41:40,024 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 21 | Global 0.4557 | Head 0.7447 | Middle 0.5025 | Tail 0.1043 | Class-9 0.0000 | best_class9 0.0660@19
+2026-08-30 15:41:40,026 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 22 selected clients: [4, 8, 17, 19] | target exposure=1 samples=25 mass=0.010016 empirical_P=0.545455 theory_P=0.368421
+2026-08-30 15:41:49,433 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 22 | Global 0.4454 | Head 0.7150 | Middle 0.4810 | Tail 0.1283 | Class-9 0.0200 | best_class9 0.0660@19
+2026-08-30 15:41:49,434 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 23 selected clients: [1, 2, 13, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.521739 theory_P=0.368421
+2026-08-30 15:41:58,387 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 23 | Global 0.4712 | Head 0.7477 | Middle 0.4103 | Tail 0.2760 | Class-9 0.0000 | best_class9 0.0660@19
+2026-08-30 15:41:58,389 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 24 selected clients: [3, 5, 13, 14] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.500000 theory_P=0.368421
+2026-08-30 15:42:07,632 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 24 | Global 0.4759 | Head 0.7877 | Middle 0.4773 | Tail 0.1623 | Class-9 0.0000 | best_class9 0.0660@19
+2026-08-30 15:42:07,634 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 25 selected clients: [2, 3, 15, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.480000 theory_P=0.368421
+2026-08-30 15:42:17,569 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 25 | Global 0.5089 | Head 0.7187 | Middle 0.4915 | Tail 0.3223 | Class-9 0.0000 | best_class9 0.0660@19
+2026-08-30 15:42:17,570 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 26 selected clients: [1, 2, 5, 7] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.461538 theory_P=0.368421
+2026-08-30 15:42:26,723 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 26 | Global 0.4941 | Head 0.7533 | Middle 0.5080 | Tail 0.2163 | Class-9 0.0000 | best_class9 0.0660@19
+2026-08-30 15:42:26,726 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 27 selected clients: [5, 10, 13, 14] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.444444 theory_P=0.368421
+2026-08-30 15:42:35,716 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 27 | Global 0.4669 | Head 0.7707 | Middle 0.5170 | Tail 0.0963 | Class-9 0.0000 | best_class9 0.0660@19
+2026-08-30 15:42:35,718 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 28 selected clients: [5, 6, 8, 19] | target exposure=1 samples=25 mass=0.010028 empirical_P=0.464286 theory_P=0.368421
+2026-08-30 15:42:44,840 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 28 | Global 0.5020 | Head 0.6763 | Middle 0.4642 | Tail 0.3780 | Class-9 0.0000 | best_class9 0.0660@19
+2026-08-30 15:42:44,843 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 29 selected clients: [4, 5, 12, 15] | target exposure=1 samples=25 mass=0.010004 empirical_P=0.482759 theory_P=0.368421
+2026-08-30 15:42:54,351 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 29 | Global 0.4805 | Head 0.6917 | Middle 0.5760 | Tail 0.1420 | Class-9 0.0020 | best_class9 0.0660@19
+2026-08-30 15:42:54,352 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 30 selected clients: [13, 14, 16, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.466667 theory_P=0.368421
+2026-08-30 15:43:03,976 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 30 | Global 0.4689 | Head 0.7657 | Middle 0.4477 | Tail 0.2003 | Class-9 0.0000 | best_class9 0.0660@19
+2026-08-30 15:43:03,989 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 31 selected clients: [1, 6, 9, 11] | target exposure=1 samples=25 mass=0.010008 empirical_P=0.483871 theory_P=0.368421
+2026-08-30 15:43:13,162 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 31 | Global 0.5047 | Head 0.7580 | Middle 0.5407 | Tail 0.2033 | Class-9 0.0010 | best_class9 0.0660@19
+2026-08-30 15:43:13,163 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 32 selected clients: [1, 5, 12, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.468750 theory_P=0.368421
+2026-08-30 15:43:22,215 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 32 | Global 0.5187 | Head 0.6957 | Middle 0.5055 | Tail 0.3593 | Class-9 0.0000 | best_class9 0.0660@19
+2026-08-30 15:43:22,217 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 33 selected clients: [3, 11, 14, 16] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.454545 theory_P=0.368421
+2026-08-30 15:43:30,945 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 33 | Global 0.4959 | Head 0.7950 | Middle 0.5025 | Tail 0.1880 | Class-9 0.0000 | best_class9 0.0660@19
+2026-08-30 15:43:30,947 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 34 selected clients: [9, 10, 14, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.441176 theory_P=0.368421
+2026-08-30 15:43:39,846 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 34 | Global 0.5102 | Head 0.7680 | Middle 0.5377 | Tail 0.2157 | Class-9 0.0000 | best_class9 0.0660@19
+2026-08-30 15:43:39,847 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 35 selected clients: [8, 10, 12, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.428571 theory_P=0.368421
+2026-08-30 15:43:49,056 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 35 | Global 0.4873 | Head 0.6890 | Middle 0.5543 | Tail 0.1963 | Class-9 0.0000 | best_class9 0.0660@19
+2026-08-30 15:43:49,057 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 36 selected clients: [1, 8, 10, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.416667 theory_P=0.368421
+2026-08-30 15:43:58,107 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 36 | Global 0.4971 | Head 0.7270 | Middle 0.4993 | Tail 0.2643 | Class-9 0.0000 | best_class9 0.0660@19
+2026-08-30 15:43:58,109 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 37 selected clients: [7, 11, 15, 17] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.405405 theory_P=0.368421
+2026-08-30 15:44:07,731 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 37 | Global 0.5025 | Head 0.7183 | Middle 0.5783 | Tail 0.1857 | Class-9 0.0000 | best_class9 0.0660@19
+2026-08-30 15:44:07,732 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 38 selected clients: [1, 2, 9, 12] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.394737 theory_P=0.368421
+2026-08-30 15:44:17,052 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 38 | Global 0.5341 | Head 0.7187 | Middle 0.6012 | Tail 0.2600 | Class-9 0.0000 | best_class9 0.0660@19
+2026-08-30 15:44:17,053 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 39 selected clients: [2, 3, 11, 13] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.384615 theory_P=0.368421
+2026-08-30 15:44:25,831 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 39 | Global 0.5214 | Head 0.7610 | Middle 0.5705 | Tail 0.2163 | Class-9 0.0000 | best_class9 0.0660@19
+2026-08-30 15:44:25,832 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 40 selected clients: [3, 9, 14, 15] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.375000 theory_P=0.368421
+2026-08-30 15:44:34,667 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 40 | Global 0.4636 | Head 0.6523 | Middle 0.5477 | Tail 0.1627 | Class-9 0.0000 | best_class9 0.0660@19
+2026-08-30 15:44:34,685 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 41 selected clients: [5, 11, 14, 15] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.365854 theory_P=0.368421
+2026-08-30 15:44:43,455 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 41 | Global 0.4801 | Head 0.6783 | Middle 0.5935 | Tail 0.1307 | Class-9 0.0000 | best_class9 0.0660@19
+2026-08-30 15:44:43,456 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 42 selected clients: [3, 7, 9, 12] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.357143 theory_P=0.368421
+2026-08-30 15:44:52,366 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 42 | Global 0.5348 | Head 0.7773 | Middle 0.6072 | Tail 0.1957 | Class-9 0.0000 | best_class9 0.0660@19
+2026-08-30 15:44:52,367 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 43 selected clients: [4, 7, 9, 12] | target exposure=1 samples=25 mass=0.010000 empirical_P=0.372093 theory_P=0.368421
+2026-08-30 15:45:01,178 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 43 | Global 0.4751 | Head 0.7237 | Middle 0.5260 | Tail 0.1587 | Class-9 0.0000 | best_class9 0.0660@19
+2026-08-30 15:45:01,180 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 44 selected clients: [6, 12, 13, 15] | target exposure=1 samples=25 mass=0.010016 empirical_P=0.386364 theory_P=0.368421
+2026-08-30 15:45:10,261 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 44 | Global 0.5373 | Head 0.7670 | Middle 0.5905 | Tail 0.2367 | Class-9 0.0010 | best_class9 0.0660@19
+2026-08-30 15:45:10,263 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 45 selected clients: [0, 5, 11, 12] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.377778 theory_P=0.368421
+2026-08-30 15:45:19,568 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 45 | Global 0.5289 | Head 0.7950 | Middle 0.5790 | Tail 0.1960 | Class-9 0.0000 | best_class9 0.0660@19
+2026-08-30 15:45:19,570 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 46 selected clients: [3, 7, 14, 16] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.369565 theory_P=0.368421
+2026-08-30 15:45:28,643 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 46 | Global 0.5258 | Head 0.7967 | Middle 0.5675 | Tail 0.1993 | Class-9 0.0000 | best_class9 0.0660@19
+2026-08-30 15:45:28,645 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 47 selected clients: [10, 11, 13, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.361702 theory_P=0.368421
+2026-08-30 15:45:37,635 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 47 | Global 0.5255 | Head 0.8167 | Middle 0.5138 | Tail 0.2500 | Class-9 0.0000 | best_class9 0.0660@19
+2026-08-30 15:45:37,637 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 48 selected clients: [7, 8, 16, 17] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.354167 theory_P=0.368421
+2026-08-30 15:45:46,646 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 48 | Global 0.5069 | Head 0.8390 | Middle 0.5018 | Tail 0.1817 | Class-9 0.0000 | best_class9 0.0660@19
+2026-08-30 15:45:46,648 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 49 selected clients: [0, 4, 7, 10] | target exposure=1 samples=25 mass=0.009972 empirical_P=0.367347 theory_P=0.368421
+2026-08-30 15:45:55,797 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 49 | Global 0.4898 | Head 0.8247 | Middle 0.5055 | Tail 0.1340 | Class-9 0.0170 | best_class9 0.0660@19
+2026-08-30 15:45:55,798 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 50 selected clients: [2, 6, 12, 14] | target exposure=1 samples=25 mass=0.009984 empirical_P=0.380000 theory_P=0.368421
+2026-08-30 15:46:04,786 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 50 | Global 0.5639 | Head 0.6780 | Middle 0.6300 | Tail 0.3617 | Class-9 0.0500 | best_class9 0.0660@19
+2026-08-30 15:46:04,799 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 51 selected clients: [0, 9, 11, 16] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.372549 theory_P=0.368421
+2026-08-30 15:46:13,637 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 51 | Global 0.5367 | Head 0.8113 | Middle 0.5360 | Tail 0.2630 | Class-9 0.0050 | best_class9 0.0660@19
+2026-08-30 15:46:13,638 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 52 selected clients: [6, 8, 15, 17] | target exposure=1 samples=25 mass=0.010016 empirical_P=0.384615 theory_P=0.368421
+2026-08-30 15:46:23,095 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 52 | Global 0.5720 | Head 0.7263 | Middle 0.6030 | Tail 0.3763 | Class-9 0.0830 | best_class9 0.0830@52
+2026-08-30 15:46:23,096 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 53 selected clients: [8, 9, 11, 12] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.377358 theory_P=0.368421
+2026-08-30 15:46:32,206 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 53 | Global 0.5349 | Head 0.7763 | Middle 0.5992 | Tail 0.2077 | Class-9 0.0040 | best_class9 0.0830@52
+2026-08-30 15:46:32,207 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 54 selected clients: [3, 11, 13, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.370370 theory_P=0.368421
+2026-08-30 15:46:41,145 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 54 | Global 0.5403 | Head 0.7137 | Middle 0.6205 | Tail 0.2600 | Class-9 0.0010 | best_class9 0.0830@52
+2026-08-30 15:46:41,147 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 55 selected clients: [6, 9, 13, 17] | target exposure=1 samples=25 mass=0.010012 empirical_P=0.381818 theory_P=0.368421
+2026-08-30 15:46:50,815 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 55 | Global 0.5897 | Head 0.7060 | Middle 0.5897 | Tail 0.4733 | Class-9 0.0860 | best_class9 0.0860@55
+2026-08-30 15:46:50,816 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 56 selected clients: [14, 15, 17, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.375000 theory_P=0.368421
+2026-08-30 15:47:00,460 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 56 | Global 0.4264 | Head 0.6800 | Middle 0.3920 | Tail 0.2187 | Class-9 0.0000 | best_class9 0.0860@55
+2026-08-30 15:47:00,461 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 57 selected clients: [0, 8, 10, 15] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.368421 theory_P=0.368421
+2026-08-30 15:47:10,152 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 57 | Global 0.5432 | Head 0.8083 | Middle 0.5765 | Tail 0.2337 | Class-9 0.0010 | best_class9 0.0860@55
+2026-08-30 15:47:10,154 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 58 selected clients: [7, 11, 12, 14] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.362069 theory_P=0.368421
+2026-08-30 15:47:19,932 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 58 | Global 0.5233 | Head 0.7907 | Middle 0.5873 | Tail 0.1707 | Class-9 0.0000 | best_class9 0.0860@55
+2026-08-30 15:47:19,934 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 59 selected clients: [0, 5, 6, 16] | target exposure=1 samples=25 mass=0.009984 empirical_P=0.372881 theory_P=0.368421
+2026-08-30 15:47:28,922 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 59 | Global 0.5467 | Head 0.8077 | Middle 0.5045 | Tail 0.3420 | Class-9 0.0080 | best_class9 0.0860@55
+2026-08-30 15:47:28,924 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 60 selected clients: [4, 8, 13, 15] | target exposure=1 samples=25 mass=0.010004 empirical_P=0.383333 theory_P=0.368421
+2026-08-30 15:47:38,082 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 60 | Global 0.5400 | Head 0.7613 | Middle 0.6215 | Tail 0.2100 | Class-9 0.1280 | best_class9 0.1280@60
+2026-08-30 15:47:38,098 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 61 selected clients: [1, 3, 6, 13] | target exposure=1 samples=25 mass=0.010044 empirical_P=0.393443 theory_P=0.368421
+2026-08-30 15:47:47,261 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 61 | Global 0.5771 | Head 0.6767 | Middle 0.5155 | Tail 0.5597 | Class-9 0.3440 | best_class9 0.3440@61
+2026-08-30 15:47:47,262 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 62 selected clients: [5, 6, 10, 17] | target exposure=1 samples=25 mass=0.009988 empirical_P=0.403226 theory_P=0.368421
+2026-08-30 15:47:56,190 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 62 | Global 0.5961 | Head 0.7423 | Middle 0.5525 | Tail 0.5080 | Class-9 0.2300 | best_class9 0.3440@61
+2026-08-30 15:47:56,192 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 63 selected clients: [8, 9, 13, 16] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.396825 theory_P=0.368421
+2026-08-30 15:48:05,053 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 63 | Global 0.5589 | Head 0.8313 | Middle 0.5158 | Tail 0.3440 | Class-9 0.0590 | best_class9 0.3440@61
+2026-08-30 15:48:05,054 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 64 selected clients: [1, 2, 9, 11] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.390625 theory_P=0.368421
+2026-08-30 15:48:14,381 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 64 | Global 0.5686 | Head 0.7800 | Middle 0.5923 | Tail 0.3257 | Class-9 0.0140 | best_class9 0.3440@61
+2026-08-30 15:48:14,383 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 65 selected clients: [4, 6, 8, 19] | target exposure=1 samples=50 mass=0.019849 empirical_P=0.400000 theory_P=0.368421
+2026-08-30 15:48:23,617 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 65 | Global 0.5673 | Head 0.7620 | Middle 0.5540 | Tail 0.3903 | Class-9 0.2420 | best_class9 0.3440@61
+2026-08-30 15:48:23,618 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 66 selected clients: [3, 7, 8, 15] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.393939 theory_P=0.368421
+2026-08-30 15:48:32,470 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 66 | Global 0.5900 | Head 0.7857 | Middle 0.5968 | Tail 0.3853 | Class-9 0.2530 | best_class9 0.3440@61
+2026-08-30 15:48:32,472 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 67 selected clients: [6, 13, 17, 18] | target exposure=1 samples=25 mass=0.010020 empirical_P=0.402985 theory_P=0.368421
+2026-08-30 15:48:41,448 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 67 | Global 0.5877 | Head 0.6400 | Middle 0.5745 | Tail 0.5530 | Class-9 0.1930 | best_class9 0.3440@61
+2026-08-30 15:48:41,450 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 68 selected clients: [7, 12, 18, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.397059 theory_P=0.368421
+2026-08-30 15:48:50,440 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 68 | Global 0.6095 | Head 0.7150 | Middle 0.6280 | Tail 0.4793 | Class-9 0.1190 | best_class9 0.3440@61
+2026-08-30 15:48:50,442 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 69 selected clients: [12, 13, 15, 17] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.391304 theory_P=0.368421
+2026-08-30 15:48:59,520 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 69 | Global 0.5781 | Head 0.7700 | Middle 0.6268 | Tail 0.3213 | Class-9 0.0070 | best_class9 0.3440@61
+2026-08-30 15:48:59,522 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 70 selected clients: [3, 5, 10, 17] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.385714 theory_P=0.368421
+2026-08-30 15:49:08,919 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 70 | Global 0.5890 | Head 0.7667 | Middle 0.6238 | Tail 0.3650 | Class-9 0.0200 | best_class9 0.3440@61
+2026-08-30 15:49:08,933 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 71 selected clients: [2, 6, 11, 19] | target exposure=1 samples=25 mass=0.010024 empirical_P=0.394366 theory_P=0.368421
+2026-08-30 15:49:18,141 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 71 | Global 0.6044 | Head 0.6840 | Middle 0.6340 | Tail 0.4853 | Class-9 0.0990 | best_class9 0.3440@61
+2026-08-30 15:49:18,143 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 72 selected clients: [2, 10, 13, 17] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.388889 theory_P=0.368421
+2026-08-30 15:49:26,811 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 72 | Global 0.5996 | Head 0.7793 | Middle 0.6332 | Tail 0.3750 | Class-9 0.0100 | best_class9 0.3440@61
+2026-08-30 15:49:26,813 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 73 selected clients: [8, 11, 12, 13] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.383562 theory_P=0.368421
+2026-08-30 15:49:35,761 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 73 | Global 0.5728 | Head 0.7700 | Middle 0.6198 | Tail 0.3130 | Class-9 0.0010 | best_class9 0.3440@61
+2026-08-30 15:49:35,763 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 74 selected clients: [7, 9, 17, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.378378 theory_P=0.368421
+2026-08-30 15:49:44,755 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 74 | Global 0.5389 | Head 0.6427 | Middle 0.5680 | Tail 0.3963 | Class-9 0.0330 | best_class9 0.3440@61
+2026-08-30 15:49:44,757 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 75 selected clients: [0, 8, 16, 17] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.373333 theory_P=0.368421
+2026-08-30 15:49:53,670 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 75 | Global 0.5826 | Head 0.8377 | Middle 0.5660 | Tail 0.3497 | Class-9 0.0010 | best_class9 0.3440@61
+2026-08-30 15:49:53,671 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 76 selected clients: [1, 3, 12, 15] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.368421 theory_P=0.368421
+2026-08-30 15:50:02,230 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 76 | Global 0.5659 | Head 0.7500 | Middle 0.6188 | Tail 0.3113 | Class-9 0.0000 | best_class9 0.3440@61
+2026-08-30 15:50:02,232 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 77 selected clients: [2, 3, 7, 17] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.363636 theory_P=0.368421
+2026-08-30 15:50:11,347 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 77 | Global 0.6007 | Head 0.7667 | Middle 0.6480 | Tail 0.3717 | Class-9 0.0040 | best_class9 0.3440@61
+2026-08-30 15:50:11,348 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 78 selected clients: [5, 8, 11, 13] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.358974 theory_P=0.368421
+2026-08-30 15:50:22,117 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 78 | Global 0.5881 | Head 0.7867 | Middle 0.6480 | Tail 0.3097 | Class-9 0.0000 | best_class9 0.3440@61
+2026-08-30 15:50:22,118 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 79 selected clients: [2, 10, 17, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.354430 theory_P=0.368421
+2026-08-30 15:50:31,494 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 79 | Global 0.5706 | Head 0.7120 | Middle 0.5950 | Tail 0.3967 | Class-9 0.0000 | best_class9 0.3440@61
+2026-08-30 15:50:31,495 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 80 selected clients: [5, 8, 13, 14] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.350000 theory_P=0.368421
+2026-08-30 15:50:40,236 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 80 | Global 0.5974 | Head 0.7910 | Middle 0.6515 | Tail 0.3317 | Class-9 0.0000 | best_class9 0.3440@61
+2026-08-30 15:50:40,252 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 81 selected clients: [5, 9, 10, 15] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.345679 theory_P=0.368421
+2026-08-30 15:50:49,097 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 81 | Global 0.6000 | Head 0.7770 | Middle 0.6630 | Tail 0.3390 | Class-9 0.0000 | best_class9 0.3440@61
+2026-08-30 15:50:49,099 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 82 selected clients: [0, 9, 13, 16] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.341463 theory_P=0.368421
+2026-08-30 15:50:58,297 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 82 | Global 0.5626 | Head 0.8317 | Middle 0.5617 | Tail 0.2947 | Class-9 0.0000 | best_class9 0.3440@61
+2026-08-30 15:50:58,299 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 83 selected clients: [3, 11, 14, 15] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.337349 theory_P=0.368421
+2026-08-30 15:51:07,301 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 83 | Global 0.5620 | Head 0.7773 | Middle 0.6252 | Tail 0.2623 | Class-9 0.0000 | best_class9 0.3440@61
+2026-08-30 15:51:07,302 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 84 selected clients: [3, 6, 13, 14] | target exposure=1 samples=25 mass=0.010048 empirical_P=0.345238 theory_P=0.368421
+2026-08-30 15:51:16,664 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 84 | Global 0.5495 | Head 0.6757 | Middle 0.5807 | Tail 0.3817 | Class-9 0.0130 | best_class9 0.3440@61
+2026-08-30 15:51:16,666 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 85 selected clients: [5, 9, 12, 16] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.341176 theory_P=0.368421
+2026-08-30 15:51:26,197 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 85 | Global 0.6065 | Head 0.8240 | Middle 0.6312 | Tail 0.3560 | Class-9 0.0000 | best_class9 0.3440@61
+2026-08-30 15:51:26,198 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 86 selected clients: [0, 2, 11, 13] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.337209 theory_P=0.368421
+2026-08-30 15:51:35,337 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 86 | Global 0.5890 | Head 0.8150 | Middle 0.6232 | Tail 0.3173 | Class-9 0.0000 | best_class9 0.3440@61
+2026-08-30 15:51:35,339 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 87 selected clients: [4, 6, 13, 15] | target exposure=1 samples=50 mass=0.019826 empirical_P=0.344828 theory_P=0.368421
+2026-08-30 15:51:45,065 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 87 | Global 0.6114 | Head 0.7410 | Middle 0.6238 | Tail 0.4653 | Class-9 0.4650 | best_class9 0.4650@87
+2026-08-30 15:51:45,066 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 88 selected clients: [0, 7, 15, 16] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.340909 theory_P=0.368421
+2026-08-30 15:51:54,313 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 88 | Global 0.5468 | Head 0.8047 | Middle 0.5205 | Tail 0.3240 | Class-9 0.1940 | best_class9 0.4650@87
+2026-08-30 15:51:54,315 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 89 selected clients: [2, 4, 5, 7] | target exposure=1 samples=25 mass=0.009972 empirical_P=0.348315 theory_P=0.368421
+2026-08-30 15:52:03,602 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 89 | Global 0.6124 | Head 0.7940 | Middle 0.6335 | Tail 0.4027 | Class-9 0.3250 | best_class9 0.4650@87
+2026-08-30 15:52:03,604 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 90 selected clients: [0, 2, 10, 12] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.344444 theory_P=0.368421
+2026-08-30 15:52:12,837 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 90 | Global 0.6195 | Head 0.7540 | Middle 0.6660 | Tail 0.4230 | Class-9 0.3070 | best_class9 0.4650@87
+2026-08-30 15:52:12,854 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 91 selected clients: [1, 5, 6, 17] | target exposure=1 samples=25 mass=0.009984 empirical_P=0.351648 theory_P=0.368421
+2026-08-30 15:52:21,890 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 91 | Global 0.5664 | Head 0.4867 | Middle 0.6000 | Tail 0.6013 | Class-9 0.3540 | best_class9 0.4650@87
+2026-08-30 15:52:21,891 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 92 selected clients: [11, 15, 17, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.347826 theory_P=0.368421
+2026-08-30 15:52:30,943 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 92 | Global 0.6001 | Head 0.7997 | Middle 0.5825 | Tail 0.4240 | Class-9 0.1460 | best_class9 0.4650@87
+2026-08-30 15:52:30,944 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 93 selected clients: [1, 6, 8, 9] | target exposure=1 samples=25 mass=0.010008 empirical_P=0.354839 theory_P=0.368421
+2026-08-30 15:52:40,370 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 93 | Global 0.6091 | Head 0.7173 | Middle 0.5905 | Tail 0.5257 | Class-9 0.3840 | best_class9 0.4650@87
+2026-08-30 15:52:40,371 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 94 selected clients: [3, 9, 10, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.351064 theory_P=0.368421
+2026-08-30 15:52:49,714 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 94 | Global 0.5835 | Head 0.8283 | Middle 0.5302 | Tail 0.4097 | Class-9 0.0850 | best_class9 0.4650@87
+2026-08-30 15:52:49,715 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 95 selected clients: [1, 7, 12, 16] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.347368 theory_P=0.368421
+2026-08-30 15:52:58,916 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 95 | Global 0.5947 | Head 0.8297 | Middle 0.6075 | Tail 0.3427 | Class-9 0.0360 | best_class9 0.4650@87
+2026-08-30 15:52:58,918 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 96 selected clients: [6, 14, 15, 17] | target exposure=1 samples=25 mass=0.010016 empirical_P=0.354167 theory_P=0.368421
+2026-08-30 15:53:08,113 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 96 | Global 0.6212 | Head 0.7727 | Middle 0.6310 | Tail 0.4567 | Class-9 0.2350 | best_class9 0.4650@87
+2026-08-30 15:53:08,114 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 97 selected clients: [2, 4, 6, 12] | target exposure=1 samples=50 mass=0.019763 empirical_P=0.360825 theory_P=0.368421
+2026-08-30 15:53:17,385 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 97 | Global 0.6565 | Head 0.7450 | Middle 0.6125 | Tail 0.6267 | Class-9 0.5640 | best_class9 0.5640@97
+2026-08-30 15:53:17,386 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 98 selected clients: [2, 4, 10, 17] | target exposure=1 samples=25 mass=0.009972 empirical_P=0.367347 theory_P=0.368421
+2026-08-30 15:53:26,866 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 98 | Global 0.6358 | Head 0.7213 | Middle 0.6118 | Tail 0.5823 | Class-9 0.6050 | best_class9 0.6050@98
+2026-08-30 15:53:26,867 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 99 selected clients: [0, 4, 13, 14] | target exposure=1 samples=25 mass=0.009972 empirical_P=0.373737 theory_P=0.368421
+2026-08-30 15:53:35,785 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 99 | Global 0.5973 | Head 0.7970 | Middle 0.5948 | Tail 0.4010 | Class-9 0.4900 | best_class9 0.6050@98
+2026-08-30 15:53:35,786 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 100 selected clients: [0, 10, 11, 12] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.370000 theory_P=0.368421
+2026-08-30 15:53:45,101 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 100 | Global 0.5930 | Head 0.7973 | Middle 0.6302 | Tail 0.3390 | Class-9 0.3250 | best_class9 0.6050@98
+2026-08-30 15:53:45,116 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 101 selected clients: [0, 11, 15, 17] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.366337 theory_P=0.368421
+2026-08-30 15:53:54,290 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 101 | Global 0.6007 | Head 0.7977 | Middle 0.6218 | Tail 0.3757 | Class-9 0.2660 | best_class9 0.6050@98
+2026-08-30 15:53:54,291 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 102 selected clients: [1, 10, 12, 17] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.362745 theory_P=0.368421
+2026-08-30 15:54:03,437 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 102 | Global 0.5996 | Head 0.7420 | Middle 0.6490 | Tail 0.3913 | Class-9 0.3580 | best_class9 0.6050@98
+2026-08-30 15:54:03,438 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 103 selected clients: [0, 7, 9, 11] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.359223 theory_P=0.368421
+2026-08-30 15:54:12,353 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 103 | Global 0.5503 | Head 0.8000 | Middle 0.5415 | Tail 0.3123 | Class-9 0.2050 | best_class9 0.6050@98
+2026-08-30 15:54:12,354 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 104 selected clients: [10, 12, 15, 16] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.355769 theory_P=0.368421
+2026-08-30 15:54:21,545 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 104 | Global 0.5197 | Head 0.7833 | Middle 0.5100 | Tail 0.2690 | Class-9 0.1540 | best_class9 0.6050@98
+2026-08-30 15:54:21,547 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 105 selected clients: [9, 12, 15, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.352381 theory_P=0.368421
+2026-08-30 15:54:30,524 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 105 | Global 0.5977 | Head 0.6550 | Middle 0.6405 | Tail 0.4833 | Class-9 0.1090 | best_class9 0.6050@98
+2026-08-30 15:54:30,526 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 106 selected clients: [1, 6, 15, 18] | target exposure=1 samples=25 mass=0.010044 empirical_P=0.358491 theory_P=0.368421
+2026-08-30 15:54:39,908 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 106 | Global 0.6287 | Head 0.6800 | Middle 0.6590 | Tail 0.5370 | Class-9 0.2170 | best_class9 0.6050@98
+2026-08-30 15:54:39,910 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 107 selected clients: [2, 6, 8, 17] | target exposure=1 samples=25 mass=0.009984 empirical_P=0.364486 theory_P=0.368421
+2026-08-30 15:54:48,757 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 107 | Global 0.6547 | Head 0.7267 | Middle 0.6580 | Tail 0.5783 | Class-9 0.3360 | best_class9 0.6050@98
+2026-08-30 15:54:48,759 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 108 selected clients: [6, 7, 8, 11] | target exposure=1 samples=25 mass=0.009988 empirical_P=0.370370 theory_P=0.368421
+2026-08-30 15:54:57,761 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 108 | Global 0.6325 | Head 0.7303 | Middle 0.5950 | Tail 0.5847 | Class-9 0.5420 | best_class9 0.6050@98
+2026-08-30 15:54:57,764 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 109 selected clients: [0, 2, 12, 16] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.366972 theory_P=0.368421
+2026-08-30 15:55:06,726 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 109 | Global 0.6359 | Head 0.8043 | Middle 0.6418 | Tail 0.4597 | Class-9 0.1240 | best_class9 0.6050@98
+2026-08-30 15:55:06,728 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 110 selected clients: [2, 3, 18, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.363636 theory_P=0.368421
+2026-08-30 15:55:16,091 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 110 | Global 0.6367 | Head 0.7133 | Middle 0.6398 | Tail 0.5560 | Class-9 0.1460 | best_class9 0.6050@98
+2026-08-30 15:55:16,107 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 111 selected clients: [7, 11, 15, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.360360 theory_P=0.368421
+2026-08-30 15:55:25,584 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 111 | Global 0.5770 | Head 0.7970 | Middle 0.5657 | Tail 0.3720 | Class-9 0.0300 | best_class9 0.6050@98
+2026-08-30 15:55:25,585 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 112 selected clients: [0, 7, 15, 16] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.357143 theory_P=0.368421
+2026-08-30 15:55:35,468 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 112 | Global 0.6127 | Head 0.8207 | Middle 0.5895 | Tail 0.4357 | Class-9 0.0600 | best_class9 0.6050@98
+2026-08-30 15:55:35,470 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 113 selected clients: [1, 7, 15, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.353982 theory_P=0.368421
+2026-08-30 15:55:44,688 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 113 | Global 0.6104 | Head 0.7747 | Middle 0.6150 | Tail 0.4400 | Class-9 0.0530 | best_class9 0.6050@98
+2026-08-30 15:55:44,689 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 114 selected clients: [0, 6, 12, 17] | target exposure=1 samples=25 mass=0.009984 empirical_P=0.359649 theory_P=0.368421
+2026-08-30 15:55:53,989 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 114 | Global 0.6303 | Head 0.7753 | Middle 0.6617 | Tail 0.4433 | Class-9 0.0900 | best_class9 0.6050@98
+2026-08-30 15:55:53,991 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 115 selected clients: [0, 7, 8, 9] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.356522 theory_P=0.368421
+2026-08-30 15:56:03,167 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 115 | Global 0.5989 | Head 0.8157 | Middle 0.6025 | Tail 0.3773 | Class-9 0.1060 | best_class9 0.6050@98
+2026-08-30 15:56:03,170 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 116 selected clients: [0, 6, 9, 11] | target exposure=1 samples=25 mass=0.010008 empirical_P=0.362069 theory_P=0.368421
+2026-08-30 15:56:12,396 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 116 | Global 0.6312 | Head 0.7697 | Middle 0.6272 | Tail 0.4980 | Class-9 0.3080 | best_class9 0.6050@98
+2026-08-30 15:56:12,398 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 117 selected clients: [4, 6, 11, 18] | target exposure=1 samples=50 mass=0.019833 empirical_P=0.367521 theory_P=0.368421
+2026-08-30 15:56:21,818 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 117 | Global 0.6533 | Head 0.7810 | Middle 0.6485 | Tail 0.5320 | Class-9 0.5890 | best_class9 0.6050@98
+2026-08-30 15:56:21,818 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 118 selected clients: [8, 10, 15, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.364407 theory_P=0.368421
+2026-08-30 15:56:31,044 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 118 | Global 0.6274 | Head 0.7763 | Middle 0.6390 | Tail 0.4630 | Class-9 0.2370 | best_class9 0.6050@98
+2026-08-30 15:56:31,046 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 119 selected clients: [5, 6, 11, 13] | target exposure=1 samples=25 mass=0.009988 empirical_P=0.369748 theory_P=0.368421
+2026-08-30 15:56:40,415 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 119 | Global 0.6521 | Head 0.7917 | Middle 0.6370 | Tail 0.5327 | Class-9 0.2930 | best_class9 0.6050@98
+2026-08-30 15:56:40,417 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 120 selected clients: [5, 8, 15, 16] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.366667 theory_P=0.368421
+2026-08-30 15:56:50,330 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 120 | Global 0.6396 | Head 0.8227 | Middle 0.6260 | Tail 0.4747 | Class-9 0.2020 | best_class9 0.6050@98
+2026-08-30 15:56:50,344 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 121 selected clients: [0, 3, 5, 7] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.363636 theory_P=0.368421
+2026-08-30 15:56:59,294 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 121 | Global 0.6212 | Head 0.7983 | Middle 0.6318 | Tail 0.4300 | Class-9 0.1700 | best_class9 0.6050@98
+2026-08-30 15:56:59,296 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 122 selected clients: [0, 1, 12, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.360656 theory_P=0.368421
+2026-08-30 15:57:08,405 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 122 | Global 0.6361 | Head 0.7173 | Middle 0.6345 | Tail 0.5570 | Class-9 0.1490 | best_class9 0.6050@98
+2026-08-30 15:57:08,406 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 123 selected clients: [13, 14, 15, 16] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.357724 theory_P=0.368421
+2026-08-30 15:57:17,527 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 123 | Global 0.6150 | Head 0.8263 | Middle 0.6268 | Tail 0.3880 | Class-9 0.0540 | best_class9 0.6050@98
+2026-08-30 15:57:17,529 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 124 selected clients: [4, 8, 12, 13] | target exposure=1 samples=25 mass=0.009976 empirical_P=0.362903 theory_P=0.368421
+2026-08-30 15:57:27,510 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 124 | Global 0.5969 | Head 0.8417 | Middle 0.6140 | Tail 0.3293 | Class-9 0.2120 | best_class9 0.6050@98
+2026-08-30 15:57:27,512 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 125 selected clients: [1, 8, 17, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.360000 theory_P=0.368421
+2026-08-30 15:57:36,294 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 125 | Global 0.6510 | Head 0.8143 | Middle 0.6398 | Tail 0.5027 | Class-9 0.2560 | best_class9 0.6050@98
+2026-08-30 15:57:36,296 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 126 selected clients: [2, 8, 12, 16] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.357143 theory_P=0.368421
+2026-08-30 15:57:45,322 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 126 | Global 0.6552 | Head 0.8210 | Middle 0.6675 | Tail 0.4730 | Class-9 0.1740 | best_class9 0.6050@98
+2026-08-30 15:57:45,323 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 127 selected clients: [4, 11, 16, 17] | target exposure=1 samples=25 mass=0.009976 empirical_P=0.362205 theory_P=0.368421
+2026-08-30 15:57:54,389 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 127 | Global 0.6398 | Head 0.8320 | Middle 0.6318 | Tail 0.4583 | Class-9 0.3310 | best_class9 0.6050@98
+2026-08-30 15:57:54,389 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 128 selected clients: [8, 10, 12, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.359375 theory_P=0.368421
+2026-08-30 15:58:03,599 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 128 | Global 0.6360 | Head 0.7100 | Middle 0.6345 | Tail 0.5640 | Class-9 0.3740 | best_class9 0.6050@98
+2026-08-30 15:58:03,600 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 129 selected clients: [4, 7, 11, 17] | target exposure=1 samples=25 mass=0.009976 empirical_P=0.364341 theory_P=0.368421
+2026-08-30 15:58:12,905 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 129 | Global 0.6406 | Head 0.7910 | Middle 0.6450 | Tail 0.4843 | Class-9 0.4290 | best_class9 0.6050@98
+2026-08-30 15:58:12,907 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 130 selected clients: [6, 14, 15, 17] | target exposure=1 samples=25 mass=0.010016 empirical_P=0.369231 theory_P=0.368421
+2026-08-30 15:58:22,879 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 130 | Global 0.6756 | Head 0.7250 | Middle 0.6583 | Tail 0.6493 | Class-9 0.5910 | best_class9 0.6050@98
+2026-08-30 15:58:22,893 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 131 selected clients: [3, 8, 9, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.366412 theory_P=0.368421
+2026-08-30 15:58:32,427 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 131 | Global 0.4351 | Head 0.4597 | Middle 0.5120 | Tail 0.3080 | Class-9 0.0490 | best_class9 0.6050@98
+2026-08-30 15:58:32,428 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 132 selected clients: [1, 5, 7, 12] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.363636 theory_P=0.368421
+2026-08-30 15:58:41,842 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 132 | Global 0.6421 | Head 0.8027 | Middle 0.6617 | Tail 0.4553 | Class-9 0.2560 | best_class9 0.6050@98
+2026-08-30 15:58:41,843 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 133 selected clients: [0, 1, 11, 15] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.360902 theory_P=0.368421
+2026-08-30 15:58:51,395 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 133 | Global 0.6080 | Head 0.8143 | Middle 0.6248 | Tail 0.3793 | Class-9 0.1470 | best_class9 0.6050@98
+2026-08-30 15:58:51,396 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 134 selected clients: [2, 7, 18, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.358209 theory_P=0.368421
+2026-08-30 15:59:01,184 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 134 | Global 0.6455 | Head 0.7487 | Middle 0.6555 | Tail 0.5290 | Class-9 0.1280 | best_class9 0.6050@98
+2026-08-30 15:59:01,185 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 135 selected clients: [6, 12, 13, 19] | target exposure=1 samples=25 mass=0.010028 empirical_P=0.362963 theory_P=0.368421
+2026-08-30 15:59:11,443 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 135 | Global 0.6617 | Head 0.6933 | Middle 0.6720 | Tail 0.6163 | Class-9 0.3820 | best_class9 0.6050@98
+2026-08-30 15:59:11,444 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 136 selected clients: [5, 10, 13, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.360294 theory_P=0.368421
+2026-08-30 15:59:21,720 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 136 | Global 0.6117 | Head 0.6853 | Middle 0.6560 | Tail 0.4790 | Class-9 0.1670 | best_class9 0.6050@98
+2026-08-30 15:59:21,722 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 137 selected clients: [1, 3, 5, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.357664 theory_P=0.368421
+2026-08-30 15:59:31,687 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 137 | Global 0.6416 | Head 0.7660 | Middle 0.6478 | Tail 0.5090 | Class-9 0.1110 | best_class9 0.6050@98
+2026-08-30 15:59:31,689 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 138 selected clients: [0, 7, 12, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.355072 theory_P=0.368421
+2026-08-30 15:59:41,033 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 138 | Global 0.5844 | Head 0.7737 | Middle 0.5925 | Tail 0.3843 | Class-9 0.0780 | best_class9 0.6050@98
+2026-08-30 15:59:41,034 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 139 selected clients: [4, 11, 12, 14] | target exposure=1 samples=25 mass=0.009976 empirical_P=0.359712 theory_P=0.368421
+2026-08-30 15:59:50,452 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 139 | Global 0.6327 | Head 0.8143 | Middle 0.6498 | Tail 0.4283 | Class-9 0.2810 | best_class9 0.6050@98
+2026-08-30 15:59:50,453 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 140 selected clients: [2, 6, 16, 19] | target exposure=1 samples=25 mass=0.010024 empirical_P=0.364286 theory_P=0.368421
+2026-08-30 15:59:59,857 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 140 | Global 0.6495 | Head 0.6937 | Middle 0.5950 | Tail 0.6780 | Class-9 0.5750 | best_class9 0.6050@98
+2026-08-30 15:59:59,872 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 141 selected clients: [3, 12, 15, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.361702 theory_P=0.368421
+2026-08-30 16:00:09,036 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 141 | Global 0.6563 | Head 0.7653 | Middle 0.6733 | Tail 0.5247 | Class-9 0.2340 | best_class9 0.6050@98
+2026-08-30 16:00:09,038 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 142 selected clients: [0, 2, 9, 17] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.359155 theory_P=0.368421
+2026-08-30 16:00:18,081 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 142 | Global 0.6529 | Head 0.7510 | Middle 0.6847 | Tail 0.5123 | Class-9 0.1930 | best_class9 0.6050@98
+2026-08-30 16:00:18,083 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 143 selected clients: [1, 8, 13, 16] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.356643 theory_P=0.368421
+2026-08-30 16:00:27,136 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 143 | Global 0.6293 | Head 0.8397 | Middle 0.6265 | Tail 0.4227 | Class-9 0.0990 | best_class9 0.6050@98
+2026-08-30 16:00:27,137 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 144 selected clients: [6, 8, 12, 15] | target exposure=1 samples=25 mass=0.010016 empirical_P=0.361111 theory_P=0.368421
+2026-08-30 16:00:36,365 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 144 | Global 0.6570 | Head 0.8033 | Middle 0.6883 | Tail 0.4690 | Class-9 0.2600 | best_class9 0.6050@98
+2026-08-30 16:00:36,366 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 145 selected clients: [2, 4, 7, 17] | target exposure=1 samples=25 mass=0.009972 empirical_P=0.365517 theory_P=0.368421
+2026-08-30 16:00:45,725 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 145 | Global 0.6707 | Head 0.7837 | Middle 0.6833 | Tail 0.5410 | Class-9 0.4700 | best_class9 0.6050@98
+2026-08-30 16:00:45,727 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 146 selected clients: [0, 6, 8, 12] | target exposure=1 samples=25 mass=0.009984 empirical_P=0.369863 theory_P=0.368421
+2026-08-30 16:00:54,973 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 146 | Global 0.6807 | Head 0.7300 | Middle 0.6740 | Tail 0.6403 | Class-9 0.6330 | best_class9 0.6330@146
+2026-08-30 16:00:54,974 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 147 selected clients: [1, 10, 12, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.367347 theory_P=0.368421
+2026-08-30 16:01:04,223 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 147 | Global 0.6646 | Head 0.7790 | Middle 0.6623 | Tail 0.5533 | Class-9 0.3730 | best_class9 0.6330@146
+2026-08-30 16:01:04,225 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 148 selected clients: [0, 10, 11, 17] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.364865 theory_P=0.368421
+2026-08-30 16:01:13,646 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 148 | Global 0.6271 | Head 0.8137 | Middle 0.6360 | Tail 0.4287 | Class-9 0.1920 | best_class9 0.6330@146
+2026-08-30 16:01:13,647 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 149 selected clients: [1, 4, 7, 14] | target exposure=1 samples=25 mass=0.009972 empirical_P=0.369128 theory_P=0.368421
+2026-08-30 16:01:23,152 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 149 | Global 0.6121 | Head 0.8340 | Middle 0.5970 | Tail 0.4103 | Class-9 0.3250 | best_class9 0.6330@146
+2026-08-30 16:01:23,154 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 150 selected clients: [11, 12, 18, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.366667 theory_P=0.368421
+2026-08-30 16:01:31,973 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 150 | Global 0.6619 | Head 0.7743 | Middle 0.6560 | Tail 0.5573 | Class-9 0.3000 | best_class9 0.6330@146
+2026-08-30 16:01:31,988 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 151 selected clients: [5, 6, 14, 15] | target exposure=1 samples=25 mass=0.010016 empirical_P=0.370861 theory_P=0.368421
+2026-08-30 16:01:41,223 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 151 | Global 0.6204 | Head 0.7160 | Middle 0.5962 | Tail 0.5570 | Class-9 0.3350 | best_class9 0.6330@146
+2026-08-30 16:01:41,225 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 152 selected clients: [1, 10, 18, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.368421 theory_P=0.368421
+2026-08-30 16:01:50,381 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 152 | Global 0.6514 | Head 0.7553 | Middle 0.6395 | Tail 0.5633 | Class-9 0.3130 | best_class9 0.6330@146
+2026-08-30 16:01:50,382 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 153 selected clients: [0, 4, 10, 19] | target exposure=1 samples=25 mass=0.010012 empirical_P=0.372549 theory_P=0.368421
+2026-08-30 16:01:59,776 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 153 | Global 0.5928 | Head 0.7493 | Middle 0.5102 | Tail 0.5463 | Class-9 0.5120 | best_class9 0.6330@146
+2026-08-30 16:01:59,778 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 154 selected clients: [2, 9, 15, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.370130 theory_P=0.368421
+2026-08-30 16:02:08,885 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 154 | Global 0.6429 | Head 0.7040 | Middle 0.6388 | Tail 0.5873 | Class-9 0.3330 | best_class9 0.6330@146
+2026-08-30 16:02:08,886 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 155 selected clients: [1, 5, 14, 15] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.367742 theory_P=0.368421
+2026-08-30 16:02:17,990 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 155 | Global 0.6267 | Head 0.7993 | Middle 0.6508 | Tail 0.4220 | Class-9 0.1570 | best_class9 0.6330@146
+2026-08-30 16:02:17,991 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 156 selected clients: [2, 4, 14, 19] | target exposure=1 samples=25 mass=0.010012 empirical_P=0.371795 theory_P=0.368421
+2026-08-30 16:02:26,915 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 156 | Global 0.6800 | Head 0.7660 | Middle 0.6735 | Tail 0.6027 | Class-9 0.5320 | best_class9 0.6330@146
+2026-08-30 16:02:26,916 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 157 selected clients: [10, 11, 16, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.369427 theory_P=0.368421
+2026-08-30 16:02:36,316 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 157 | Global 0.5869 | Head 0.8390 | Middle 0.5308 | Tail 0.4097 | Class-9 0.1070 | best_class9 0.6330@146
+2026-08-30 16:02:36,317 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 158 selected clients: [0, 1, 11, 17] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.367089 theory_P=0.368421
+2026-08-30 16:02:45,208 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 158 | Global 0.6383 | Head 0.8170 | Middle 0.6170 | Tail 0.4880 | Class-9 0.2430 | best_class9 0.6330@146
+2026-08-30 16:02:45,210 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 159 selected clients: [4, 8, 10, 19] | target exposure=1 samples=25 mass=0.010016 empirical_P=0.371069 theory_P=0.368421
+2026-08-30 16:02:54,422 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 159 | Global 0.6403 | Head 0.8257 | Middle 0.6110 | Tail 0.4940 | Class-9 0.4440 | best_class9 0.6330@146
+2026-08-30 16:02:54,423 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 160 selected clients: [2, 5, 12, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.368750 theory_P=0.368421
+2026-08-30 16:03:03,387 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 160 | Global 0.6787 | Head 0.7450 | Middle 0.6680 | Tail 0.6267 | Class-9 0.3890 | best_class9 0.6330@146
+2026-08-30 16:03:03,405 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 161 selected clients: [9, 14, 17, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.366460 theory_P=0.368421
+2026-08-30 16:03:12,727 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 161 | Global 0.6625 | Head 0.7710 | Middle 0.6723 | Tail 0.5410 | Class-9 0.1740 | best_class9 0.6330@146
+2026-08-30 16:03:12,728 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 162 selected clients: [2, 7, 14, 15] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.364198 theory_P=0.368421
+2026-08-30 16:03:21,717 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 162 | Global 0.6566 | Head 0.7973 | Middle 0.6947 | Tail 0.4650 | Class-9 0.1710 | best_class9 0.6330@146
+2026-08-30 16:03:21,718 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 163 selected clients: [6, 11, 12, 17] | target exposure=1 samples=25 mass=0.009988 empirical_P=0.368098 theory_P=0.368421
+2026-08-30 16:03:30,894 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 163 | Global 0.6744 | Head 0.7667 | Middle 0.6997 | Tail 0.5483 | Class-9 0.3870 | best_class9 0.6330@146
+2026-08-30 16:03:30,895 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 164 selected clients: [6, 10, 13, 15] | target exposure=1 samples=25 mass=0.010016 empirical_P=0.371951 theory_P=0.368421
+2026-08-30 16:03:39,802 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 164 | Global 0.6596 | Head 0.7817 | Middle 0.6647 | Tail 0.5307 | Class-9 0.4330 | best_class9 0.6330@146
+2026-08-30 16:03:39,804 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 165 selected clients: [7, 9, 15, 17] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.369697 theory_P=0.368421
+2026-08-30 16:03:49,180 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 165 | Global 0.6458 | Head 0.8040 | Middle 0.6747 | Tail 0.4490 | Class-9 0.2300 | best_class9 0.6330@146
+2026-08-30 16:03:49,181 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 166 selected clients: [1, 12, 14, 16] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.367470 theory_P=0.368421
+2026-08-30 16:03:58,330 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 166 | Global 0.6369 | Head 0.8497 | Middle 0.6532 | Tail 0.4023 | Class-9 0.1330 | best_class9 0.6330@146
+2026-08-30 16:03:58,333 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 167 selected clients: [4, 9, 10, 18] | target exposure=1 samples=25 mass=0.010032 empirical_P=0.371257 theory_P=0.368421
+2026-08-30 16:04:07,710 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 167 | Global 0.6290 | Head 0.8460 | Middle 0.6008 | Tail 0.4497 | Class-9 0.3890 | best_class9 0.6330@146
+2026-08-30 16:04:07,712 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 168 selected clients: [0, 3, 4, 15] | target exposure=1 samples=25 mass=0.010060 empirical_P=0.375000 theory_P=0.368421
+2026-08-30 16:04:16,771 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 168 | Global 0.6526 | Head 0.8067 | Middle 0.6402 | Tail 0.5150 | Class-9 0.4840 | best_class9 0.6330@146
+2026-08-30 16:04:16,773 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 169 selected clients: [0, 1, 9, 16] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.372781 theory_P=0.368421
+2026-08-30 16:04:26,171 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 169 | Global 0.6347 | Head 0.8320 | Middle 0.6115 | Tail 0.4683 | Class-9 0.2640 | best_class9 0.6330@146
+2026-08-30 16:04:26,173 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 170 selected clients: [5, 9, 11, 14] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.370588 theory_P=0.368421
+2026-08-30 16:04:35,475 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 170 | Global 0.6175 | Head 0.8447 | Middle 0.6295 | Tail 0.3743 | Class-9 0.1190 | best_class9 0.6330@146
+2026-08-30 16:04:35,490 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 171 selected clients: [5, 6, 7, 12] | target exposure=1 samples=25 mass=0.009988 empirical_P=0.374269 theory_P=0.368421
+2026-08-30 16:04:44,971 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 171 | Global 0.6451 | Head 0.7317 | Middle 0.6348 | Tail 0.5723 | Class-9 0.4420 | best_class9 0.6330@146
+2026-08-30 16:04:44,972 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 172 selected clients: [9, 10, 11, 13] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.372093 theory_P=0.368421
+2026-08-30 16:04:53,908 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 172 | Global 0.6302 | Head 0.8313 | Middle 0.6585 | Tail 0.3913 | Class-9 0.1840 | best_class9 0.6330@146
+2026-08-30 16:04:53,909 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 173 selected clients: [4, 9, 13, 16] | target exposure=1 samples=25 mass=0.010000 empirical_P=0.375723 theory_P=0.368421
+2026-08-30 16:05:03,419 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 173 | Global 0.6372 | Head 0.8453 | Middle 0.6278 | Tail 0.4417 | Class-9 0.3600 | best_class9 0.6330@146
+2026-08-30 16:05:03,420 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 174 selected clients: [1, 3, 6, 15] | target exposure=1 samples=25 mass=0.010073 empirical_P=0.379310 theory_P=0.368421
+2026-08-30 16:05:13,130 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 174 | Global 0.6569 | Head 0.7223 | Middle 0.6820 | Tail 0.5580 | Class-9 0.4790 | best_class9 0.6330@146
+2026-08-30 16:05:13,131 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 175 selected clients: [2, 8, 9, 11] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.377143 theory_P=0.368421
+2026-08-30 16:05:23,523 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 175 | Global 0.6605 | Head 0.8237 | Middle 0.6785 | Tail 0.4733 | Class-9 0.3090 | best_class9 0.6330@146
+2026-08-30 16:05:23,524 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 176 selected clients: [1, 3, 5, 12] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.375000 theory_P=0.368421
+2026-08-30 16:05:32,919 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 176 | Global 0.6632 | Head 0.8033 | Middle 0.6745 | Tail 0.5080 | Class-9 0.2620 | best_class9 0.6330@146
+2026-08-30 16:05:32,921 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 177 selected clients: [5, 8, 10, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.372881 theory_P=0.368421
+2026-08-30 16:05:42,573 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 177 | Global 0.6262 | Head 0.7540 | Middle 0.6660 | Tail 0.4453 | Class-9 0.1320 | best_class9 0.6330@146
+2026-08-30 16:05:42,575 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 178 selected clients: [5, 6, 7, 9] | target exposure=1 samples=25 mass=0.010012 empirical_P=0.376404 theory_P=0.368421
+2026-08-30 16:05:53,053 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 178 | Global 0.6535 | Head 0.7783 | Middle 0.6655 | Tail 0.5127 | Class-9 0.2740 | best_class9 0.6330@146
+2026-08-30 16:05:53,054 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 179 selected clients: [3, 4, 7, 13] | target exposure=1 samples=25 mass=0.010036 empirical_P=0.379888 theory_P=0.368421
+2026-08-30 16:06:02,181 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 179 | Global 0.6449 | Head 0.8160 | Middle 0.6490 | Tail 0.4683 | Class-9 0.4110 | best_class9 0.6330@146
+2026-08-30 16:06:02,183 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 180 selected clients: [3, 9, 10, 17] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.377778 theory_P=0.368421
+2026-08-30 16:06:10,956 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 180 | Global 0.6753 | Head 0.8080 | Middle 0.6863 | Tail 0.5280 | Class-9 0.3710 | best_class9 0.6330@146
+2026-08-30 16:06:10,977 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 181 selected clients: [0, 11, 14, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.375691 theory_P=0.368421
+2026-08-30 16:06:20,237 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 181 | Global 0.6292 | Head 0.8137 | Middle 0.6522 | Tail 0.4140 | Class-9 0.1480 | best_class9 0.6330@146
+2026-08-30 16:06:20,239 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 182 selected clients: [2, 8, 17, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.373626 theory_P=0.368421
+2026-08-30 16:06:29,100 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 182 | Global 0.6402 | Head 0.7473 | Middle 0.6490 | Tail 0.5213 | Class-9 0.1990 | best_class9 0.6330@146
+2026-08-30 16:06:29,103 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 183 selected clients: [6, 8, 12, 18] | target exposure=1 samples=25 mass=0.010020 empirical_P=0.377049 theory_P=0.368421
+2026-08-30 16:06:38,437 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 183 | Global 0.6660 | Head 0.7267 | Middle 0.6620 | Tail 0.6107 | Class-9 0.3310 | best_class9 0.6330@146
+2026-08-30 16:06:38,438 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 184 selected clients: [0, 8, 9, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.375000 theory_P=0.368421
+2026-08-30 16:06:47,102 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 184 | Global 0.6319 | Head 0.7210 | Middle 0.6208 | Tail 0.5577 | Class-9 0.3550 | best_class9 0.6330@146
+2026-08-30 16:06:47,103 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 185 selected clients: [7, 8, 10, 12] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.372973 theory_P=0.368421
+2026-08-30 16:06:55,875 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 185 | Global 0.6190 | Head 0.8250 | Middle 0.6298 | Tail 0.3987 | Class-9 0.2140 | best_class9 0.6330@146
+2026-08-30 16:06:55,877 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 186 selected clients: [7, 9, 10, 14] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.370968 theory_P=0.368421
+2026-08-30 16:07:05,101 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 186 | Global 0.6073 | Head 0.8407 | Middle 0.6242 | Tail 0.3513 | Class-9 0.1590 | best_class9 0.6330@146
+2026-08-30 16:07:05,103 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 187 selected clients: [1, 5, 7, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.368984 theory_P=0.368421
+2026-08-30 16:07:13,974 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 187 | Global 0.6267 | Head 0.7943 | Middle 0.5787 | Tail 0.5230 | Class-9 0.1890 | best_class9 0.6330@146
+2026-08-30 16:07:13,975 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 188 selected clients: [0, 12, 14, 15] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.367021 theory_P=0.368421
+2026-08-30 16:07:22,875 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 188 | Global 0.6302 | Head 0.8213 | Middle 0.6445 | Tail 0.4200 | Class-9 0.1070 | best_class9 0.6330@146
+2026-08-30 16:07:22,877 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 189 selected clients: [2, 8, 9, 16] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.365079 theory_P=0.368421
+2026-08-30 16:07:32,261 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 189 | Global 0.6512 | Head 0.8353 | Middle 0.6727 | Tail 0.4383 | Class-9 0.1120 | best_class9 0.6330@146
+2026-08-30 16:07:32,263 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 190 selected clients: [1, 4, 8, 10] | target exposure=1 samples=25 mass=0.009972 empirical_P=0.368421 theory_P=0.368421
+2026-08-30 16:07:41,187 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 190 | Global 0.6162 | Head 0.8380 | Middle 0.6300 | Tail 0.3760 | Class-9 0.2780 | best_class9 0.6330@146
+2026-08-30 16:07:41,206 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 191 selected clients: [1, 9, 10, 11] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.366492 theory_P=0.368421
+2026-08-30 16:07:50,210 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 191 | Global 0.6073 | Head 0.8417 | Middle 0.6192 | Tail 0.3570 | Class-9 0.1920 | best_class9 0.6330@146
+2026-08-30 16:07:50,212 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 192 selected clients: [0, 3, 7, 8] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.364583 theory_P=0.368421
+2026-08-30 16:07:58,714 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 192 | Global 0.5924 | Head 0.8417 | Middle 0.5925 | Tail 0.3430 | Class-9 0.1550 | best_class9 0.6330@146
+2026-08-30 16:07:58,716 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 193 selected clients: [1, 5, 8, 10] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.362694 theory_P=0.368421
+2026-08-30 16:08:07,814 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 193 | Global 0.6012 | Head 0.8317 | Middle 0.6005 | Tail 0.3717 | Class-9 0.1600 | best_class9 0.6330@146
+2026-08-30 16:08:07,815 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 194 selected clients: [4, 10, 11, 18] | target exposure=1 samples=25 mass=0.010008 empirical_P=0.365979 theory_P=0.368421
+2026-08-30 16:08:17,395 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 194 | Global 0.6139 | Head 0.8303 | Middle 0.6052 | Tail 0.4090 | Class-9 0.2440 | best_class9 0.6330@146
+2026-08-30 16:08:17,396 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 195 selected clients: [2, 10, 13, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.364103 theory_P=0.368421
+2026-08-30 16:08:26,659 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 195 | Global 0.6740 | Head 0.8083 | Middle 0.6637 | Tail 0.5533 | Class-9 0.3270 | best_class9 0.6330@146
+2026-08-30 16:08:26,659 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 196 selected clients: [1, 3, 9, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.362245 theory_P=0.368421
+2026-08-30 16:08:36,002 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 196 | Global 0.6218 | Head 0.7920 | Middle 0.5545 | Tail 0.5413 | Class-9 0.2310 | best_class9 0.6330@146
+2026-08-30 16:08:36,004 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 197 selected clients: [0, 2, 11, 18] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.360406 theory_P=0.368421
+2026-08-30 16:08:45,459 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 197 | Global 0.6330 | Head 0.7883 | Middle 0.6405 | Tail 0.4677 | Class-9 0.1430 | best_class9 0.6330@146
+2026-08-30 16:08:45,461 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 198 selected clients: [2, 3, 5, 16] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.358586 theory_P=0.368421
+2026-08-30 16:08:54,656 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 198 | Global 0.6619 | Head 0.8010 | Middle 0.6468 | Tail 0.5430 | Class-9 0.1660 | best_class9 0.6330@146
+2026-08-30 16:08:54,658 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 199 selected clients: [1, 3, 13, 14] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.356784 theory_P=0.368421
+2026-08-30 16:09:04,177 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 199 | Global 0.6490 | Head 0.8183 | Middle 0.6540 | Tail 0.4730 | Class-9 0.1120 | best_class9 0.6330@146
+2026-08-30 16:09:04,179 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 200 selected clients: [8, 14, 17, 19] | target exposure=0 samples=0 mass=0.000000 empirical_P=0.355000 theory_P=0.368421
+2026-08-30 16:09:13,091 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Round 200 | Global 0.6560 | Head 0.8170 | Middle 0.6713 | Tail 0.4747 | Class-9 0.1070 | best_class9 0.6330@146
+2026-08-30 16:09:13,120 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - ==========================================================================================
+2026-08-30 16:09:13,120 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - FINISHED FIXED-h / VARIED-PARTICIPATION EXPERIMENT
+2026-08-30 16:09:13,120 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - target_class=9 N=50 actual_h=2 m=4 participation=0.2000
+2026-08-30 16:09:13,121 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Theoretical exposure: 0.368421
+2026-08-30 16:09:13,121 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Empirical exposure over 200 rounds: 0.355000
+2026-08-30 16:09:13,121 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Final class-9 accuracy: 0.1070
+2026-08-30 16:09:13,121 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Final Tail accuracy: 0.4747
+2026-08-30 16:09:13,121 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Final Global accuracy: 0.6560
+2026-08-30 16:09:13,121 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Best class-9 accuracy (diagnostic only): 0.6330 @ round 146
+2026-08-30 16:09:13,122 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Best Tail accuracy (diagnostic only): 0.6780 @ round 140
+2026-08-30 16:09:13,122 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Metrics CSV: D:\Desktop\FedLF_project\FedLF\outputs\pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42\metrics.csv
+2026-08-30 16:09:13,122 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - History: D:\Desktop\FedLF_project\FedLF\outputs\pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42\history.pkl
+2026-08-30 16:09:13,122 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Config: D:\Desktop\FedLF_project\FedLF\outputs\pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42\config.json
+2026-08-30 16:09:13,123 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Checkpoint: D:\Desktop\FedLF_project\FedLF\outputs\pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42\checkpoint.pth
+2026-08-30 16:09:13,123 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - Final model: D:\Desktop\FedLF_project\FedLF\outputs\pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42\final_model.pth
+2026-08-30 16:09:13,123 - pr_cifar10_class9_h2_m4_IF100_alpha0p5_seed42.log - INFO - ==========================================================================================

@@ -1,0 +1,296 @@
+2026-08-26 22:27:03,390 - INFO - ======================================================================
+2026-08-26 22:27:03,390 - INFO - CIFAR-10-LT FedProx baseline
+2026-08-26 22:27:03,390 - INFO - Algorithm: FedProx
+2026-08-26 22:27:03,391 - INFO - Seed: 42
+2026-08-26 22:27:03,391 - INFO - Dataset: CIFAR-10-LT
+2026-08-26 22:27:03,391 - INFO - imb_factor: 0.0100
+2026-08-26 22:27:03,391 - INFO - IF: 100
+2026-08-26 22:27:03,391 - INFO - num_clients: 20
+2026-08-26 22:27:03,391 - INFO - num_online_clients: 8
+2026-08-26 22:27:03,391 - INFO - non_iid_alpha: 0.5000
+2026-08-26 22:27:03,391 - INFO - num_rounds: 200
+2026-08-26 22:27:03,391 - INFO - local_epochs: 10
+2026-08-26 22:27:03,391 - INFO - batch_size: 32
+2026-08-26 22:27:03,392 - INFO - learning_rate: 0.1000
+2026-08-26 22:27:03,392 - INFO - Optimizer: SGD
+2026-08-26 22:27:03,392 - INFO - Momentum: 0
+2026-08-26 22:27:03,392 - INFO - Weight decay: 0
+2026-08-26 22:27:03,392 - INFO - FedProx mu: 0.010000
+2026-08-26 22:27:03,392 - INFO - FedRS: DISABLED
+2026-08-26 22:27:03,392 - INFO - FedLF: DISABLED
+2026-08-26 22:27:03,392 - INFO - Learning-rate decay: DISABLED
+2026-08-26 22:27:03,392 - INFO - Device: cuda
+2026-08-26 22:27:03,392 - INFO - CIFAR-10 path: D:\Desktop\FedLF_project\FedLF\data\CIFAR10
+2026-08-26 22:27:03,392 - INFO - Log file: D:\Desktop\FedLF_project\FedLF\Logs\cifar10_fedprox_seed42.log
+2026-08-26 22:27:03,392 - INFO - Existing CIFAR-10 dataset found.
+2026-08-26 22:27:03,955 - INFO - Raw CIFAR-10 loaded.
+2026-08-26 22:27:03,955 - INFO - Raw training samples: 50000
+2026-08-26 22:27:03,955 - INFO - Test samples: 10000
+2026-08-26 22:27:10,150 - INFO - Created list_label2indices.
+2026-08-26 22:27:10,150 - INFO - Original CIFAR-10 class counts: [5000, 5000, 5000, 5000, 5000, 5000, 5000, 5000, 5000, 5000]
+2026-08-26 22:27:10,169 - INFO - Original project train_long_tail() completed.
+2026-08-26 22:27:10,169 - INFO - CIFAR-10-LT class counts: [5000, 2997, 1796, 1077, 645, 387, 232, 139, 83, 50]
+2026-08-26 22:27:10,169 - INFO - Total CIFAR-10-LT samples: 12406
+2026-08-26 22:27:10,169 - INFO - Using original Dataset.sample_dirichlet.clients_indices().
+2026-08-26 22:27:10,169 - INFO - Dirichlet alpha: 0.5
+2026-08-26 22:27:10,174 - INFO - Number of clients: 20
+2026-08-26 22:27:10,174 - INFO - Client data sizes: [621, 621, 621, 621, 621, 621, 620, 620, 620, 620, 620, 620, 620, 620, 620, 620, 620, 620, 620, 620]
+2026-08-26 22:27:10,174 - INFO - Minimum client size: 620
+2026-08-26 22:27:10,175 - INFO - Maximum client size: 621
+2026-08-26 22:27:10,175 - INFO - Average client size: 620.30
+2026-08-26 22:27:10,175 - INFO - Total client samples: 12406
+2026-08-26 22:27:10,175 - INFO - Client datasets created.
+2026-08-26 22:27:10,280 - INFO - ResNet-8 global model initialized.
+2026-08-26 22:27:10,280 - INFO - FedProx local model initialized.
+2026-08-26 22:27:10,280 - INFO - Round 1 selected clients: [3, 0, 8, 7, 16, 2, 11, 1]
+2026-08-26 22:27:36,551 - INFO - Round 1/200 | Accuracy=0.1411 | Head=0.4703 | Middle=0.0000 | Tail=0.0000 | H-mean=0.0000
+2026-08-26 22:27:36,568 - INFO - Checkpoint saved: D:\Desktop\FedLF_project\FedLF\outputs\cifar10_fedprox_seed42_round1.pth
+2026-08-26 22:27:36,568 - INFO - Round 2 selected clients: [17, 2, 13, 1, 0, 16, 3, 19]
+2026-08-26 22:27:59,602 - INFO - Round 3 selected clients: [16, 0, 17, 6, 13, 3, 7, 9]
+2026-08-26 22:28:25,167 - INFO - Round 4 selected clients: [8, 0, 5, 13, 10, 4, 2, 3]
+2026-08-26 22:28:50,261 - INFO - Round 5 selected clients: [10, 3, 2, 12, 18, 5, 13, 14]
+2026-08-26 22:29:13,977 - INFO - Round 6 selected clients: [19, 8, 1, 14, 3, 16, 6, 17]
+2026-08-26 22:29:36,646 - INFO - Round 7 selected clients: [17, 9, 11, 6, 2, 0, 10, 3]
+2026-08-26 22:29:59,339 - INFO - Round 8 selected clients: [9, 2, 7, 3, 12, 4, 17, 10]
+2026-08-26 22:30:22,151 - INFO - Round 9 selected clients: [11, 5, 19, 17, 6, 10, 4, 16]
+2026-08-26 22:30:44,758 - INFO - Round 10 selected clients: [2, 5, 17, 7, 18, 16, 6, 4]
+2026-08-26 22:31:11,527 - INFO - Round 10/200 | Accuracy=0.3652 | Head=0.8393 | Middle=0.2010 | Tail=0.1100 | H-mean=0.1945
+2026-08-26 22:31:11,542 - INFO - Checkpoint saved: D:\Desktop\FedLF_project\FedLF\outputs\cifar10_fedprox_seed42_round10.pth
+2026-08-26 22:31:11,542 - INFO - Round 11 selected clients: [17, 7, 10, 1, 18, 13, 0, 12]
+2026-08-26 22:31:34,199 - INFO - Round 12 selected clients: [10, 12, 8, 2, 6, 14, 9, 11]
+2026-08-26 22:31:56,766 - INFO - Round 13 selected clients: [10, 6, 15, 12, 14, 2, 4, 17]
+2026-08-26 22:32:19,285 - INFO - Round 14 selected clients: [7, 17, 18, 8, 13, 14, 9, 6]
+2026-08-26 22:32:42,069 - INFO - Round 15 selected clients: [11, 7, 4, 16, 15, 1, 12, 0]
+2026-08-26 22:33:04,563 - INFO - Round 16 selected clients: [3, 4, 5, 13, 2, 6, 14, 9]
+2026-08-26 22:33:27,199 - INFO - Round 17 selected clients: [14, 16, 8, 0, 3, 10, 17, 12]
+2026-08-26 22:33:49,810 - INFO - Round 18 selected clients: [8, 10, 3, 9, 13, 2, 7, 0]
+2026-08-26 22:34:12,295 - INFO - Round 19 selected clients: [8, 16, 5, 18, 3, 13, 10, 4]
+2026-08-26 22:34:35,078 - INFO - Round 20 selected clients: [16, 6, 4, 11, 5, 8, 12, 14]
+2026-08-26 22:35:01,726 - INFO - Round 20/200 | Accuracy=0.3997 | Head=0.8247 | Middle=0.3235 | Tail=0.0763 | H-mean=0.1397
+2026-08-26 22:35:01,739 - INFO - Checkpoint saved: D:\Desktop\FedLF_project\FedLF\outputs\cifar10_fedprox_seed42_round20.pth
+2026-08-26 22:35:01,740 - INFO - Round 21 selected clients: [0, 10, 15, 19, 3, 14, 5, 12]
+2026-08-26 22:35:24,668 - INFO - Round 22 selected clients: [9, 7, 1, 18, 2, 17, 11, 16]
+2026-08-26 22:35:48,624 - INFO - Round 23 selected clients: [2, 17, 4, 18, 15, 8, 19, 16]
+2026-08-26 22:36:12,166 - INFO - Round 24 selected clients: [16, 13, 6, 17, 9, 19, 10, 18]
+2026-08-26 22:36:34,521 - INFO - Round 25 selected clients: [11, 14, 16, 18, 3, 15, 17, 1]
+2026-08-26 22:36:57,069 - INFO - Round 26 selected clients: [10, 0, 17, 7, 16, 18, 1, 11]
+2026-08-26 22:37:19,330 - INFO - Round 27 selected clients: [1, 7, 2, 19, 10, 16, 8, 3]
+2026-08-26 22:37:41,543 - INFO - Round 28 selected clients: [8, 15, 6, 4, 18, 3, 12, 7]
+2026-08-26 22:38:03,765 - INFO - Round 29 selected clients: [13, 6, 3, 17, 19, 5, 18, 15]
+2026-08-26 22:38:25,982 - INFO - Round 30 selected clients: [14, 1, 3, 18, 12, 11, 5, 15]
+2026-08-26 22:38:52,355 - INFO - Round 30/200 | Accuracy=0.4765 | Head=0.8033 | Middle=0.5145 | Tail=0.0990 | H-mean=0.1763
+2026-08-26 22:38:52,394 - INFO - Checkpoint saved: D:\Desktop\FedLF_project\FedLF\outputs\cifar10_fedprox_seed42_round30.pth
+2026-08-26 22:38:52,394 - INFO - Round 31 selected clients: [3, 7, 6, 17, 14, 2, 16, 15]
+2026-08-26 22:39:14,608 - INFO - Round 32 selected clients: [8, 14, 7, 2, 18, 12, 13, 19]
+2026-08-26 22:39:36,847 - INFO - Round 33 selected clients: [3, 1, 17, 0, 2, 14, 12, 19]
+2026-08-26 22:39:59,037 - INFO - Round 34 selected clients: [5, 13, 15, 17, 6, 18, 16, 0]
+2026-08-26 22:40:21,257 - INFO - Round 35 selected clients: [5, 12, 0, 18, 8, 14, 16, 13]
+2026-08-26 22:40:43,309 - INFO - Round 36 selected clients: [14, 9, 13, 15, 4, 3, 16, 19]
+2026-08-26 22:41:05,474 - INFO - Round 37 selected clients: [1, 18, 17, 19, 10, 0, 14, 9]
+2026-08-26 22:41:27,707 - INFO - Round 38 selected clients: [15, 16, 18, 5, 1, 8, 19, 2]
+2026-08-26 22:41:49,762 - INFO - Round 39 selected clients: [2, 19, 7, 12, 3, 14, 9, 15]
+2026-08-26 22:42:11,976 - INFO - Round 40 selected clients: [18, 1, 2, 13, 10, 14, 4, 3]
+2026-08-26 22:42:38,051 - INFO - Round 40/200 | Accuracy=0.4919 | Head=0.8450 | Middle=0.4992 | Tail=0.1290 | H-mean=0.2238
+2026-08-26 22:42:38,063 - INFO - Checkpoint saved: D:\Desktop\FedLF_project\FedLF\outputs\cifar10_fedprox_seed42_round40.pth
+2026-08-26 22:42:38,065 - INFO - Round 41 selected clients: [10, 7, 8, 12, 4, 19, 14, 15]
+2026-08-26 22:43:00,259 - INFO - Round 42 selected clients: [14, 10, 2, 0, 19, 9, 15, 1]
+2026-08-26 22:43:22,326 - INFO - Round 43 selected clients: [2, 17, 6, 16, 8, 19, 5, 1]
+2026-08-26 22:43:44,439 - INFO - Round 44 selected clients: [7, 11, 9, 5, 14, 13, 8, 18]
+2026-08-26 22:44:06,806 - INFO - Round 45 selected clients: [9, 16, 0, 19, 3, 14, 2, 4]
+2026-08-26 22:44:28,944 - INFO - Round 46 selected clients: [3, 19, 17, 4, 8, 16, 9, 18]
+2026-08-26 22:44:51,192 - INFO - Round 47 selected clients: [10, 6, 8, 16, 15, 4, 13, 0]
+2026-08-26 22:45:13,382 - INFO - Round 48 selected clients: [2, 13, 8, 1, 0, 5, 12, 19]
+2026-08-26 22:45:35,439 - INFO - Round 49 selected clients: [8, 5, 14, 13, 0, 1, 17, 11]
+2026-08-26 22:45:57,666 - INFO - Round 50 selected clients: [4, 17, 1, 11, 19, 6, 2, 0]
+2026-08-26 22:46:23,830 - INFO - Round 50/200 | Accuracy=0.5012 | Head=0.8527 | Middle=0.4773 | Tail=0.1817 | H-mean=0.2995
+2026-08-26 22:46:23,844 - INFO - Checkpoint saved: D:\Desktop\FedLF_project\FedLF\outputs\cifar10_fedprox_seed42_round50.pth
+2026-08-26 22:46:23,844 - INFO - Round 51 selected clients: [9, 11, 1, 18, 6, 10, 3, 14]
+2026-08-26 22:46:45,999 - INFO - Round 52 selected clients: [3, 11, 17, 13, 4, 14, 19, 2]
+2026-08-26 22:47:08,163 - INFO - Round 53 selected clients: [5, 13, 0, 19, 10, 12, 6, 14]
+2026-08-26 22:47:30,117 - INFO - Round 54 selected clients: [7, 8, 5, 3, 12, 13, 0, 19]
+2026-08-26 22:47:52,102 - INFO - Round 55 selected clients: [7, 6, 14, 11, 9, 13, 12, 3]
+2026-08-26 22:48:14,235 - INFO - Round 56 selected clients: [7, 0, 6, 12, 10, 4, 13, 1]
+2026-08-26 22:48:36,445 - INFO - Round 57 selected clients: [8, 11, 16, 12, 10, 0, 1, 4]
+2026-08-26 22:48:58,733 - INFO - Round 58 selected clients: [5, 18, 8, 1, 3, 9, 6, 19]
+2026-08-26 22:49:20,877 - INFO - Round 59 selected clients: [10, 13, 16, 3, 12, 14, 9, 17]
+2026-08-26 22:49:43,227 - INFO - Round 60 selected clients: [8, 1, 13, 0, 6, 5, 15, 18]
+2026-08-26 22:50:09,568 - INFO - Round 60/200 | Accuracy=0.5423 | Head=0.8727 | Middle=0.5302 | Tail=0.2280 | H-mean=0.3615
+2026-08-26 22:50:09,579 - INFO - Checkpoint saved: D:\Desktop\FedLF_project\FedLF\outputs\cifar10_fedprox_seed42_round60.pth
+2026-08-26 22:50:09,579 - INFO - Round 61 selected clients: [10, 19, 3, 9, 16, 18, 6, 5]
+2026-08-26 22:50:31,824 - INFO - Round 62 selected clients: [12, 9, 17, 4, 6, 15, 10, 14]
+2026-08-26 22:50:53,922 - INFO - Round 63 selected clients: [5, 18, 9, 12, 0, 4, 14, 3]
+2026-08-26 22:51:16,148 - INFO - Round 64 selected clients: [13, 18, 10, 14, 16, 7, 17, 3]
+2026-08-26 22:51:38,170 - INFO - Round 65 selected clients: [16, 15, 5, 2, 9, 8, 10, 13]
+2026-08-26 22:52:00,333 - INFO - Round 66 selected clients: [19, 10, 2, 7, 9, 3, 12, 14]
+2026-08-26 22:52:22,557 - INFO - Round 67 selected clients: [4, 0, 1, 7, 15, 9, 13, 12]
+2026-08-26 22:52:44,728 - INFO - Round 68 selected clients: [2, 14, 13, 6, 12, 7, 16, 3]
+2026-08-26 22:53:06,988 - INFO - Round 69 selected clients: [4, 0, 3, 13, 7, 2, 12, 11]
+2026-08-26 22:53:29,090 - INFO - Round 70 selected clients: [16, 14, 1, 7, 3, 19, 2, 12]
+2026-08-26 22:53:55,074 - INFO - Round 70/200 | Accuracy=0.5377 | Head=0.8707 | Middle=0.5162 | Tail=0.2333 | H-mean=0.3680
+2026-08-26 22:53:55,087 - INFO - Checkpoint saved: D:\Desktop\FedLF_project\FedLF\outputs\cifar10_fedprox_seed42_round70.pth
+2026-08-26 22:53:55,088 - INFO - Round 71 selected clients: [14, 16, 17, 10, 19, 9, 13, 11]
+2026-08-26 22:54:17,402 - INFO - Round 72 selected clients: [16, 13, 17, 14, 5, 11, 18, 7]
+2026-08-26 22:54:39,686 - INFO - Round 73 selected clients: [14, 8, 7, 18, 15, 10, 3, 4]
+2026-08-26 22:55:02,113 - INFO - Round 74 selected clients: [14, 2, 9, 7, 8, 5, 19, 15]
+2026-08-26 22:55:24,365 - INFO - Round 75 selected clients: [2, 4, 18, 7, 12, 11, 19, 14]
+2026-08-26 22:55:46,611 - INFO - Round 76 selected clients: [6, 2, 13, 17, 10, 8, 7, 19]
+2026-08-26 22:56:08,765 - INFO - Round 77 selected clients: [1, 6, 13, 12, 0, 17, 16, 9]
+2026-08-26 22:56:31,110 - INFO - Round 78 selected clients: [12, 15, 0, 11, 9, 19, 6, 13]
+2026-08-26 22:56:53,299 - INFO - Round 79 selected clients: [17, 19, 7, 15, 18, 4, 6, 16]
+2026-08-26 22:57:15,577 - INFO - Round 80 selected clients: [0, 12, 10, 18, 5, 13, 7, 2]
+2026-08-26 22:57:41,838 - INFO - Round 80/200 | Accuracy=0.5581 | Head=0.8497 | Middle=0.5875 | Tail=0.2273 | H-mean=0.3587
+2026-08-26 22:57:41,851 - INFO - Checkpoint saved: D:\Desktop\FedLF_project\FedLF\outputs\cifar10_fedprox_seed42_round80.pth
+2026-08-26 22:57:41,851 - INFO - Round 81 selected clients: [19, 17, 0, 12, 18, 1, 10, 6]
+2026-08-26 22:58:04,043 - INFO - Round 82 selected clients: [4, 14, 5, 1, 8, 6, 17, 3]
+2026-08-26 22:58:26,253 - INFO - Round 83 selected clients: [14, 10, 18, 12, 8, 16, 13, 6]
+2026-08-26 22:58:48,585 - INFO - Round 84 selected clients: [8, 2, 15, 0, 1, 5, 3, 10]
+2026-08-26 22:59:10,945 - INFO - Round 85 selected clients: [2, 1, 0, 7, 6, 13, 17, 9]
+2026-08-26 22:59:33,176 - INFO - Round 86 selected clients: [4, 7, 19, 15, 3, 9, 16, 18]
+2026-08-26 22:59:55,280 - INFO - Round 87 selected clients: [8, 11, 5, 3, 17, 4, 1, 9]
+2026-08-26 23:00:17,423 - INFO - Round 88 selected clients: [0, 9, 12, 17, 6, 1, 18, 11]
+2026-08-26 23:00:39,724 - INFO - Round 89 selected clients: [7, 3, 9, 18, 1, 5, 8, 6]
+2026-08-26 23:01:01,847 - INFO - Round 90 selected clients: [11, 2, 16, 10, 0, 13, 6, 7]
+2026-08-26 23:01:28,148 - INFO - Round 90/200 | Accuracy=0.4975 | Head=0.8570 | Middle=0.4555 | Tail=0.1940 | H-mean=0.3164
+2026-08-26 23:01:28,158 - INFO - Checkpoint saved: D:\Desktop\FedLF_project\FedLF\outputs\cifar10_fedprox_seed42_round90.pth
+2026-08-26 23:01:28,158 - INFO - Round 91 selected clients: [3, 13, 11, 14, 4, 6, 2, 17]
+2026-08-26 23:01:50,368 - INFO - Round 92 selected clients: [16, 8, 17, 15, 14, 6, 13, 11]
+2026-08-26 23:02:12,466 - INFO - Round 93 selected clients: [18, 8, 10, 7, 2, 4, 16, 3]
+2026-08-26 23:02:34,649 - INFO - Round 94 selected clients: [14, 18, 12, 10, 0, 7, 13, 5]
+2026-08-26 23:02:56,831 - INFO - Round 95 selected clients: [5, 15, 6, 11, 8, 19, 4, 9]
+2026-08-26 23:03:19,107 - INFO - Round 96 selected clients: [8, 17, 0, 16, 6, 1, 3, 11]
+2026-08-26 23:03:41,301 - INFO - Round 97 selected clients: [13, 15, 17, 7, 18, 10, 11, 16]
+2026-08-26 23:04:03,490 - INFO - Round 98 selected clients: [14, 0, 2, 9, 7, 6, 11, 3]
+2026-08-26 23:04:25,522 - INFO - Round 99 selected clients: [9, 18, 11, 15, 17, 6, 16, 8]
+2026-08-26 23:04:47,944 - INFO - Round 100 selected clients: [10, 11, 14, 8, 9, 4, 3, 1]
+2026-08-26 23:05:14,067 - INFO - Round 100/200 | Accuracy=0.4624 | Head=0.8087 | Middle=0.4300 | Tail=0.1593 | H-mean=0.2662
+2026-08-26 23:05:14,079 - INFO - Checkpoint saved: D:\Desktop\FedLF_project\FedLF\outputs\cifar10_fedprox_seed42_round100.pth
+2026-08-26 23:05:14,081 - INFO - Round 101 selected clients: [6, 10, 3, 5, 19, 17, 11, 7]
+2026-08-26 23:05:36,272 - INFO - Round 102 selected clients: [8, 18, 16, 9, 3, 13, 15, 4]
+2026-08-26 23:05:58,298 - INFO - Round 103 selected clients: [7, 11, 5, 9, 0, 18, 8, 2]
+2026-08-26 23:06:20,483 - INFO - Round 104 selected clients: [8, 1, 18, 9, 4, 10, 13, 12]
+2026-08-26 23:06:42,593 - INFO - Round 105 selected clients: [15, 3, 0, 9, 19, 7, 14, 5]
+2026-08-26 23:07:04,744 - INFO - Round 106 selected clients: [5, 1, 8, 15, 3, 13, 18, 6]
+2026-08-26 23:07:27,058 - INFO - Round 107 selected clients: [15, 2, 1, 4, 16, 12, 9, 19]
+2026-08-26 23:07:49,234 - INFO - Round 108 selected clients: [2, 7, 3, 13, 18, 12, 8, 6]
+2026-08-26 23:08:11,507 - INFO - Round 109 selected clients: [14, 19, 9, 13, 17, 15, 18, 0]
+2026-08-26 23:08:33,821 - INFO - Round 110 selected clients: [19, 3, 6, 17, 8, 10, 1, 2]
+2026-08-26 23:08:59,892 - INFO - Round 110/200 | Accuracy=0.5898 | Head=0.8750 | Middle=0.5588 | Tail=0.3460 | H-mean=0.4959
+2026-08-26 23:08:59,905 - INFO - Checkpoint saved: D:\Desktop\FedLF_project\FedLF\outputs\cifar10_fedprox_seed42_round110.pth
+2026-08-26 23:08:59,905 - INFO - Round 111 selected clients: [7, 5, 17, 2, 18, 0, 6, 19]
+2026-08-26 23:09:22,164 - INFO - Round 112 selected clients: [19, 15, 9, 1, 7, 4, 11, 14]
+2026-08-26 23:09:44,314 - INFO - Round 113 selected clients: [14, 2, 7, 8, 6, 15, 1, 16]
+2026-08-26 23:10:06,605 - INFO - Round 114 selected clients: [7, 4, 8, 18, 2, 0, 15, 12]
+2026-08-26 23:10:28,661 - INFO - Round 115 selected clients: [9, 18, 19, 14, 3, 7, 11, 4]
+2026-08-26 23:10:50,887 - INFO - Round 116 selected clients: [12, 8, 16, 15, 14, 1, 9, 0]
+2026-08-26 23:11:13,024 - INFO - Round 117 selected clients: [13, 10, 8, 0, 2, 3, 18, 9]
+2026-08-26 23:11:35,397 - INFO - Round 118 selected clients: [18, 0, 8, 1, 5, 7, 17, 10]
+2026-08-26 23:11:57,724 - INFO - Round 119 selected clients: [14, 8, 5, 13, 15, 1, 7, 17]
+2026-08-26 23:12:20,075 - INFO - Round 120 selected clients: [13, 10, 18, 3, 5, 15, 6, 11]
+2026-08-26 23:12:46,174 - INFO - Round 120/200 | Accuracy=0.5824 | Head=0.8780 | Middle=0.5727 | Tail=0.2997 | H-mean=0.4468
+2026-08-26 23:12:46,188 - INFO - Checkpoint saved: D:\Desktop\FedLF_project\FedLF\outputs\cifar10_fedprox_seed42_round120.pth
+2026-08-26 23:12:46,188 - INFO - Round 121 selected clients: [15, 9, 12, 1, 14, 16, 5, 4]
+2026-08-26 23:13:08,352 - INFO - Round 122 selected clients: [10, 3, 12, 16, 0, 19, 13, 8]
+2026-08-26 23:13:30,616 - INFO - Round 123 selected clients: [14, 13, 1, 6, 11, 9, 12, 7]
+2026-08-26 23:13:52,785 - INFO - Round 124 selected clients: [14, 1, 6, 8, 4, 19, 15, 7]
+2026-08-26 23:14:14,873 - INFO - Round 125 selected clients: [15, 3, 0, 7, 5, 4, 8, 17]
+2026-08-26 23:14:37,058 - INFO - Round 126 selected clients: [17, 13, 2, 7, 3, 16, 1, 10]
+2026-08-26 23:14:59,200 - INFO - Round 127 selected clients: [4, 15, 9, 16, 8, 6, 13, 7]
+2026-08-26 23:15:21,260 - INFO - Round 128 selected clients: [15, 7, 14, 4, 12, 3, 9, 8]
+2026-08-26 23:15:43,554 - INFO - Round 129 selected clients: [4, 2, 8, 13, 10, 14, 12, 17]
+2026-08-26 23:16:05,800 - INFO - Round 130 selected clients: [8, 0, 9, 17, 15, 13, 2, 7]
+2026-08-26 23:16:31,849 - INFO - Round 130/200 | Accuracy=0.5658 | Head=0.8727 | Middle=0.5910 | Tail=0.2253 | H-mean=0.3582
+2026-08-26 23:16:31,862 - INFO - Checkpoint saved: D:\Desktop\FedLF_project\FedLF\outputs\cifar10_fedprox_seed42_round130.pth
+2026-08-26 23:16:31,862 - INFO - Round 131 selected clients: [17, 15, 11, 10, 12, 7, 5, 3]
+2026-08-26 23:16:53,939 - INFO - Round 132 selected clients: [7, 18, 12, 19, 13, 0, 5, 11]
+2026-08-26 23:17:16,334 - INFO - Round 133 selected clients: [15, 12, 18, 4, 19, 0, 2, 8]
+2026-08-26 23:17:38,610 - INFO - Round 134 selected clients: [18, 10, 3, 14, 17, 8, 7, 0]
+2026-08-26 23:18:00,778 - INFO - Round 135 selected clients: [4, 13, 19, 2, 15, 12, 17, 5]
+2026-08-26 23:18:22,887 - INFO - Round 136 selected clients: [19, 12, 2, 10, 18, 5, 16, 11]
+2026-08-26 23:18:45,014 - INFO - Round 137 selected clients: [15, 17, 1, 2, 7, 10, 14, 4]
+2026-08-26 23:19:07,335 - INFO - Round 138 selected clients: [7, 2, 13, 3, 16, 19, 18, 11]
+2026-08-26 23:19:29,770 - INFO - Round 139 selected clients: [9, 0, 1, 10, 17, 4, 5, 13]
+2026-08-26 23:19:52,245 - INFO - Round 140 selected clients: [13, 4, 7, 16, 19, 9, 10, 12]
+2026-08-26 23:20:18,533 - INFO - Round 140/200 | Accuracy=0.5297 | Head=0.8267 | Middle=0.5247 | Tail=0.2393 | H-mean=0.3712
+2026-08-26 23:20:18,549 - INFO - Checkpoint saved: D:\Desktop\FedLF_project\FedLF\outputs\cifar10_fedprox_seed42_round140.pth
+2026-08-26 23:20:18,549 - INFO - Round 141 selected clients: [5, 19, 18, 2, 12, 9, 10, 3]
+2026-08-26 23:20:40,869 - INFO - Round 142 selected clients: [15, 18, 4, 7, 14, 10, 17, 16]
+2026-08-26 23:21:03,118 - INFO - Round 143 selected clients: [8, 0, 14, 9, 5, 1, 7, 15]
+2026-08-26 23:21:25,476 - INFO - Round 144 selected clients: [18, 9, 13, 8, 14, 17, 4, 3]
+2026-08-26 23:21:47,699 - INFO - Round 145 selected clients: [12, 15, 3, 7, 19, 9, 5, 14]
+2026-08-26 23:22:10,037 - INFO - Round 146 selected clients: [9, 19, 0, 12, 8, 17, 18, 10]
+2026-08-26 23:22:32,211 - INFO - Round 147 selected clients: [1, 15, 9, 7, 11, 3, 10, 14]
+2026-08-26 23:22:54,293 - INFO - Round 148 selected clients: [19, 8, 4, 3, 1, 17, 12, 7]
+2026-08-26 23:23:16,661 - INFO - Round 149 selected clients: [1, 18, 11, 4, 2, 14, 16, 5]
+2026-08-26 23:23:39,024 - INFO - Round 150 selected clients: [13, 5, 6, 4, 11, 8, 14, 16]
+2026-08-26 23:24:05,209 - INFO - Round 150/200 | Accuracy=0.5452 | Head=0.8953 | Middle=0.5130 | Tail=0.2380 | H-mean=0.3760
+2026-08-26 23:24:05,222 - INFO - Checkpoint saved: D:\Desktop\FedLF_project\FedLF\outputs\cifar10_fedprox_seed42_round150.pth
+2026-08-26 23:24:05,222 - INFO - Round 151 selected clients: [5, 8, 15, 9, 10, 12, 1, 7]
+2026-08-26 23:24:27,227 - INFO - Round 152 selected clients: [2, 4, 7, 12, 11, 1, 16, 6]
+2026-08-26 23:24:49,405 - INFO - Round 153 selected clients: [0, 8, 17, 3, 14, 5, 10, 11]
+2026-08-26 23:25:11,726 - INFO - Round 154 selected clients: [8, 18, 12, 11, 3, 10, 15, 7]
+2026-08-26 23:25:33,881 - INFO - Round 155 selected clients: [0, 17, 10, 7, 2, 18, 13, 16]
+2026-08-26 23:25:56,134 - INFO - Round 156 selected clients: [9, 13, 3, 4, 1, 0, 16, 7]
+2026-08-26 23:26:18,367 - INFO - Round 157 selected clients: [3, 19, 7, 4, 12, 17, 5, 10]
+2026-08-26 23:26:40,560 - INFO - Round 158 selected clients: [17, 13, 4, 18, 3, 16, 7, 9]
+2026-08-26 23:27:02,774 - INFO - Round 159 selected clients: [13, 8, 1, 11, 6, 7, 14, 3]
+2026-08-26 23:27:24,965 - INFO - Round 160 selected clients: [11, 3, 19, 17, 1, 6, 4, 18]
+2026-08-26 23:27:51,219 - INFO - Round 160/200 | Accuracy=0.6127 | Head=0.9043 | Middle=0.5820 | Tail=0.3620 | H-mean=0.5170
+2026-08-26 23:27:51,230 - INFO - Checkpoint saved: D:\Desktop\FedLF_project\FedLF\outputs\cifar10_fedprox_seed42_round160.pth
+2026-08-26 23:27:51,230 - INFO - Round 161 selected clients: [3, 14, 2, 6, 0, 15, 12, 5]
+2026-08-26 23:28:13,327 - INFO - Round 162 selected clients: [7, 4, 6, 2, 17, 9, 3, 13]
+2026-08-26 23:28:35,781 - INFO - Round 163 selected clients: [10, 4, 0, 8, 18, 2, 16, 15]
+2026-08-26 23:28:57,986 - INFO - Round 164 selected clients: [5, 3, 0, 4, 17, 19, 12, 13]
+2026-08-26 23:29:20,133 - INFO - Round 165 selected clients: [7, 18, 10, 0, 5, 4, 16, 2]
+2026-08-26 23:29:42,337 - INFO - Round 166 selected clients: [13, 16, 3, 2, 15, 7, 12, 5]
+2026-08-26 23:30:04,532 - INFO - Round 167 selected clients: [16, 18, 3, 14, 7, 9, 0, 11]
+2026-08-26 23:30:26,775 - INFO - Round 168 selected clients: [16, 9, 14, 0, 1, 7, 13, 6]
+2026-08-26 23:30:48,970 - INFO - Round 169 selected clients: [13, 3, 15, 14, 2, 16, 1, 5]
+2026-08-26 23:31:11,262 - INFO - Round 170 selected clients: [19, 4, 2, 18, 8, 9, 10, 14]
+2026-08-26 23:31:37,410 - INFO - Round 170/200 | Accuracy=0.5470 | Head=0.7933 | Middle=0.5805 | Tail=0.2560 | H-mean=0.3871
+2026-08-26 23:31:37,424 - INFO - Checkpoint saved: D:\Desktop\FedLF_project\FedLF\outputs\cifar10_fedprox_seed42_round170.pth
+2026-08-26 23:31:37,424 - INFO - Round 171 selected clients: [17, 10, 12, 16, 9, 7, 8, 15]
+2026-08-26 23:31:59,639 - INFO - Round 172 selected clients: [13, 3, 18, 6, 19, 7, 17, 16]
+2026-08-26 23:32:21,700 - INFO - Round 173 selected clients: [10, 14, 12, 13, 3, 5, 6, 18]
+2026-08-26 23:32:43,933 - INFO - Round 174 selected clients: [8, 11, 4, 15, 2, 1, 13, 14]
+2026-08-26 23:33:05,985 - INFO - Round 175 selected clients: [2, 13, 3, 11, 4, 8, 0, 9]
+2026-08-26 23:33:28,118 - INFO - Round 176 selected clients: [17, 19, 10, 3, 13, 5, 15, 18]
+2026-08-26 23:33:50,459 - INFO - Round 177 selected clients: [13, 1, 9, 17, 11, 18, 16, 8]
+2026-08-26 23:34:12,538 - INFO - Round 178 selected clients: [6, 4, 15, 7, 3, 5, 13, 8]
+2026-08-26 23:34:35,051 - INFO - Round 179 selected clients: [11, 3, 8, 7, 13, 15, 17, 12]
+2026-08-26 23:34:57,307 - INFO - Round 180 selected clients: [19, 17, 0, 8, 18, 2, 4, 11]
+2026-08-26 23:35:23,544 - INFO - Round 180/200 | Accuracy=0.5848 | Head=0.8613 | Middle=0.6065 | Tail=0.2793 | H-mean=0.4219
+2026-08-26 23:35:23,556 - INFO - Checkpoint saved: D:\Desktop\FedLF_project\FedLF\outputs\cifar10_fedprox_seed42_round180.pth
+2026-08-26 23:35:23,556 - INFO - Round 181 selected clients: [9, 10, 11, 0, 5, 13, 2, 19]
+2026-08-26 23:35:45,720 - INFO - Round 182 selected clients: [12, 2, 4, 0, 18, 11, 8, 3]
+2026-08-26 23:36:08,089 - INFO - Round 183 selected clients: [12, 13, 14, 10, 5, 15, 4, 11]
+2026-08-26 23:36:30,323 - INFO - Round 184 selected clients: [10, 18, 2, 1, 4, 17, 12, 9]
+2026-08-26 23:36:52,555 - INFO - Round 185 selected clients: [1, 2, 8, 14, 13, 7, 9, 16]
+2026-08-26 23:37:14,807 - INFO - Round 186 selected clients: [13, 8, 6, 16, 3, 5, 17, 1]
+2026-08-26 23:37:37,080 - INFO - Round 187 selected clients: [9, 18, 15, 16, 19, 0, 3, 6]
+2026-08-26 23:37:59,354 - INFO - Round 188 selected clients: [19, 1, 0, 6, 9, 3, 12, 2]
+2026-08-26 23:38:21,647 - INFO - Round 189 selected clients: [8, 9, 10, 3, 0, 7, 11, 6]
+2026-08-26 23:38:43,832 - INFO - Round 190 selected clients: [5, 4, 12, 7, 11, 1, 6, 15]
+2026-08-26 23:39:10,200 - INFO - Round 190/200 | Accuracy=0.5965 | Head=0.8813 | Middle=0.6112 | Tail=0.2920 | H-mean=0.4387
+2026-08-26 23:39:10,212 - INFO - Checkpoint saved: D:\Desktop\FedLF_project\FedLF\outputs\cifar10_fedprox_seed42_round190.pth
+2026-08-26 23:39:10,213 - INFO - Round 191 selected clients: [1, 13, 0, 14, 2, 18, 5, 9]
+2026-08-26 23:39:32,407 - INFO - Round 192 selected clients: [13, 18, 12, 19, 9, 1, 6, 0]
+2026-08-26 23:39:54,766 - INFO - Round 193 selected clients: [10, 5, 14, 11, 2, 6, 13, 1]
+2026-08-26 23:40:16,993 - INFO - Round 194 selected clients: [7, 13, 12, 16, 2, 6, 18, 4]
+2026-08-26 23:40:39,089 - INFO - Round 195 selected clients: [10, 7, 19, 5, 2, 8, 17, 1]
+2026-08-26 23:41:01,209 - INFO - Round 196 selected clients: [16, 19, 6, 11, 18, 15, 13, 10]
+2026-08-26 23:41:23,333 - INFO - Round 197 selected clients: [4, 7, 3, 19, 8, 17, 2, 9]
+2026-08-26 23:41:45,592 - INFO - Round 198 selected clients: [4, 2, 5, 15, 14, 12, 9, 16]
+2026-08-26 23:42:07,758 - INFO - Round 199 selected clients: [18, 14, 10, 17, 4, 7, 1, 19]
+2026-08-26 23:42:29,943 - INFO - Round 200 selected clients: [14, 9, 8, 1, 11, 17, 16, 4]
+2026-08-26 23:42:56,141 - INFO - Round 200/200 | Accuracy=0.5416 | Head=0.9067 | Middle=0.4875 | Tail=0.2487 | H-mean=0.3903
+2026-08-26 23:42:56,153 - INFO - Checkpoint saved: D:\Desktop\FedLF_project\FedLF\outputs\cifar10_fedprox_seed42_round200.pth
+2026-08-26 23:43:00,118 - INFO - ======================================================================
+2026-08-26 23:43:00,118 - INFO - FedProx baseline completed.
+2026-08-26 23:43:00,118 - INFO - FedProx mu: 0.010000
+2026-08-26 23:43:00,118 - INFO - Final Global Accuracy: 0.5416
+2026-08-26 23:43:00,120 - INFO - Final Head Accuracy: 0.9067
+2026-08-26 23:43:00,120 - INFO - Final Middle Accuracy: 0.4875
+2026-08-26 23:43:00,120 - INFO - Final Tail Accuracy: 0.2487
+2026-08-26 23:43:00,120 - INFO - Final H-mean: 0.3903
+2026-08-26 23:43:00,120 - INFO - Log saved to: D:\Desktop\FedLF_project\FedLF\Logs\cifar10_fedprox_seed42.log
+2026-08-26 23:43:00,120 - INFO - ======================================================================

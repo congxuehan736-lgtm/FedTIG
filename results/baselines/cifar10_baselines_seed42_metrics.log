@@ -1,0 +1,14 @@
+2026-08-27 17:52:49,476 - INFO - ======================================================================
+2026-08-27 17:52:49,476 - INFO - CIFAR-10-LT saved-checkpoint evaluation
+2026-08-27 17:52:49,476 - INFO - No training is performed.
+2026-08-27 17:52:49,476 - INFO - Device: cuda
+2026-08-27 17:52:49,476 - INFO - Head = classes 0,1,2 | Middle = 3,4,5,6 | Tail = 7,8,9
+2026-08-27 17:52:52,251 - INFO - FedAvg | Head=87.27% | Middle=56.38% | Tail=28.43% | All=57.26%
+2026-08-27 17:52:54,194 - INFO - FedProx | Head=87.20% | Middle=57.43% | Tail=28.47% | All=57.67%
+2026-08-27 17:52:56,233 - INFO - FedBN | Head=58.97% | Middle=22.95% | Tail=5.77% | All=28.60%
+2026-08-27 17:52:58,260 - INFO - FedRS | Head=83.87% | Middle=64.58% | Tail=39.97% | All=62.98%
+2026-08-27 17:53:00,284 - INFO - FEDIC | Head=87.63% | Middle=51.90% | Tail=24.37% | All=54.36%
+2026-08-27 17:53:02,342 - INFO - CReFF | Head=85.70% | Middle=60.38% | Tail=29.93% | All=58.84%
+2026-08-27 17:53:02,359 - INFO - Summary CSV: D:\Desktop\FedLF_project\FedLF\outputs\cifar10_baselines_seed42_head_middle_tail.csv
+2026-08-27 17:53:02,359 - INFO - Per-class CSV: D:\Desktop\FedLF_project\FedLF\outputs\cifar10_baselines_seed42_per_class.csv
+2026-08-27 17:53:02,359 - INFO - Metrics log: D:\Desktop\FedLF_project\FedLF\Logs\cifar10_baselines_seed42_metrics.log

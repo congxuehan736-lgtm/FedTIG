@@ -1,0 +1,755 @@
+2026-08-27 11:58:17,986 - INFO - ======================================================================
+2026-08-27 11:58:17,986 - INFO - CIFAR-10-LT BASELINE SUITE
+2026-08-27 11:58:17,986 - INFO - IF=100 | alpha=0.500 | clients=20 | online=8 | rounds=200 | local_epochs=5 | batch=32 | lr=0.100 | seed=42
+2026-08-27 11:58:17,986 - INFO - Device: cuda
+2026-08-27 11:58:17,987 - INFO - CIFAR-10 path: D:\Desktop\FedLF_project\FedLF\data\CIFAR10
+2026-08-27 11:58:18,543 - INFO - CIFAR-10-LT class counts: [5000, 2997, 1796, 1077, 645, 387, 232, 139, 83, 50]
+2026-08-27 11:58:18,543 - INFO - Total LT samples: 12406
+2026-08-27 11:58:18,544 - INFO - Client sizes: [621, 621, 621, 621, 621, 621, 620, 620, 620, 620, 620, 620, 620, 620, 620, 620, 620, 620, 620, 620]
+2026-08-27 11:58:18,544 - INFO - Min/Max/Avg client size: 620/621/620.30
+2026-08-27 11:58:18,546 - INFO - ======================================================================
+2026-08-27 11:58:18,546 - INFO - START FedAvg
+2026-08-27 11:58:18,857 - INFO - FedAvg Round 1 selected clients: [0, 17, 15, 1, 8, 5, 11, 3]
+2026-08-27 11:58:27,207 - INFO - FedAvg Round 1/200 | Accuracy=0.1688 | Best=0.1688
+2026-08-27 11:58:27,208 - INFO - FedAvg Round 2 selected clients: [19, 16, 15, 5, 4, 12, 14, 7]
+2026-08-27 11:58:33,591 - INFO - FedAvg Round 3 selected clients: [10, 7, 0, 2, 5, 18, 16, 12]
+2026-08-27 11:58:40,128 - INFO - FedAvg Round 4 selected clients: [0, 18, 6, 8, 17, 11, 4, 9]
+2026-08-27 11:58:46,529 - INFO - FedAvg Round 5 selected clients: [5, 2, 10, 19, 0, 12, 9, 16]
+2026-08-27 11:58:52,957 - INFO - FedAvg Round 6 selected clients: [3, 1, 4, 5, 15, 16, 9, 10]
+2026-08-27 11:58:59,255 - INFO - FedAvg Round 7 selected clients: [13, 10, 12, 16, 9, 5, 3, 2]
+2026-08-27 11:59:05,562 - INFO - FedAvg Round 8 selected clients: [17, 18, 1, 5, 3, 15, 7, 11]
+2026-08-27 11:59:11,826 - INFO - FedAvg Round 9 selected clients: [17, 11, 7, 13, 0, 9, 4, 8]
+2026-08-27 11:59:18,103 - INFO - FedAvg Round 10 selected clients: [4, 9, 1, 15, 7, 5, 16, 2]
+2026-08-27 11:59:26,105 - INFO - FedAvg Round 10/200 | Accuracy=0.2708 | Best=0.2708
+2026-08-27 11:59:26,106 - INFO - FedAvg Round 11 selected clients: [2, 6, 16, 4, 17, 1, 13, 12]
+2026-08-27 11:59:32,311 - INFO - FedAvg Round 12 selected clients: [14, 3, 9, 18, 8, 11, 17, 6]
+2026-08-27 11:59:38,685 - INFO - FedAvg Round 13 selected clients: [9, 8, 6, 14, 13, 2, 19, 12]
+2026-08-27 11:59:44,952 - INFO - FedAvg Round 14 selected clients: [5, 11, 4, 19, 9, 1, 12, 10]
+2026-08-27 11:59:51,228 - INFO - FedAvg Round 15 selected clients: [14, 16, 19, 13, 4, 12, 5, 7]
+2026-08-27 11:59:57,488 - INFO - FedAvg Round 16 selected clients: [6, 11, 4, 1, 18, 9, 14, 13]
+2026-08-27 12:00:04,226 - INFO - FedAvg Round 17 selected clients: [14, 7, 12, 6, 11, 4, 16, 9]
+2026-08-27 12:00:10,686 - INFO - FedAvg Round 18 selected clients: [7, 3, 4, 18, 1, 12, 8, 9]
+2026-08-27 12:00:16,900 - INFO - FedAvg Round 19 selected clients: [8, 7, 1, 6, 9, 10, 11, 19]
+2026-08-27 12:00:23,122 - INFO - FedAvg Round 20 selected clients: [17, 4, 3, 10, 6, 13, 14, 11]
+2026-08-27 12:00:31,331 - INFO - FedAvg Round 20/200 | Accuracy=0.3197 | Best=0.3197
+2026-08-27 12:00:31,332 - INFO - FedAvg Round 21 selected clients: [13, 14, 15, 17, 3, 4, 18, 19]
+2026-08-27 12:00:37,702 - INFO - FedAvg Round 22 selected clients: [4, 19, 8, 17, 18, 5, 10, 16]
+2026-08-27 12:00:45,404 - INFO - FedAvg Round 23 selected clients: [2, 13, 1, 19, 8, 15, 3, 6]
+2026-08-27 12:00:52,135 - INFO - FedAvg Round 24 selected clients: [3, 14, 13, 5, 8, 10, 4, 17]
+2026-08-27 12:00:59,443 - INFO - FedAvg Round 25 selected clients: [18, 15, 3, 2, 12, 6, 9, 10]
+2026-08-27 12:01:06,273 - INFO - FedAvg Round 26 selected clients: [5, 7, 1, 2, 8, 16, 12, 6]
+2026-08-27 12:01:13,811 - INFO - FedAvg Round 27 selected clients: [10, 5, 14, 13, 12, 17, 6, 8]
+2026-08-27 12:01:20,784 - INFO - FedAvg Round 28 selected clients: [5, 6, 19, 8, 3, 14, 1, 7]
+2026-08-27 12:01:28,828 - INFO - FedAvg Round 29 selected clients: [12, 5, 4, 15, 8, 3, 14, 16]
+2026-08-27 12:01:35,064 - INFO - FedAvg Round 30 selected clients: [14, 19, 13, 16, 15, 5, 6, 11]
+2026-08-27 12:01:43,632 - INFO - FedAvg Round 30/200 | Accuracy=0.3976 | Best=0.3976
+2026-08-27 12:01:43,634 - INFO - FedAvg Round 31 selected clients: [1, 6, 11, 9, 19, 4, 7, 14]
+2026-08-27 12:01:50,977 - INFO - FedAvg Round 32 selected clients: [12, 19, 1, 5, 7, 0, 6, 9]
+2026-08-27 12:01:57,405 - INFO - FedAvg Round 33 selected clients: [16, 14, 11, 3, 7, 15, 5, 17]
+2026-08-27 12:02:04,404 - INFO - FedAvg Round 34 selected clients: [10, 14, 18, 9, 16, 8, 13, 6]
+2026-08-27 12:02:11,871 - INFO - FedAvg Round 35 selected clients: [10, 19, 8, 12, 5, 0, 13, 4]
+2026-08-27 12:02:17,964 - INFO - FedAvg Round 36 selected clients: [10, 8, 1, 18, 7, 6, 2, 3]
+2026-08-27 12:02:24,246 - INFO - FedAvg Round 37 selected clients: [7, 11, 15, 17, 9, 1, 3, 10]
+2026-08-27 12:02:30,748 - INFO - FedAvg Round 38 selected clients: [2, 12, 1, 9, 6, 18, 13, 14]
+2026-08-27 12:02:37,270 - INFO - FedAvg Round 39 selected clients: [3, 13, 2, 11, 15, 19, 0, 12]
+2026-08-27 12:02:43,731 - INFO - FedAvg Round 40 selected clients: [15, 3, 9, 14, 13, 7, 19, 11]
+2026-08-27 12:02:51,807 - INFO - FedAvg Round 40/200 | Accuracy=0.3783 | Best=0.3976
+2026-08-27 12:02:51,807 - INFO - FedAvg Round 41 selected clients: [14, 11, 5, 15, 6, 10, 1, 7]
+2026-08-27 12:02:58,164 - INFO - FedAvg Round 42 selected clients: [12, 9, 3, 7, 19, 1, 15, 14]
+2026-08-27 12:03:04,521 - INFO - FedAvg Round 43 selected clients: [4, 9, 7, 12, 11, 14, 6, 0]
+2026-08-27 12:03:11,136 - INFO - FedAvg Round 44 selected clients: [12, 15, 13, 6, 2, 17, 8, 10]
+2026-08-27 12:03:17,617 - INFO - FedAvg Round 45 selected clients: [12, 0, 11, 5, 6, 1, 4, 17]
+2026-08-27 12:03:24,181 - INFO - FedAvg Round 46 selected clients: [7, 3, 16, 14, 2, 6, 12, 10]
+2026-08-27 12:03:30,766 - INFO - FedAvg Round 47 selected clients: [11, 18, 10, 13, 15, 8, 4, 1]
+2026-08-27 12:03:37,318 - INFO - FedAvg Round 48 selected clients: [16, 7, 8, 17, 3, 4, 0, 6]
+2026-08-27 12:03:43,688 - INFO - FedAvg Round 49 selected clients: [7, 4, 0, 10, 17, 5, 15, 18]
+2026-08-27 12:03:50,204 - INFO - FedAvg Round 50 selected clients: [2, 6, 14, 12, 13, 17, 11, 0]
+2026-08-27 12:03:58,006 - INFO - FedAvg Round 50/200 | Accuracy=0.4445 | Best=0.4445
+2026-08-27 12:03:58,025 - INFO - FedAvg Round 51 selected clients: [0, 9, 11, 16, 13, 19, 17, 1]
+2026-08-27 12:04:04,203 - INFO - FedAvg Round 52 selected clients: [6, 17, 15, 8, 0, 19, 12, 3]
+2026-08-27 12:04:10,348 - INFO - FedAvg Round 53 selected clients: [11, 9, 8, 12, 6, 15, 7, 1]
+2026-08-27 12:04:16,517 - INFO - FedAvg Round 54 selected clients: [11, 13, 3, 18, 16, 14, 9, 12]
+2026-08-27 12:04:22,594 - INFO - FedAvg Round 55 selected clients: [17, 9, 6, 13, 14, 19, 3, 16]
+2026-08-27 12:04:28,612 - INFO - FedAvg Round 56 selected clients: [19, 14, 17, 15, 10, 0, 5, 4]
+2026-08-27 12:04:34,746 - INFO - FedAvg Round 57 selected clients: [15, 10, 8, 0, 4, 3, 18, 9]
+2026-08-27 12:04:40,889 - INFO - FedAvg Round 58 selected clients: [11, 14, 12, 7, 8, 13, 15, 2]
+2026-08-27 12:04:47,083 - INFO - FedAvg Round 59 selected clients: [6, 5, 0, 16, 8, 15, 17, 13]
+2026-08-27 12:04:53,249 - INFO - FedAvg Round 60 selected clients: [4, 8, 13, 15, 2, 3, 11, 0]
+2026-08-27 12:05:01,119 - INFO - FedAvg Round 60/200 | Accuracy=0.4251 | Best=0.4445
+2026-08-27 12:05:01,119 - INFO - FedAvg Round 61 selected clients: [3, 6, 1, 13, 19, 0, 10, 15]
+2026-08-27 12:05:07,187 - INFO - FedAvg Round 62 selected clients: [10, 6, 5, 17, 2, 18, 1, 12]
+2026-08-27 12:05:13,309 - INFO - FedAvg Round 63 selected clients: [13, 9, 16, 8, 4, 3, 11, 7]
+2026-08-27 12:05:19,393 - INFO - FedAvg Round 64 selected clients: [11, 9, 2, 1, 4, 13, 18, 12]
+2026-08-27 12:05:25,589 - INFO - FedAvg Round 65 selected clients: [19, 8, 6, 4, 11, 9, 17, 3]
+2026-08-27 12:05:31,801 - INFO - FedAvg Round 66 selected clients: [7, 8, 3, 15, 5, 12, 4, 16]
+2026-08-27 12:05:37,967 - INFO - FedAvg Round 67 selected clients: [6, 17, 13, 18, 8, 3, 10, 5]
+2026-08-27 12:05:43,989 - INFO - FedAvg Round 68 selected clients: [7, 12, 18, 19, 5, 1, 8, 11]
+2026-08-27 12:05:50,150 - INFO - FedAvg Round 69 selected clients: [12, 17, 15, 13, 16, 0, 8, 7]
+2026-08-27 12:05:56,400 - INFO - FedAvg Round 70 selected clients: [5, 17, 3, 10, 12, 15, 19, 4]
+2026-08-27 12:06:04,268 - INFO - FedAvg Round 70/200 | Accuracy=0.4773 | Best=0.4773
+2026-08-27 12:06:04,268 - INFO - FedAvg Round 71 selected clients: [6, 19, 2, 11, 16, 7, 13, 0]
+2026-08-27 12:06:10,370 - INFO - FedAvg Round 72 selected clients: [2, 10, 13, 17, 15, 16, 18, 3]
+2026-08-27 12:06:16,552 - INFO - FedAvg Round 73 selected clients: [8, 11, 12, 13, 4, 9, 1, 5]
+2026-08-27 12:06:22,705 - INFO - FedAvg Round 74 selected clients: [9, 17, 19, 7, 5, 6, 15, 4]
+2026-08-27 12:06:28,704 - INFO - FedAvg Round 75 selected clients: [8, 0, 17, 16, 18, 12, 19, 3]
+2026-08-27 12:06:34,787 - INFO - FedAvg Round 76 selected clients: [12, 3, 15, 1, 18, 8, 5, 10]
+2026-08-27 12:06:40,847 - INFO - FedAvg Round 77 selected clients: [7, 3, 17, 2, 10, 18, 11, 1]
+2026-08-27 12:06:47,042 - INFO - FedAvg Round 78 selected clients: [5, 11, 13, 8, 14, 4, 12, 3]
+2026-08-27 12:06:53,176 - INFO - FedAvg Round 79 selected clients: [2, 10, 17, 18, 13, 9, 4, 15]
+2026-08-27 12:06:59,373 - INFO - FedAvg Round 80 selected clients: [13, 8, 5, 14, 11, 7, 18, 15]
+2026-08-27 12:07:07,157 - INFO - FedAvg Round 80/200 | Accuracy=0.4346 | Best=0.4773
+2026-08-27 12:07:07,157 - INFO - FedAvg Round 81 selected clients: [9, 10, 5, 15, 19, 8, 14, 17]
+2026-08-27 12:07:13,221 - INFO - FedAvg Round 82 selected clients: [9, 16, 0, 13, 2, 15, 19, 12]
+2026-08-27 12:07:19,242 - INFO - FedAvg Round 83 selected clients: [3, 15, 11, 14, 6, 4, 5, 7]
+2026-08-27 12:07:25,311 - INFO - FedAvg Round 84 selected clients: [14, 6, 13, 3, 4, 5, 18, 15]
+2026-08-27 12:07:31,425 - INFO - FedAvg Round 85 selected clients: [5, 16, 9, 12, 6, 18, 15, 0]
+2026-08-27 12:07:37,587 - INFO - FedAvg Round 86 selected clients: [2, 13, 11, 0, 6, 16, 8, 3]
+2026-08-27 12:07:43,750 - INFO - FedAvg Round 87 selected clients: [15, 6, 13, 4, 8, 11, 3, 9]
+2026-08-27 12:07:49,902 - INFO - FedAvg Round 88 selected clients: [15, 0, 7, 16, 13, 1, 18, 2]
+2026-08-27 12:07:56,003 - INFO - FedAvg Round 89 selected clients: [5, 2, 7, 4, 18, 10, 15, 9]
+2026-08-27 12:08:02,138 - INFO - FedAvg Round 90 selected clients: [12, 10, 0, 2, 17, 14, 19, 7]
+2026-08-27 12:08:09,887 - INFO - FedAvg Round 90/200 | Accuracy=0.4484 | Best=0.4773
+2026-08-27 12:08:09,887 - INFO - FedAvg Round 91 selected clients: [5, 6, 1, 17, 18, 7, 8, 4]
+2026-08-27 12:08:16,028 - INFO - FedAvg Round 92 selected clients: [15, 11, 19, 17, 5, 4, 7, 9]
+2026-08-27 12:08:22,174 - INFO - FedAvg Round 93 selected clients: [9, 1, 6, 8, 15, 18, 0, 17]
+2026-08-27 12:08:28,327 - INFO - FedAvg Round 94 selected clients: [9, 19, 3, 10, 16, 6, 4, 18]
+2026-08-27 12:08:34,441 - INFO - FedAvg Round 95 selected clients: [7, 16, 1, 12, 4, 9, 17, 5]
+2026-08-27 12:08:40,613 - INFO - FedAvg Round 96 selected clients: [6, 15, 14, 17, 2, 9, 11, 3]
+2026-08-27 12:08:46,728 - INFO - FedAvg Round 97 selected clients: [12, 2, 4, 6, 9, 10, 1, 19]
+2026-08-27 12:08:52,841 - INFO - FedAvg Round 98 selected clients: [10, 4, 2, 17, 15, 7, 19, 14]
+2026-08-27 12:08:58,969 - INFO - FedAvg Round 99 selected clients: [13, 0, 14, 4, 19, 9, 16, 3]
+2026-08-27 12:09:05,155 - INFO - FedAvg Round 100 selected clients: [10, 12, 11, 0, 4, 7, 6, 17]
+2026-08-27 12:09:13,194 - INFO - FedAvg Round 100/200 | Accuracy=0.4542 | Best=0.4773
+2026-08-27 12:09:13,202 - INFO - FedAvg Round 101 selected clients: [15, 11, 0, 17, 14, 8, 10, 9]
+2026-08-27 12:09:19,538 - INFO - FedAvg Round 102 selected clients: [17, 12, 10, 1, 5, 16, 8, 13]
+2026-08-27 12:09:25,816 - INFO - FedAvg Round 103 selected clients: [9, 0, 7, 11, 4, 10, 12, 19]
+2026-08-27 12:09:32,214 - INFO - FedAvg Round 104 selected clients: [12, 15, 10, 16, 8, 5, 13, 4]
+2026-08-27 12:09:38,615 - INFO - FedAvg Round 105 selected clients: [9, 12, 19, 15, 3, 18, 7, 4]
+2026-08-27 12:09:45,157 - INFO - FedAvg Round 106 selected clients: [15, 6, 1, 18, 11, 7, 16, 3]
+2026-08-27 12:09:51,621 - INFO - FedAvg Round 107 selected clients: [8, 6, 17, 2, 12, 19, 9, 1]
+2026-08-27 12:09:58,001 - INFO - FedAvg Round 108 selected clients: [7, 11, 8, 6, 17, 14, 1, 13]
+2026-08-27 12:10:04,422 - INFO - FedAvg Round 109 selected clients: [16, 12, 2, 0, 4, 7, 9, 8]
+2026-08-27 12:10:10,689 - INFO - FedAvg Round 110 selected clients: [18, 19, 2, 3, 12, 7, 16, 8]
+2026-08-27 12:10:18,586 - INFO - FedAvg Round 110/200 | Accuracy=0.5400 | Best=0.5400
+2026-08-27 12:10:18,586 - INFO - FedAvg Round 111 selected clients: [15, 7, 18, 11, 6, 16, 5, 10]
+2026-08-27 12:10:25,010 - INFO - FedAvg Round 112 selected clients: [7, 15, 16, 0, 4, 6, 13, 9]
+2026-08-27 12:10:31,429 - INFO - FedAvg Round 113 selected clients: [1, 15, 7, 18, 5, 13, 19, 3]
+2026-08-27 12:10:37,901 - INFO - FedAvg Round 114 selected clients: [12, 6, 17, 0, 3, 18, 15, 19]
+2026-08-27 12:10:44,322 - INFO - FedAvg Round 115 selected clients: [8, 7, 9, 0, 16, 13, 2, 12]
+2026-08-27 12:10:50,588 - INFO - FedAvg Round 116 selected clients: [11, 9, 6, 0, 19, 8, 12, 7]
+2026-08-27 12:10:56,867 - INFO - FedAvg Round 117 selected clients: [4, 18, 11, 6, 12, 10, 19, 5]
+2026-08-27 12:11:03,349 - INFO - FedAvg Round 118 selected clients: [15, 18, 10, 8, 2, 1, 4, 12]
+2026-08-27 12:11:09,817 - INFO - FedAvg Round 119 selected clients: [13, 5, 6, 11, 3, 4, 2, 1]
+2026-08-27 12:11:16,232 - INFO - FedAvg Round 120 selected clients: [16, 15, 5, 8, 7, 11, 13, 10]
+2026-08-27 12:11:24,291 - INFO - FedAvg Round 120/200 | Accuracy=0.4685 | Best=0.5400
+2026-08-27 12:11:24,292 - INFO - FedAvg Round 121 selected clients: [7, 0, 3, 5, 17, 16, 4, 18]
+2026-08-27 12:11:30,744 - INFO - FedAvg Round 122 selected clients: [1, 18, 12, 0, 14, 13, 17, 4]
+2026-08-27 12:11:37,092 - INFO - FedAvg Round 123 selected clients: [16, 14, 13, 15, 2, 10, 17, 19]
+2026-08-27 12:11:43,322 - INFO - FedAvg Round 124 selected clients: [8, 12, 4, 13, 10, 16, 9, 14]
+2026-08-27 12:11:49,669 - INFO - FedAvg Round 125 selected clients: [1, 8, 19, 17, 13, 4, 5, 12]
+2026-08-27 12:11:56,194 - INFO - FedAvg Round 126 selected clients: [8, 2, 16, 12, 13, 9, 15, 14]
+2026-08-27 12:12:02,748 - INFO - FedAvg Round 127 selected clients: [17, 16, 11, 4, 18, 7, 15, 5]
+2026-08-27 12:12:09,247 - INFO - FedAvg Round 128 selected clients: [12, 8, 19, 10, 15, 3, 6, 17]
+2026-08-27 12:12:15,742 - INFO - FedAvg Round 129 selected clients: [4, 17, 7, 11, 10, 16, 6, 15]
+2026-08-27 12:12:21,972 - INFO - FedAvg Round 130 selected clients: [14, 17, 6, 15, 9, 10, 0, 3]
+2026-08-27 12:12:29,971 - INFO - FedAvg Round 130/200 | Accuracy=0.5666 | Best=0.5666
+2026-08-27 12:12:29,971 - INFO - FedAvg Round 131 selected clients: [18, 3, 8, 9, 12, 0, 7, 14]
+2026-08-27 12:12:36,438 - INFO - FedAvg Round 132 selected clients: [12, 1, 7, 5, 19, 15, 10, 13]
+2026-08-27 12:12:42,885 - INFO - FedAvg Round 133 selected clients: [0, 15, 11, 1, 8, 9, 7, 16]
+2026-08-27 12:12:49,378 - INFO - FedAvg Round 134 selected clients: [7, 19, 2, 18, 3, 16, 8, 10]
+2026-08-27 12:12:55,819 - INFO - FedAvg Round 135 selected clients: [12, 13, 6, 19, 9, 0, 16, 14]
+2026-08-27 12:13:02,107 - INFO - FedAvg Round 136 selected clients: [10, 18, 13, 5, 6, 15, 2, 3]
+2026-08-27 12:13:08,436 - INFO - FedAvg Round 137 selected clients: [5, 1, 3, 19, 10, 9, 2, 13]
+2026-08-27 12:13:14,814 - INFO - FedAvg Round 138 selected clients: [0, 18, 12, 7, 1, 16, 5, 8]
+2026-08-27 12:13:21,266 - INFO - FedAvg Round 139 selected clients: [4, 14, 11, 12, 18, 6, 10, 5]
+2026-08-27 12:13:27,746 - INFO - FedAvg Round 140 selected clients: [16, 6, 2, 19, 12, 8, 15, 14]
+2026-08-27 12:13:35,841 - INFO - FedAvg Round 140/200 | Accuracy=0.5615 | Best=0.5666
+2026-08-27 12:13:35,842 - INFO - FedAvg Round 141 selected clients: [19, 3, 12, 15, 5, 14, 1, 10]
+2026-08-27 12:13:42,356 - INFO - FedAvg Round 142 selected clients: [17, 2, 0, 9, 1, 14, 4, 3]
+2026-08-27 12:13:48,644 - INFO - FedAvg Round 143 selected clients: [8, 1, 16, 13, 3, 15, 6, 9]
+2026-08-27 12:13:55,048 - INFO - FedAvg Round 144 selected clients: [8, 12, 15, 6, 5, 1, 10, 18]
+2026-08-27 12:14:01,393 - INFO - FedAvg Round 145 selected clients: [7, 2, 4, 17, 18, 19, 0, 11]
+2026-08-27 12:14:07,751 - INFO - FedAvg Round 146 selected clients: [6, 12, 0, 8, 13, 1, 14, 16]
+2026-08-27 12:14:14,397 - INFO - FedAvg Round 147 selected clients: [12, 1, 10, 19, 2, 16, 4, 15]
+2026-08-27 12:14:21,065 - INFO - FedAvg Round 148 selected clients: [10, 0, 17, 11, 8, 15, 18, 6]
+2026-08-27 12:14:27,484 - INFO - FedAvg Round 149 selected clients: [7, 14, 1, 4, 2, 6, 3, 12]
+2026-08-27 12:14:33,896 - INFO - FedAvg Round 150 selected clients: [12, 11, 19, 18, 14, 17, 7, 5]
+2026-08-27 12:14:41,827 - INFO - FedAvg Round 150/200 | Accuracy=0.5639 | Best=0.5666
+2026-08-27 12:14:41,837 - INFO - FedAvg Round 151 selected clients: [15, 14, 6, 5, 7, 10, 8, 1]
+2026-08-27 12:14:48,023 - INFO - FedAvg Round 152 selected clients: [19, 18, 10, 1, 4, 9, 16, 15]
+2026-08-27 12:14:54,596 - INFO - FedAvg Round 153 selected clients: [4, 19, 0, 10, 11, 1, 17, 18]
+2026-08-27 12:15:00,731 - INFO - FedAvg Round 154 selected clients: [2, 18, 15, 9, 11, 8, 13, 4]
+2026-08-27 12:15:06,760 - INFO - FedAvg Round 155 selected clients: [14, 1, 15, 5, 12, 11, 3, 13]
+2026-08-27 12:15:12,801 - INFO - FedAvg Round 156 selected clients: [14, 2, 19, 4, 11, 10, 15, 5]
+2026-08-27 12:15:18,821 - INFO - FedAvg Round 157 selected clients: [16, 18, 10, 11, 13, 7, 3, 14]
+2026-08-27 12:15:24,722 - INFO - FedAvg Round 158 selected clients: [11, 17, 1, 0, 10, 2, 9, 8]
+2026-08-27 12:15:30,738 - INFO - FedAvg Round 159 selected clients: [4, 19, 8, 10, 18, 15, 14, 13]
+2026-08-27 12:15:36,811 - INFO - FedAvg Round 160 selected clients: [5, 2, 19, 12, 1, 0, 6, 14]
+2026-08-27 12:15:44,473 - INFO - FedAvg Round 160/200 | Accuracy=0.5580 | Best=0.5666
+2026-08-27 12:15:44,473 - INFO - FedAvg Round 161 selected clients: [17, 18, 14, 9, 11, 4, 8, 3]
+2026-08-27 12:15:50,584 - INFO - FedAvg Round 162 selected clients: [15, 2, 7, 14, 19, 1, 16, 18]
+2026-08-27 12:15:56,615 - INFO - FedAvg Round 163 selected clients: [6, 11, 17, 12, 10, 7, 13, 5]
+2026-08-27 12:16:02,621 - INFO - FedAvg Round 164 selected clients: [13, 6, 10, 15, 0, 16, 12, 3]
+2026-08-27 12:16:08,575 - INFO - FedAvg Round 165 selected clients: [17, 15, 7, 9, 13, 19, 11, 3]
+2026-08-27 12:16:14,633 - INFO - FedAvg Round 166 selected clients: [14, 16, 12, 1, 11, 10, 17, 13]
+2026-08-27 12:16:20,759 - INFO - FedAvg Round 167 selected clients: [18, 4, 9, 10, 3, 13, 7, 14]
+2026-08-27 12:16:26,860 - INFO - FedAvg Round 168 selected clients: [3, 4, 0, 15, 1, 11, 14, 10]
+2026-08-27 12:16:32,763 - INFO - FedAvg Round 169 selected clients: [9, 1, 0, 16, 18, 4, 7, 5]
+2026-08-27 12:16:38,886 - INFO - FedAvg Round 170 selected clients: [11, 5, 14, 9, 6, 15, 18, 1]
+2026-08-27 12:16:46,582 - INFO - FedAvg Round 170/200 | Accuracy=0.5641 | Best=0.5666
+2026-08-27 12:16:46,582 - INFO - FedAvg Round 171 selected clients: [12, 6, 5, 7, 0, 8, 17, 9]
+2026-08-27 12:16:52,591 - INFO - FedAvg Round 172 selected clients: [9, 10, 13, 11, 4, 18, 15, 17]
+2026-08-27 12:16:58,833 - INFO - FedAvg Round 173 selected clients: [13, 16, 9, 4, 0, 10, 8, 7]
+2026-08-27 12:17:04,954 - INFO - FedAvg Round 174 selected clients: [6, 15, 1, 3, 18, 13, 12, 4]
+2026-08-27 12:17:11,056 - INFO - FedAvg Round 175 selected clients: [9, 2, 11, 8, 14, 4, 6, 1]
+2026-08-27 12:17:17,202 - INFO - FedAvg Round 176 selected clients: [3, 12, 5, 1, 19, 11, 14, 13]
+2026-08-27 12:17:23,391 - INFO - FedAvg Round 177 selected clients: [10, 18, 5, 8, 6, 3, 1, 9]
+2026-08-27 12:17:29,350 - INFO - FedAvg Round 178 selected clients: [7, 5, 9, 6, 8, 2, 4, 11]
+2026-08-27 12:17:35,486 - INFO - FedAvg Round 179 selected clients: [4, 13, 3, 7, 15, 0, 5, 19]
+2026-08-27 12:17:41,585 - INFO - FedAvg Round 180 selected clients: [9, 3, 17, 10, 14, 12, 4, 6]
+2026-08-27 12:17:49,351 - INFO - FedAvg Round 180/200 | Accuracy=0.5756 | Best=0.5756
+2026-08-27 12:17:49,351 - INFO - FedAvg Round 181 selected clients: [14, 0, 18, 11, 16, 13, 15, 7]
+2026-08-27 12:17:55,565 - INFO - FedAvg Round 182 selected clients: [17, 8, 18, 2, 5, 14, 9, 16]
+2026-08-27 12:18:01,599 - INFO - FedAvg Round 183 selected clients: [8, 18, 12, 6, 19, 3, 1, 7]
+2026-08-27 12:18:07,774 - INFO - FedAvg Round 184 selected clients: [18, 0, 9, 8, 6, 1, 15, 11]
+2026-08-27 12:18:13,825 - INFO - FedAvg Round 185 selected clients: [8, 7, 12, 10, 13, 19, 0, 15]
+2026-08-27 12:18:19,886 - INFO - FedAvg Round 186 selected clients: [10, 7, 14, 9, 11, 6, 2, 17]
+2026-08-27 12:18:25,953 - INFO - FedAvg Round 187 selected clients: [19, 1, 5, 7, 8, 17, 9, 0]
+2026-08-27 12:18:31,812 - INFO - FedAvg Round 188 selected clients: [14, 15, 12, 0, 18, 19, 6, 4]
+2026-08-27 12:18:37,802 - INFO - FedAvg Round 189 selected clients: [2, 16, 8, 9, 17, 7, 19, 0]
+2026-08-27 12:18:43,937 - INFO - FedAvg Round 190 selected clients: [1, 4, 8, 10, 7, 2, 12, 17]
+2026-08-27 12:18:51,599 - INFO - FedAvg Round 190/200 | Accuracy=0.5219 | Best=0.5756
+2026-08-27 12:18:51,599 - INFO - FedAvg Round 191 selected clients: [1, 10, 11, 9, 5, 12, 0, 4]
+2026-08-27 12:18:57,836 - INFO - FedAvg Round 192 selected clients: [8, 0, 7, 3, 17, 15, 11, 9]
+2026-08-27 12:19:03,956 - INFO - FedAvg Round 193 selected clients: [10, 1, 8, 5, 11, 13, 4, 15]
+2026-08-27 12:19:10,080 - INFO - FedAvg Round 194 selected clients: [11, 10, 4, 18, 9, 12, 13, 16]
+2026-08-27 12:19:16,193 - INFO - FedAvg Round 195 selected clients: [10, 13, 2, 18, 3, 4, 14, 8]
+2026-08-27 12:19:22,131 - INFO - FedAvg Round 196 selected clients: [9, 1, 3, 18, 16, 5, 19, 14]
+2026-08-27 12:19:28,138 - INFO - FedAvg Round 197 selected clients: [11, 18, 2, 0, 10, 8, 15, 6]
+2026-08-27 12:19:34,253 - INFO - FedAvg Round 198 selected clients: [16, 2, 3, 5, 4, 12, 9, 6]
+2026-08-27 12:19:40,252 - INFO - FedAvg Round 199 selected clients: [13, 14, 3, 1, 6, 9, 18, 2]
+2026-08-27 12:19:46,294 - INFO - FedAvg Round 200 selected clients: [8, 14, 17, 19, 3, 10, 13, 1]
+2026-08-27 12:19:53,914 - INFO - FedAvg Round 200/200 | Accuracy=0.5726 | Best=0.5756
+2026-08-27 12:19:55,605 - INFO - FedAvg FINAL Accuracy=0.5726 | Best=0.5756
+2026-08-27 12:19:55,617 - INFO - ======================================================================
+2026-08-27 12:19:55,618 - INFO - START FedProx
+2026-08-27 12:19:55,812 - INFO - FedProx Round 1 selected clients: [0, 17, 15, 1, 8, 5, 11, 3]
+2026-08-27 12:20:07,434 - INFO - FedProx Round 1/200 | Accuracy=0.1761 | Best=0.1761
+2026-08-27 12:20:07,434 - INFO - FedProx Round 2 selected clients: [19, 16, 15, 5, 4, 12, 14, 7]
+2026-08-27 12:20:18,282 - INFO - FedProx Round 3 selected clients: [10, 7, 0, 2, 5, 18, 16, 12]
+2026-08-27 12:20:29,140 - INFO - FedProx Round 4 selected clients: [0, 18, 6, 8, 17, 11, 4, 9]
+2026-08-27 12:20:40,063 - INFO - FedProx Round 5 selected clients: [5, 2, 10, 19, 0, 12, 9, 16]
+2026-08-27 12:20:50,911 - INFO - FedProx Round 6 selected clients: [3, 1, 4, 5, 15, 16, 9, 10]
+2026-08-27 12:21:01,706 - INFO - FedProx Round 7 selected clients: [13, 10, 12, 16, 9, 5, 3, 2]
+2026-08-27 12:21:12,514 - INFO - FedProx Round 8 selected clients: [17, 18, 1, 5, 3, 15, 7, 11]
+2026-08-27 12:21:23,227 - INFO - FedProx Round 9 selected clients: [17, 11, 7, 13, 0, 9, 4, 8]
+2026-08-27 12:21:33,997 - INFO - FedProx Round 10 selected clients: [4, 9, 1, 15, 7, 5, 16, 2]
+2026-08-27 12:21:46,444 - INFO - FedProx Round 10/200 | Accuracy=0.2775 | Best=0.2775
+2026-08-27 12:21:46,444 - INFO - FedProx Round 11 selected clients: [2, 6, 16, 4, 17, 1, 13, 12]
+2026-08-27 12:21:57,314 - INFO - FedProx Round 12 selected clients: [14, 3, 9, 18, 8, 11, 17, 6]
+2026-08-27 12:22:07,842 - INFO - FedProx Round 13 selected clients: [9, 8, 6, 14, 13, 2, 19, 12]
+2026-08-27 12:22:18,669 - INFO - FedProx Round 14 selected clients: [5, 11, 4, 19, 9, 1, 12, 10]
+2026-08-27 12:22:29,331 - INFO - FedProx Round 15 selected clients: [14, 16, 19, 13, 4, 12, 5, 7]
+2026-08-27 12:22:40,107 - INFO - FedProx Round 16 selected clients: [6, 11, 4, 1, 18, 9, 14, 13]
+2026-08-27 12:22:50,854 - INFO - FedProx Round 17 selected clients: [14, 7, 12, 6, 11, 4, 16, 9]
+2026-08-27 12:23:01,695 - INFO - FedProx Round 18 selected clients: [7, 3, 4, 18, 1, 12, 8, 9]
+2026-08-27 12:23:12,303 - INFO - FedProx Round 19 selected clients: [8, 7, 1, 6, 9, 10, 11, 19]
+2026-08-27 12:23:22,968 - INFO - FedProx Round 20 selected clients: [17, 4, 3, 10, 6, 13, 14, 11]
+2026-08-27 12:23:35,347 - INFO - FedProx Round 20/200 | Accuracy=0.3135 | Best=0.3135
+2026-08-27 12:23:35,347 - INFO - FedProx Round 21 selected clients: [13, 14, 15, 17, 3, 4, 18, 19]
+2026-08-27 12:23:46,092 - INFO - FedProx Round 22 selected clients: [4, 19, 8, 17, 18, 5, 10, 16]
+2026-08-27 12:23:56,642 - INFO - FedProx Round 23 selected clients: [2, 13, 1, 19, 8, 15, 3, 6]
+2026-08-27 12:24:07,489 - INFO - FedProx Round 24 selected clients: [3, 14, 13, 5, 8, 10, 4, 17]
+2026-08-27 12:24:17,446 - INFO - FedProx Round 25 selected clients: [18, 15, 3, 2, 12, 6, 9, 10]
+2026-08-27 12:24:26,523 - INFO - FedProx Round 26 selected clients: [5, 7, 1, 2, 8, 16, 12, 6]
+2026-08-27 12:24:35,675 - INFO - FedProx Round 27 selected clients: [10, 5, 14, 13, 12, 17, 6, 8]
+2026-08-27 12:24:44,705 - INFO - FedProx Round 28 selected clients: [5, 6, 19, 8, 3, 14, 1, 7]
+2026-08-27 12:24:53,840 - INFO - FedProx Round 29 selected clients: [12, 5, 4, 15, 8, 3, 14, 16]
+2026-08-27 12:25:02,941 - INFO - FedProx Round 30 selected clients: [14, 19, 13, 16, 15, 5, 6, 11]
+2026-08-27 12:25:13,635 - INFO - FedProx Round 30/200 | Accuracy=0.3883 | Best=0.3883
+2026-08-27 12:25:13,635 - INFO - FedProx Round 31 selected clients: [1, 6, 11, 9, 19, 4, 7, 14]
+2026-08-27 12:25:22,765 - INFO - FedProx Round 32 selected clients: [12, 19, 1, 5, 7, 0, 6, 9]
+2026-08-27 12:25:31,878 - INFO - FedProx Round 33 selected clients: [16, 14, 11, 3, 7, 15, 5, 17]
+2026-08-27 12:25:41,003 - INFO - FedProx Round 34 selected clients: [10, 14, 18, 9, 16, 8, 13, 6]
+2026-08-27 12:25:50,113 - INFO - FedProx Round 35 selected clients: [10, 19, 8, 12, 5, 0, 13, 4]
+2026-08-27 12:25:59,192 - INFO - FedProx Round 36 selected clients: [10, 8, 1, 18, 7, 6, 2, 3]
+2026-08-27 12:26:08,254 - INFO - FedProx Round 37 selected clients: [7, 11, 15, 17, 9, 1, 3, 10]
+2026-08-27 12:26:17,456 - INFO - FedProx Round 38 selected clients: [2, 12, 1, 9, 6, 18, 13, 14]
+2026-08-27 12:26:26,498 - INFO - FedProx Round 39 selected clients: [3, 13, 2, 11, 15, 19, 0, 12]
+2026-08-27 12:26:35,632 - INFO - FedProx Round 40 selected clients: [15, 3, 9, 14, 13, 7, 19, 11]
+2026-08-27 12:26:46,418 - INFO - FedProx Round 40/200 | Accuracy=0.3635 | Best=0.3883
+2026-08-27 12:26:46,418 - INFO - FedProx Round 41 selected clients: [14, 11, 5, 15, 6, 10, 1, 7]
+2026-08-27 12:26:55,549 - INFO - FedProx Round 42 selected clients: [12, 9, 3, 7, 19, 1, 15, 14]
+2026-08-27 12:27:04,661 - INFO - FedProx Round 43 selected clients: [4, 9, 7, 12, 11, 14, 6, 0]
+2026-08-27 12:27:13,856 - INFO - FedProx Round 44 selected clients: [12, 15, 13, 6, 2, 17, 8, 10]
+2026-08-27 12:27:22,978 - INFO - FedProx Round 45 selected clients: [12, 0, 11, 5, 6, 1, 4, 17]
+2026-08-27 12:27:31,855 - INFO - FedProx Round 46 selected clients: [7, 3, 16, 14, 2, 6, 12, 10]
+2026-08-27 12:27:40,791 - INFO - FedProx Round 47 selected clients: [11, 18, 10, 13, 15, 8, 4, 1]
+2026-08-27 12:27:49,842 - INFO - FedProx Round 48 selected clients: [16, 7, 8, 17, 3, 4, 0, 6]
+2026-08-27 12:27:58,725 - INFO - FedProx Round 49 selected clients: [7, 4, 0, 10, 17, 5, 15, 18]
+2026-08-27 12:28:07,695 - INFO - FedProx Round 50 selected clients: [2, 6, 14, 12, 13, 17, 11, 0]
+2026-08-27 12:28:18,280 - INFO - FedProx Round 50/200 | Accuracy=0.4460 | Best=0.4460
+2026-08-27 12:28:18,285 - INFO - FedProx Round 51 selected clients: [0, 9, 11, 16, 13, 19, 17, 1]
+2026-08-27 12:28:28,733 - INFO - FedProx Round 52 selected clients: [6, 17, 15, 8, 0, 19, 12, 3]
+2026-08-27 12:28:39,386 - INFO - FedProx Round 53 selected clients: [11, 9, 8, 12, 6, 15, 7, 1]
+2026-08-27 12:28:50,141 - INFO - FedProx Round 54 selected clients: [11, 13, 3, 18, 16, 14, 9, 12]
+2026-08-27 12:29:00,660 - INFO - FedProx Round 55 selected clients: [17, 9, 6, 13, 14, 19, 3, 16]
+2026-08-27 12:29:11,221 - INFO - FedProx Round 56 selected clients: [19, 14, 17, 15, 10, 0, 5, 4]
+2026-08-27 12:29:21,740 - INFO - FedProx Round 57 selected clients: [15, 10, 8, 0, 4, 3, 18, 9]
+2026-08-27 12:29:32,291 - INFO - FedProx Round 58 selected clients: [11, 14, 12, 7, 8, 13, 15, 2]
+2026-08-27 12:29:42,852 - INFO - FedProx Round 59 selected clients: [6, 5, 0, 16, 8, 15, 17, 13]
+2026-08-27 12:29:53,657 - INFO - FedProx Round 60 selected clients: [4, 8, 13, 15, 2, 3, 11, 0]
+2026-08-27 12:30:05,810 - INFO - FedProx Round 60/200 | Accuracy=0.4591 | Best=0.4591
+2026-08-27 12:30:05,810 - INFO - FedProx Round 61 selected clients: [3, 6, 1, 13, 19, 0, 10, 15]
+2026-08-27 12:30:16,350 - INFO - FedProx Round 62 selected clients: [10, 6, 5, 17, 2, 18, 1, 12]
+2026-08-27 12:30:27,083 - INFO - FedProx Round 63 selected clients: [13, 9, 16, 8, 4, 3, 11, 7]
+2026-08-27 12:30:37,798 - INFO - FedProx Round 64 selected clients: [11, 9, 2, 1, 4, 13, 18, 12]
+2026-08-27 12:30:48,328 - INFO - FedProx Round 65 selected clients: [19, 8, 6, 4, 11, 9, 17, 3]
+2026-08-27 12:30:59,159 - INFO - FedProx Round 66 selected clients: [7, 8, 3, 15, 5, 12, 4, 16]
+2026-08-27 12:31:09,822 - INFO - FedProx Round 67 selected clients: [6, 17, 13, 18, 8, 3, 10, 5]
+2026-08-27 12:31:20,505 - INFO - FedProx Round 68 selected clients: [7, 12, 18, 19, 5, 1, 8, 11]
+2026-08-27 12:31:31,127 - INFO - FedProx Round 69 selected clients: [12, 17, 15, 13, 16, 0, 8, 7]
+2026-08-27 12:31:41,830 - INFO - FedProx Round 70 selected clients: [5, 17, 3, 10, 12, 15, 19, 4]
+2026-08-27 12:31:53,902 - INFO - FedProx Round 70/200 | Accuracy=0.5118 | Best=0.5118
+2026-08-27 12:31:53,902 - INFO - FedProx Round 71 selected clients: [6, 19, 2, 11, 16, 7, 13, 0]
+2026-08-27 12:32:04,480 - INFO - FedProx Round 72 selected clients: [2, 10, 13, 17, 15, 16, 18, 3]
+2026-08-27 12:32:15,362 - INFO - FedProx Round 73 selected clients: [8, 11, 12, 13, 4, 9, 1, 5]
+2026-08-27 12:32:25,888 - INFO - FedProx Round 74 selected clients: [9, 17, 19, 7, 5, 6, 15, 4]
+2026-08-27 12:32:35,946 - INFO - FedProx Round 75 selected clients: [8, 0, 17, 16, 18, 12, 19, 3]
+2026-08-27 12:32:45,142 - INFO - FedProx Round 76 selected clients: [12, 3, 15, 1, 18, 8, 5, 10]
+2026-08-27 12:32:54,456 - INFO - FedProx Round 77 selected clients: [7, 3, 17, 2, 10, 18, 11, 1]
+2026-08-27 12:33:03,670 - INFO - FedProx Round 78 selected clients: [5, 11, 13, 8, 14, 4, 12, 3]
+2026-08-27 12:33:12,957 - INFO - FedProx Round 79 selected clients: [2, 10, 17, 18, 13, 9, 4, 15]
+2026-08-27 12:33:22,192 - INFO - FedProx Round 80 selected clients: [13, 8, 5, 14, 11, 7, 18, 15]
+2026-08-27 12:33:33,153 - INFO - FedProx Round 80/200 | Accuracy=0.4461 | Best=0.5118
+2026-08-27 12:33:33,153 - INFO - FedProx Round 81 selected clients: [9, 10, 5, 15, 19, 8, 14, 17]
+2026-08-27 12:33:42,437 - INFO - FedProx Round 82 selected clients: [9, 16, 0, 13, 2, 15, 19, 12]
+2026-08-27 12:33:51,758 - INFO - FedProx Round 83 selected clients: [3, 15, 11, 14, 6, 4, 5, 7]
+2026-08-27 12:34:01,010 - INFO - FedProx Round 84 selected clients: [14, 6, 13, 3, 4, 5, 18, 15]
+2026-08-27 12:34:10,287 - INFO - FedProx Round 85 selected clients: [5, 16, 9, 12, 6, 18, 15, 0]
+2026-08-27 12:34:19,512 - INFO - FedProx Round 86 selected clients: [2, 13, 11, 0, 6, 16, 8, 3]
+2026-08-27 12:34:28,700 - INFO - FedProx Round 87 selected clients: [15, 6, 13, 4, 8, 11, 3, 9]
+2026-08-27 12:34:37,962 - INFO - FedProx Round 88 selected clients: [15, 0, 7, 16, 13, 1, 18, 2]
+2026-08-27 12:34:47,207 - INFO - FedProx Round 89 selected clients: [5, 2, 7, 4, 18, 10, 15, 9]
+2026-08-27 12:34:56,391 - INFO - FedProx Round 90 selected clients: [12, 10, 0, 2, 17, 14, 19, 7]
+2026-08-27 12:35:07,238 - INFO - FedProx Round 90/200 | Accuracy=0.4963 | Best=0.5118
+2026-08-27 12:35:07,238 - INFO - FedProx Round 91 selected clients: [5, 6, 1, 17, 18, 7, 8, 4]
+2026-08-27 12:35:16,414 - INFO - FedProx Round 92 selected clients: [15, 11, 19, 17, 5, 4, 7, 9]
+2026-08-27 12:35:25,658 - INFO - FedProx Round 93 selected clients: [9, 1, 6, 8, 15, 18, 0, 17]
+2026-08-27 12:35:34,852 - INFO - FedProx Round 94 selected clients: [9, 19, 3, 10, 16, 6, 4, 18]
+2026-08-27 12:35:44,068 - INFO - FedProx Round 95 selected clients: [7, 16, 1, 12, 4, 9, 17, 5]
+2026-08-27 12:35:53,272 - INFO - FedProx Round 96 selected clients: [6, 15, 14, 17, 2, 9, 11, 3]
+2026-08-27 12:36:02,351 - INFO - FedProx Round 97 selected clients: [12, 2, 4, 6, 9, 10, 1, 19]
+2026-08-27 12:36:11,403 - INFO - FedProx Round 98 selected clients: [10, 4, 2, 17, 15, 7, 19, 14]
+2026-08-27 12:36:20,494 - INFO - FedProx Round 99 selected clients: [13, 0, 14, 4, 19, 9, 16, 3]
+2026-08-27 12:36:29,513 - INFO - FedProx Round 100 selected clients: [10, 12, 11, 0, 4, 7, 6, 17]
+2026-08-27 12:36:40,240 - INFO - FedProx Round 100/200 | Accuracy=0.4742 | Best=0.5118
+2026-08-27 12:36:40,244 - INFO - FedProx Round 101 selected clients: [15, 11, 0, 17, 14, 8, 10, 9]
+2026-08-27 12:36:50,831 - INFO - FedProx Round 102 selected clients: [17, 12, 10, 1, 5, 16, 8, 13]
+2026-08-27 12:37:01,783 - INFO - FedProx Round 103 selected clients: [9, 0, 7, 11, 4, 10, 12, 19]
+2026-08-27 12:37:12,422 - INFO - FedProx Round 104 selected clients: [12, 15, 10, 16, 8, 5, 13, 4]
+2026-08-27 12:37:23,034 - INFO - FedProx Round 105 selected clients: [9, 12, 19, 15, 3, 18, 7, 4]
+2026-08-27 12:37:33,782 - INFO - FedProx Round 106 selected clients: [15, 6, 1, 18, 11, 7, 16, 3]
+2026-08-27 12:37:44,568 - INFO - FedProx Round 107 selected clients: [8, 6, 17, 2, 12, 19, 9, 1]
+2026-08-27 12:37:55,127 - INFO - FedProx Round 108 selected clients: [7, 11, 8, 6, 17, 14, 1, 13]
+2026-08-27 12:38:05,822 - INFO - FedProx Round 109 selected clients: [16, 12, 2, 0, 4, 7, 9, 8]
+2026-08-27 12:38:16,583 - INFO - FedProx Round 110 selected clients: [18, 19, 2, 3, 12, 7, 16, 8]
+2026-08-27 12:38:28,798 - INFO - FedProx Round 110/200 | Accuracy=0.5615 | Best=0.5615
+2026-08-27 12:38:28,808 - INFO - FedProx Round 111 selected clients: [15, 7, 18, 11, 6, 16, 5, 10]
+2026-08-27 12:38:39,525 - INFO - FedProx Round 112 selected clients: [7, 15, 16, 0, 4, 6, 13, 9]
+2026-08-27 12:38:50,228 - INFO - FedProx Round 113 selected clients: [1, 15, 7, 18, 5, 13, 19, 3]
+2026-08-27 12:39:00,902 - INFO - FedProx Round 114 selected clients: [12, 6, 17, 0, 3, 18, 15, 19]
+2026-08-27 12:39:11,695 - INFO - FedProx Round 115 selected clients: [8, 7, 9, 0, 16, 13, 2, 12]
+2026-08-27 12:39:22,577 - INFO - FedProx Round 116 selected clients: [11, 9, 6, 0, 19, 8, 12, 7]
+2026-08-27 12:39:33,085 - INFO - FedProx Round 117 selected clients: [4, 18, 11, 6, 12, 10, 19, 5]
+2026-08-27 12:39:43,625 - INFO - FedProx Round 118 selected clients: [15, 18, 10, 8, 2, 1, 4, 12]
+2026-08-27 12:39:54,440 - INFO - FedProx Round 119 selected clients: [13, 5, 6, 11, 3, 4, 2, 1]
+2026-08-27 12:40:05,113 - INFO - FedProx Round 120 selected clients: [16, 15, 5, 8, 7, 11, 13, 10]
+2026-08-27 12:40:17,429 - INFO - FedProx Round 120/200 | Accuracy=0.4825 | Best=0.5615
+2026-08-27 12:40:17,429 - INFO - FedProx Round 121 selected clients: [7, 0, 3, 5, 17, 16, 4, 18]
+2026-08-27 12:40:28,209 - INFO - FedProx Round 122 selected clients: [1, 18, 12, 0, 14, 13, 17, 4]
+2026-08-27 12:40:38,983 - INFO - FedProx Round 123 selected clients: [16, 14, 13, 15, 2, 10, 17, 19]
+2026-08-27 12:40:49,594 - INFO - FedProx Round 124 selected clients: [8, 12, 4, 13, 10, 16, 9, 14]
+2026-08-27 12:40:59,139 - INFO - FedProx Round 125 selected clients: [1, 8, 19, 17, 13, 4, 5, 12]
+2026-08-27 12:41:08,248 - INFO - FedProx Round 126 selected clients: [8, 2, 16, 12, 13, 9, 15, 14]
+2026-08-27 12:41:17,382 - INFO - FedProx Round 127 selected clients: [17, 16, 11, 4, 18, 7, 15, 5]
+2026-08-27 12:41:26,472 - INFO - FedProx Round 128 selected clients: [12, 8, 19, 10, 15, 3, 6, 17]
+2026-08-27 12:41:35,554 - INFO - FedProx Round 129 selected clients: [4, 17, 7, 11, 10, 16, 6, 15]
+2026-08-27 12:41:44,675 - INFO - FedProx Round 130 selected clients: [14, 17, 6, 15, 9, 10, 0, 3]
+2026-08-27 12:41:55,378 - INFO - FedProx Round 130/200 | Accuracy=0.5516 | Best=0.5615
+2026-08-27 12:41:55,378 - INFO - FedProx Round 131 selected clients: [18, 3, 8, 9, 12, 0, 7, 14]
+2026-08-27 12:42:04,436 - INFO - FedProx Round 132 selected clients: [12, 1, 7, 5, 19, 15, 10, 13]
+2026-08-27 12:42:13,573 - INFO - FedProx Round 133 selected clients: [0, 15, 11, 1, 8, 9, 7, 16]
+2026-08-27 12:42:22,776 - INFO - FedProx Round 134 selected clients: [7, 19, 2, 18, 3, 16, 8, 10]
+2026-08-27 12:42:31,845 - INFO - FedProx Round 135 selected clients: [12, 13, 6, 19, 9, 0, 16, 14]
+2026-08-27 12:42:40,936 - INFO - FedProx Round 136 selected clients: [10, 18, 13, 5, 6, 15, 2, 3]
+2026-08-27 12:42:50,005 - INFO - FedProx Round 137 selected clients: [5, 1, 3, 19, 10, 9, 2, 13]
+2026-08-27 12:42:59,015 - INFO - FedProx Round 138 selected clients: [0, 18, 12, 7, 1, 16, 5, 8]
+2026-08-27 12:43:08,075 - INFO - FedProx Round 139 selected clients: [4, 14, 11, 12, 18, 6, 10, 5]
+2026-08-27 12:43:17,210 - INFO - FedProx Round 140 selected clients: [16, 6, 2, 19, 12, 8, 15, 14]
+2026-08-27 12:43:27,882 - INFO - FedProx Round 140/200 | Accuracy=0.5722 | Best=0.5722
+2026-08-27 12:43:27,882 - INFO - FedProx Round 141 selected clients: [19, 3, 12, 15, 5, 14, 1, 10]
+2026-08-27 12:43:36,962 - INFO - FedProx Round 142 selected clients: [17, 2, 0, 9, 1, 14, 4, 3]
+2026-08-27 12:43:46,106 - INFO - FedProx Round 143 selected clients: [8, 1, 16, 13, 3, 15, 6, 9]
+2026-08-27 12:43:55,152 - INFO - FedProx Round 144 selected clients: [8, 12, 15, 6, 5, 1, 10, 18]
+2026-08-27 12:44:04,254 - INFO - FedProx Round 145 selected clients: [7, 2, 4, 17, 18, 19, 0, 11]
+2026-08-27 12:44:13,514 - INFO - FedProx Round 146 selected clients: [6, 12, 0, 8, 13, 1, 14, 16]
+2026-08-27 12:44:22,521 - INFO - FedProx Round 147 selected clients: [12, 1, 10, 19, 2, 16, 4, 15]
+2026-08-27 12:44:31,540 - INFO - FedProx Round 148 selected clients: [10, 0, 17, 11, 8, 15, 18, 6]
+2026-08-27 12:44:40,529 - INFO - FedProx Round 149 selected clients: [7, 14, 1, 4, 2, 6, 3, 12]
+2026-08-27 12:44:49,436 - INFO - FedProx Round 150 selected clients: [12, 11, 19, 18, 14, 17, 7, 5]
+2026-08-27 12:45:00,220 - INFO - FedProx Round 150/200 | Accuracy=0.6119 | Best=0.6119
+2026-08-27 12:45:00,231 - INFO - FedProx Round 151 selected clients: [15, 14, 6, 5, 7, 10, 8, 1]
+2026-08-27 12:45:10,914 - INFO - FedProx Round 152 selected clients: [19, 18, 10, 1, 4, 9, 16, 15]
+2026-08-27 12:45:21,229 - INFO - FedProx Round 153 selected clients: [4, 19, 0, 10, 11, 1, 17, 18]
+2026-08-27 12:45:31,665 - INFO - FedProx Round 154 selected clients: [2, 18, 15, 9, 11, 8, 13, 4]
+2026-08-27 12:45:42,245 - INFO - FedProx Round 155 selected clients: [14, 1, 15, 5, 12, 11, 3, 13]
+2026-08-27 12:45:52,836 - INFO - FedProx Round 156 selected clients: [14, 2, 19, 4, 11, 10, 15, 5]
+2026-08-27 12:46:03,304 - INFO - FedProx Round 157 selected clients: [16, 18, 10, 11, 13, 7, 3, 14]
+2026-08-27 12:46:14,068 - INFO - FedProx Round 158 selected clients: [11, 17, 1, 0, 10, 2, 9, 8]
+2026-08-27 12:46:24,476 - INFO - FedProx Round 159 selected clients: [4, 19, 8, 10, 18, 15, 14, 13]
+2026-08-27 12:46:34,974 - INFO - FedProx Round 160 selected clients: [5, 2, 19, 12, 1, 0, 6, 14]
+2026-08-27 12:46:47,217 - INFO - FedProx Round 160/200 | Accuracy=0.5706 | Best=0.6119
+2026-08-27 12:46:47,217 - INFO - FedProx Round 161 selected clients: [17, 18, 14, 9, 11, 4, 8, 3]
+2026-08-27 12:46:57,758 - INFO - FedProx Round 162 selected clients: [15, 2, 7, 14, 19, 1, 16, 18]
+2026-08-27 12:47:08,278 - INFO - FedProx Round 163 selected clients: [6, 11, 17, 12, 10, 7, 13, 5]
+2026-08-27 12:47:18,929 - INFO - FedProx Round 164 selected clients: [13, 6, 10, 15, 0, 16, 12, 3]
+2026-08-27 12:47:29,459 - INFO - FedProx Round 165 selected clients: [17, 15, 7, 9, 13, 19, 11, 3]
+2026-08-27 12:47:40,054 - INFO - FedProx Round 166 selected clients: [14, 16, 12, 1, 11, 10, 17, 13]
+2026-08-27 12:47:50,702 - INFO - FedProx Round 167 selected clients: [18, 4, 9, 10, 3, 13, 7, 14]
+2026-08-27 12:48:01,159 - INFO - FedProx Round 168 selected clients: [3, 4, 0, 15, 1, 11, 14, 10]
+2026-08-27 12:48:11,711 - INFO - FedProx Round 169 selected clients: [9, 1, 0, 16, 18, 4, 7, 5]
+2026-08-27 12:48:22,279 - INFO - FedProx Round 170 selected clients: [11, 5, 14, 9, 6, 15, 18, 1]
+2026-08-27 12:48:34,523 - INFO - FedProx Round 170/200 | Accuracy=0.5771 | Best=0.6119
+2026-08-27 12:48:34,523 - INFO - FedProx Round 171 selected clients: [12, 6, 5, 7, 0, 8, 17, 9]
+2026-08-27 12:48:44,693 - INFO - FedProx Round 172 selected clients: [9, 10, 13, 11, 4, 18, 15, 17]
+2026-08-27 12:48:55,367 - INFO - FedProx Round 173 selected clients: [13, 16, 9, 4, 0, 10, 8, 7]
+2026-08-27 12:49:06,051 - INFO - FedProx Round 174 selected clients: [6, 15, 1, 3, 18, 13, 12, 4]
+2026-08-27 12:49:15,991 - INFO - FedProx Round 175 selected clients: [9, 2, 11, 8, 14, 4, 6, 1]
+2026-08-27 12:49:25,168 - INFO - FedProx Round 176 selected clients: [3, 12, 5, 1, 19, 11, 14, 13]
+2026-08-27 12:49:34,361 - INFO - FedProx Round 177 selected clients: [10, 18, 5, 8, 6, 3, 1, 9]
+2026-08-27 12:49:43,534 - INFO - FedProx Round 178 selected clients: [7, 5, 9, 6, 8, 2, 4, 11]
+2026-08-27 12:49:52,737 - INFO - FedProx Round 179 selected clients: [4, 13, 3, 7, 15, 0, 5, 19]
+2026-08-27 12:50:01,943 - INFO - FedProx Round 180 selected clients: [9, 3, 17, 10, 14, 12, 4, 6]
+2026-08-27 12:50:12,903 - INFO - FedProx Round 180/200 | Accuracy=0.5910 | Best=0.6119
+2026-08-27 12:50:12,903 - INFO - FedProx Round 181 selected clients: [14, 0, 18, 11, 16, 13, 15, 7]
+2026-08-27 12:50:22,167 - INFO - FedProx Round 182 selected clients: [17, 8, 18, 2, 5, 14, 9, 16]
+2026-08-27 12:50:31,383 - INFO - FedProx Round 183 selected clients: [8, 18, 12, 6, 19, 3, 1, 7]
+2026-08-27 12:50:40,566 - INFO - FedProx Round 184 selected clients: [18, 0, 9, 8, 6, 1, 15, 11]
+2026-08-27 12:50:49,779 - INFO - FedProx Round 185 selected clients: [8, 7, 12, 10, 13, 19, 0, 15]
+2026-08-27 12:50:58,955 - INFO - FedProx Round 186 selected clients: [10, 7, 14, 9, 11, 6, 2, 17]
+2026-08-27 12:51:08,415 - INFO - FedProx Round 187 selected clients: [19, 1, 5, 7, 8, 17, 9, 0]
+2026-08-27 12:51:18,329 - INFO - FedProx Round 188 selected clients: [14, 15, 12, 0, 18, 19, 6, 4]
+2026-08-27 12:51:28,851 - INFO - FedProx Round 189 selected clients: [2, 16, 8, 9, 17, 7, 19, 0]
+2026-08-27 12:51:38,878 - INFO - FedProx Round 190 selected clients: [1, 4, 8, 10, 7, 2, 12, 17]
+2026-08-27 12:51:50,151 - INFO - FedProx Round 190/200 | Accuracy=0.5658 | Best=0.6119
+2026-08-27 12:51:50,151 - INFO - FedProx Round 191 selected clients: [1, 10, 11, 9, 5, 12, 0, 4]
+2026-08-27 12:51:59,429 - INFO - FedProx Round 192 selected clients: [8, 0, 7, 3, 17, 15, 11, 9]
+2026-08-27 12:52:08,972 - INFO - FedProx Round 193 selected clients: [10, 1, 8, 5, 11, 13, 4, 15]
+2026-08-27 12:52:18,257 - INFO - FedProx Round 194 selected clients: [11, 10, 4, 18, 9, 12, 13, 16]
+2026-08-27 12:52:27,482 - INFO - FedProx Round 195 selected clients: [10, 13, 2, 18, 3, 4, 14, 8]
+2026-08-27 12:52:36,772 - INFO - FedProx Round 196 selected clients: [9, 1, 3, 18, 16, 5, 19, 14]
+2026-08-27 12:52:45,936 - INFO - FedProx Round 197 selected clients: [11, 18, 2, 0, 10, 8, 15, 6]
+2026-08-27 12:52:54,979 - INFO - FedProx Round 198 selected clients: [16, 2, 3, 5, 4, 12, 9, 6]
+2026-08-27 12:53:04,002 - INFO - FedProx Round 199 selected clients: [13, 14, 3, 1, 6, 9, 18, 2]
+2026-08-27 12:53:13,103 - INFO - FedProx Round 200 selected clients: [8, 14, 17, 19, 3, 10, 13, 1]
+2026-08-27 12:53:25,255 - INFO - FedProx Round 200/200 | Accuracy=0.5767 | Best=0.6119
+2026-08-27 12:53:26,954 - INFO - FedProx FINAL Accuracy=0.5767 | Best=0.6119
+2026-08-27 12:53:26,959 - INFO - ======================================================================
+2026-08-27 12:53:26,959 - INFO - START FedBN
+2026-08-27 12:53:35,424 - INFO - FedBN Round 1/200 | Accuracy=0.1071 | Best=0.1071
+2026-08-27 12:54:35,302 - INFO - FedBN Round 10/200 | Accuracy=0.2520 | Best=0.2520
+2026-08-27 12:55:41,394 - INFO - FedBN Round 20/200 | Accuracy=0.3258 | Best=0.3258
+2026-08-27 12:56:47,988 - INFO - FedBN Round 30/200 | Accuracy=0.2705 | Best=0.3258
+2026-08-27 12:57:54,296 - INFO - FedBN Round 40/200 | Accuracy=0.4366 | Best=0.4366
+2026-08-27 12:59:00,347 - INFO - FedBN Round 50/200 | Accuracy=0.4187 | Best=0.4366
+2026-08-27 13:00:02,966 - INFO - FedBN Round 60/200 | Accuracy=0.3823 | Best=0.4366
+2026-08-27 13:01:05,306 - INFO - FedBN Round 70/200 | Accuracy=0.4718 | Best=0.4718
+2026-08-27 13:02:07,784 - INFO - FedBN Round 80/200 | Accuracy=0.3754 | Best=0.4718
+2026-08-27 13:03:10,591 - INFO - FedBN Round 90/200 | Accuracy=0.4404 | Best=0.4718
+2026-08-27 13:04:14,636 - INFO - FedBN Round 100/200 | Accuracy=0.2370 | Best=0.4718
+2026-08-27 13:05:19,278 - INFO - FedBN Round 110/200 | Accuracy=0.4798 | Best=0.4798
+2026-08-27 13:06:24,682 - INFO - FedBN Round 120/200 | Accuracy=0.2516 | Best=0.4798
+2026-08-27 13:07:29,839 - INFO - FedBN Round 130/200 | Accuracy=0.2869 | Best=0.4798
+2026-08-27 13:08:35,081 - INFO - FedBN Round 140/200 | Accuracy=0.3054 | Best=0.4798
+2026-08-27 13:09:40,369 - INFO - FedBN Round 150/200 | Accuracy=0.4801 | Best=0.4801
+2026-08-27 13:10:44,614 - INFO - FedBN Round 160/200 | Accuracy=0.5662 | Best=0.5662
+2026-08-27 13:11:46,623 - INFO - FedBN Round 170/200 | Accuracy=0.2630 | Best=0.5662
+2026-08-27 13:12:48,635 - INFO - FedBN Round 180/200 | Accuracy=0.4405 | Best=0.5662
+2026-08-27 13:13:49,682 - INFO - FedBN Round 190/200 | Accuracy=0.3409 | Best=0.5662
+2026-08-27 13:14:51,089 - INFO - FedBN Round 200/200 | Accuracy=0.2860 | Best=0.5662
+2026-08-27 13:14:52,781 - INFO - FedBN FINAL Accuracy=0.2860 | Best=0.5662
+2026-08-27 13:14:52,786 - INFO - ======================================================================
+2026-08-27 13:14:52,786 - INFO - START FedRS
+2026-08-27 13:14:53,063 - INFO - FedRS Round 1 selected clients: [0, 17, 15, 1, 8, 5, 11, 3]
+2026-08-27 13:15:01,318 - INFO - FedRS Round 1/200 | Accuracy=0.1394 | Best=0.1394
+2026-08-27 13:15:01,318 - INFO - FedRS Round 2 selected clients: [19, 16, 15, 5, 4, 12, 14, 7]
+2026-08-27 13:15:07,945 - INFO - FedRS Round 3 selected clients: [10, 7, 0, 2, 5, 18, 16, 12]
+2026-08-27 13:15:14,553 - INFO - FedRS Round 4 selected clients: [0, 18, 6, 8, 17, 11, 4, 9]
+2026-08-27 13:15:21,185 - INFO - FedRS Round 5 selected clients: [5, 2, 10, 19, 0, 12, 9, 16]
+2026-08-27 13:15:27,860 - INFO - FedRS Round 6 selected clients: [3, 1, 4, 5, 15, 16, 9, 10]
+2026-08-27 13:15:34,664 - INFO - FedRS Round 7 selected clients: [13, 10, 12, 16, 9, 5, 3, 2]
+2026-08-27 13:15:41,955 - INFO - FedRS Round 8 selected clients: [17, 18, 1, 5, 3, 15, 7, 11]
+2026-08-27 13:15:49,411 - INFO - FedRS Round 9 selected clients: [17, 11, 7, 13, 0, 9, 4, 8]
+2026-08-27 13:15:56,687 - INFO - FedRS Round 10 selected clients: [4, 9, 1, 15, 7, 5, 16, 2]
+2026-08-27 13:16:05,618 - INFO - FedRS Round 10/200 | Accuracy=0.3079 | Best=0.3079
+2026-08-27 13:16:05,618 - INFO - FedRS Round 11 selected clients: [2, 6, 16, 4, 17, 1, 13, 12]
+2026-08-27 13:16:12,966 - INFO - FedRS Round 12 selected clients: [14, 3, 9, 18, 8, 11, 17, 6]
+2026-08-27 13:16:20,300 - INFO - FedRS Round 13 selected clients: [9, 8, 6, 14, 13, 2, 19, 12]
+2026-08-27 13:16:27,575 - INFO - FedRS Round 14 selected clients: [5, 11, 4, 19, 9, 1, 12, 10]
+2026-08-27 13:16:34,907 - INFO - FedRS Round 15 selected clients: [14, 16, 19, 13, 4, 12, 5, 7]
+2026-08-27 13:16:42,323 - INFO - FedRS Round 16 selected clients: [6, 11, 4, 1, 18, 9, 14, 13]
+2026-08-27 13:16:49,646 - INFO - FedRS Round 17 selected clients: [14, 7, 12, 6, 11, 4, 16, 9]
+2026-08-27 13:16:56,909 - INFO - FedRS Round 18 selected clients: [7, 3, 4, 18, 1, 12, 8, 9]
+2026-08-27 13:17:04,213 - INFO - FedRS Round 19 selected clients: [8, 7, 1, 6, 9, 10, 11, 19]
+2026-08-27 13:17:11,429 - INFO - FedRS Round 20 selected clients: [17, 4, 3, 10, 6, 13, 14, 11]
+2026-08-27 13:17:20,444 - INFO - FedRS Round 20/200 | Accuracy=0.3714 | Best=0.3714
+2026-08-27 13:17:20,444 - INFO - FedRS Round 21 selected clients: [13, 14, 15, 17, 3, 4, 18, 19]
+2026-08-27 13:17:27,665 - INFO - FedRS Round 22 selected clients: [4, 19, 8, 17, 18, 5, 10, 16]
+2026-08-27 13:17:34,859 - INFO - FedRS Round 23 selected clients: [2, 13, 1, 19, 8, 15, 3, 6]
+2026-08-27 13:17:42,203 - INFO - FedRS Round 24 selected clients: [3, 14, 13, 5, 8, 10, 4, 17]
+2026-08-27 13:17:49,524 - INFO - FedRS Round 25 selected clients: [18, 15, 3, 2, 12, 6, 9, 10]
+2026-08-27 13:17:56,929 - INFO - FedRS Round 26 selected clients: [5, 7, 1, 2, 8, 16, 12, 6]
+2026-08-27 13:18:04,335 - INFO - FedRS Round 27 selected clients: [10, 5, 14, 13, 12, 17, 6, 8]
+2026-08-27 13:18:11,689 - INFO - FedRS Round 28 selected clients: [5, 6, 19, 8, 3, 14, 1, 7]
+2026-08-27 13:18:19,057 - INFO - FedRS Round 29 selected clients: [12, 5, 4, 15, 8, 3, 14, 16]
+2026-08-27 13:18:26,389 - INFO - FedRS Round 30 selected clients: [14, 19, 13, 16, 15, 5, 6, 11]
+2026-08-27 13:18:35,338 - INFO - FedRS Round 30/200 | Accuracy=0.4156 | Best=0.4156
+2026-08-27 13:18:35,338 - INFO - FedRS Round 31 selected clients: [1, 6, 11, 9, 19, 4, 7, 14]
+2026-08-27 13:18:42,846 - INFO - FedRS Round 32 selected clients: [12, 19, 1, 5, 7, 0, 6, 9]
+2026-08-27 13:18:50,222 - INFO - FedRS Round 33 selected clients: [16, 14, 11, 3, 7, 15, 5, 17]
+2026-08-27 13:18:57,484 - INFO - FedRS Round 34 selected clients: [10, 14, 18, 9, 16, 8, 13, 6]
+2026-08-27 13:19:04,870 - INFO - FedRS Round 35 selected clients: [10, 19, 8, 12, 5, 0, 13, 4]
+2026-08-27 13:19:12,078 - INFO - FedRS Round 36 selected clients: [10, 8, 1, 18, 7, 6, 2, 3]
+2026-08-27 13:19:19,414 - INFO - FedRS Round 37 selected clients: [7, 11, 15, 17, 9, 1, 3, 10]
+2026-08-27 13:19:26,690 - INFO - FedRS Round 38 selected clients: [2, 12, 1, 9, 6, 18, 13, 14]
+2026-08-27 13:19:33,939 - INFO - FedRS Round 39 selected clients: [3, 13, 2, 11, 15, 19, 0, 12]
+2026-08-27 13:19:41,221 - INFO - FedRS Round 40 selected clients: [15, 3, 9, 14, 13, 7, 19, 11]
+2026-08-27 13:19:50,210 - INFO - FedRS Round 40/200 | Accuracy=0.4185 | Best=0.4185
+2026-08-27 13:19:50,210 - INFO - FedRS Round 41 selected clients: [14, 11, 5, 15, 6, 10, 1, 7]
+2026-08-27 13:19:57,525 - INFO - FedRS Round 42 selected clients: [12, 9, 3, 7, 19, 1, 15, 14]
+2026-08-27 13:20:04,982 - INFO - FedRS Round 43 selected clients: [4, 9, 7, 12, 11, 14, 6, 0]
+2026-08-27 13:20:12,245 - INFO - FedRS Round 44 selected clients: [12, 15, 13, 6, 2, 17, 8, 10]
+2026-08-27 13:20:19,639 - INFO - FedRS Round 45 selected clients: [12, 0, 11, 5, 6, 1, 4, 17]
+2026-08-27 13:20:26,951 - INFO - FedRS Round 46 selected clients: [7, 3, 16, 14, 2, 6, 12, 10]
+2026-08-27 13:20:34,257 - INFO - FedRS Round 47 selected clients: [11, 18, 10, 13, 15, 8, 4, 1]
+2026-08-27 13:20:41,631 - INFO - FedRS Round 48 selected clients: [16, 7, 8, 17, 3, 4, 0, 6]
+2026-08-27 13:20:48,908 - INFO - FedRS Round 49 selected clients: [7, 4, 0, 10, 17, 5, 15, 18]
+2026-08-27 13:20:56,105 - INFO - FedRS Round 50 selected clients: [2, 6, 14, 12, 13, 17, 11, 0]
+2026-08-27 13:21:04,950 - INFO - FedRS Round 50/200 | Accuracy=0.4979 | Best=0.4979
+2026-08-27 13:21:04,962 - INFO - FedRS Round 51 selected clients: [0, 9, 11, 16, 13, 19, 17, 1]
+2026-08-27 13:21:12,294 - INFO - FedRS Round 52 selected clients: [6, 17, 15, 8, 0, 19, 12, 3]
+2026-08-27 13:21:19,639 - INFO - FedRS Round 53 selected clients: [11, 9, 8, 12, 6, 15, 7, 1]
+2026-08-27 13:21:26,883 - INFO - FedRS Round 54 selected clients: [11, 13, 3, 18, 16, 14, 9, 12]
+2026-08-27 13:21:34,103 - INFO - FedRS Round 55 selected clients: [17, 9, 6, 13, 14, 19, 3, 16]
+2026-08-27 13:21:41,388 - INFO - FedRS Round 56 selected clients: [19, 14, 17, 15, 10, 0, 5, 4]
+2026-08-27 13:21:48,247 - INFO - FedRS Round 57 selected clients: [15, 10, 8, 0, 4, 3, 18, 9]
+2026-08-27 13:21:55,059 - INFO - FedRS Round 58 selected clients: [11, 14, 12, 7, 8, 13, 15, 2]
+2026-08-27 13:22:01,862 - INFO - FedRS Round 59 selected clients: [6, 5, 0, 16, 8, 15, 17, 13]
+2026-08-27 13:22:08,627 - INFO - FedRS Round 60 selected clients: [4, 8, 13, 15, 2, 3, 11, 0]
+2026-08-27 13:22:17,117 - INFO - FedRS Round 60/200 | Accuracy=0.5002 | Best=0.5002
+2026-08-27 13:22:17,117 - INFO - FedRS Round 61 selected clients: [3, 6, 1, 13, 19, 0, 10, 15]
+2026-08-27 13:22:23,987 - INFO - FedRS Round 62 selected clients: [10, 6, 5, 17, 2, 18, 1, 12]
+2026-08-27 13:22:30,853 - INFO - FedRS Round 63 selected clients: [13, 9, 16, 8, 4, 3, 11, 7]
+2026-08-27 13:22:37,720 - INFO - FedRS Round 64 selected clients: [11, 9, 2, 1, 4, 13, 18, 12]
+2026-08-27 13:22:44,509 - INFO - FedRS Round 65 selected clients: [19, 8, 6, 4, 11, 9, 17, 3]
+2026-08-27 13:22:51,361 - INFO - FedRS Round 66 selected clients: [7, 8, 3, 15, 5, 12, 4, 16]
+2026-08-27 13:22:58,211 - INFO - FedRS Round 67 selected clients: [6, 17, 13, 18, 8, 3, 10, 5]
+2026-08-27 13:23:05,165 - INFO - FedRS Round 68 selected clients: [7, 12, 18, 19, 5, 1, 8, 11]
+2026-08-27 13:23:12,039 - INFO - FedRS Round 69 selected clients: [12, 17, 15, 13, 16, 0, 8, 7]
+2026-08-27 13:23:18,835 - INFO - FedRS Round 70 selected clients: [5, 17, 3, 10, 12, 15, 19, 4]
+2026-08-27 13:23:27,264 - INFO - FedRS Round 70/200 | Accuracy=0.5389 | Best=0.5389
+2026-08-27 13:23:27,264 - INFO - FedRS Round 71 selected clients: [6, 19, 2, 11, 16, 7, 13, 0]
+2026-08-27 13:23:34,133 - INFO - FedRS Round 72 selected clients: [2, 10, 13, 17, 15, 16, 18, 3]
+2026-08-27 13:23:41,034 - INFO - FedRS Round 73 selected clients: [8, 11, 12, 13, 4, 9, 1, 5]
+2026-08-27 13:23:47,925 - INFO - FedRS Round 74 selected clients: [9, 17, 19, 7, 5, 6, 15, 4]
+2026-08-27 13:23:54,860 - INFO - FedRS Round 75 selected clients: [8, 0, 17, 16, 18, 12, 19, 3]
+2026-08-27 13:24:01,653 - INFO - FedRS Round 76 selected clients: [12, 3, 15, 1, 18, 8, 5, 10]
+2026-08-27 13:24:08,429 - INFO - FedRS Round 77 selected clients: [7, 3, 17, 2, 10, 18, 11, 1]
+2026-08-27 13:24:15,322 - INFO - FedRS Round 78 selected clients: [5, 11, 13, 8, 14, 4, 12, 3]
+2026-08-27 13:24:22,246 - INFO - FedRS Round 79 selected clients: [2, 10, 17, 18, 13, 9, 4, 15]
+2026-08-27 13:24:29,283 - INFO - FedRS Round 80 selected clients: [13, 8, 5, 14, 11, 7, 18, 15]
+2026-08-27 13:24:37,695 - INFO - FedRS Round 80/200 | Accuracy=0.5413 | Best=0.5413
+2026-08-27 13:24:37,695 - INFO - FedRS Round 81 selected clients: [9, 10, 5, 15, 19, 8, 14, 17]
+2026-08-27 13:24:44,573 - INFO - FedRS Round 82 selected clients: [9, 16, 0, 13, 2, 15, 19, 12]
+2026-08-27 13:24:51,471 - INFO - FedRS Round 83 selected clients: [3, 15, 11, 14, 6, 4, 5, 7]
+2026-08-27 13:24:58,372 - INFO - FedRS Round 84 selected clients: [14, 6, 13, 3, 4, 5, 18, 15]
+2026-08-27 13:25:05,316 - INFO - FedRS Round 85 selected clients: [5, 16, 9, 12, 6, 18, 15, 0]
+2026-08-27 13:25:12,249 - INFO - FedRS Round 86 selected clients: [2, 13, 11, 0, 6, 16, 8, 3]
+2026-08-27 13:25:19,143 - INFO - FedRS Round 87 selected clients: [15, 6, 13, 4, 8, 11, 3, 9]
+2026-08-27 13:25:25,931 - INFO - FedRS Round 88 selected clients: [15, 0, 7, 16, 13, 1, 18, 2]
+2026-08-27 13:25:32,816 - INFO - FedRS Round 89 selected clients: [5, 2, 7, 4, 18, 10, 15, 9]
+2026-08-27 13:25:39,759 - INFO - FedRS Round 90 selected clients: [12, 10, 0, 2, 17, 14, 19, 7]
+2026-08-27 13:25:48,301 - INFO - FedRS Round 90/200 | Accuracy=0.5562 | Best=0.5562
+2026-08-27 13:25:48,304 - INFO - FedRS Round 91 selected clients: [5, 6, 1, 17, 18, 7, 8, 4]
+2026-08-27 13:25:55,156 - INFO - FedRS Round 92 selected clients: [15, 11, 19, 17, 5, 4, 7, 9]
+2026-08-27 13:26:02,130 - INFO - FedRS Round 93 selected clients: [9, 1, 6, 8, 15, 18, 0, 17]
+2026-08-27 13:26:08,906 - INFO - FedRS Round 94 selected clients: [9, 19, 3, 10, 16, 6, 4, 18]
+2026-08-27 13:26:15,701 - INFO - FedRS Round 95 selected clients: [7, 16, 1, 12, 4, 9, 17, 5]
+2026-08-27 13:26:22,556 - INFO - FedRS Round 96 selected clients: [6, 15, 14, 17, 2, 9, 11, 3]
+2026-08-27 13:26:29,454 - INFO - FedRS Round 97 selected clients: [12, 2, 4, 6, 9, 10, 1, 19]
+2026-08-27 13:26:36,346 - INFO - FedRS Round 98 selected clients: [10, 4, 2, 17, 15, 7, 19, 14]
+2026-08-27 13:26:43,114 - INFO - FedRS Round 99 selected clients: [13, 0, 14, 4, 19, 9, 16, 3]
+2026-08-27 13:26:50,016 - INFO - FedRS Round 100 selected clients: [10, 12, 11, 0, 4, 7, 6, 17]
+2026-08-27 13:26:58,595 - INFO - FedRS Round 100/200 | Accuracy=0.5642 | Best=0.5642
+2026-08-27 13:26:58,608 - INFO - FedRS Round 101 selected clients: [15, 11, 0, 17, 14, 8, 10, 9]
+2026-08-27 13:27:05,581 - INFO - FedRS Round 102 selected clients: [17, 12, 10, 1, 5, 16, 8, 13]
+2026-08-27 13:27:12,475 - INFO - FedRS Round 103 selected clients: [9, 0, 7, 11, 4, 10, 12, 19]
+2026-08-27 13:27:19,357 - INFO - FedRS Round 104 selected clients: [12, 15, 10, 16, 8, 5, 13, 4]
+2026-08-27 13:27:26,249 - INFO - FedRS Round 105 selected clients: [9, 12, 19, 15, 3, 18, 7, 4]
+2026-08-27 13:27:33,325 - INFO - FedRS Round 106 selected clients: [15, 6, 1, 18, 11, 7, 16, 3]
+2026-08-27 13:27:40,641 - INFO - FedRS Round 107 selected clients: [8, 6, 17, 2, 12, 19, 9, 1]
+2026-08-27 13:27:47,778 - INFO - FedRS Round 108 selected clients: [7, 11, 8, 6, 17, 14, 1, 13]
+2026-08-27 13:27:54,888 - INFO - FedRS Round 109 selected clients: [16, 12, 2, 0, 4, 7, 9, 8]
+2026-08-27 13:28:02,026 - INFO - FedRS Round 110 selected clients: [18, 19, 2, 3, 12, 7, 16, 8]
+2026-08-27 13:28:10,820 - INFO - FedRS Round 110/200 | Accuracy=0.5635 | Best=0.5642
+2026-08-27 13:28:10,820 - INFO - FedRS Round 111 selected clients: [15, 7, 18, 11, 6, 16, 5, 10]
+2026-08-27 13:28:18,048 - INFO - FedRS Round 112 selected clients: [7, 15, 16, 0, 4, 6, 13, 9]
+2026-08-27 13:28:25,333 - INFO - FedRS Round 113 selected clients: [1, 15, 7, 18, 5, 13, 19, 3]
+2026-08-27 13:28:32,544 - INFO - FedRS Round 114 selected clients: [12, 6, 17, 0, 3, 18, 15, 19]
+2026-08-27 13:28:39,763 - INFO - FedRS Round 115 selected clients: [8, 7, 9, 0, 16, 13, 2, 12]
+2026-08-27 13:28:46,934 - INFO - FedRS Round 116 selected clients: [11, 9, 6, 0, 19, 8, 12, 7]
+2026-08-27 13:28:54,217 - INFO - FedRS Round 117 selected clients: [4, 18, 11, 6, 12, 10, 19, 5]
+2026-08-27 13:29:01,449 - INFO - FedRS Round 118 selected clients: [15, 18, 10, 8, 2, 1, 4, 12]
+2026-08-27 13:29:08,631 - INFO - FedRS Round 119 selected clients: [13, 5, 6, 11, 3, 4, 2, 1]
+2026-08-27 13:29:15,839 - INFO - FedRS Round 120 selected clients: [16, 15, 5, 8, 7, 11, 13, 10]
+2026-08-27 13:29:24,637 - INFO - FedRS Round 120/200 | Accuracy=0.5835 | Best=0.5835
+2026-08-27 13:29:24,638 - INFO - FedRS Round 121 selected clients: [7, 0, 3, 5, 17, 16, 4, 18]
+2026-08-27 13:29:31,864 - INFO - FedRS Round 122 selected clients: [1, 18, 12, 0, 14, 13, 17, 4]
+2026-08-27 13:29:38,965 - INFO - FedRS Round 123 selected clients: [16, 14, 13, 15, 2, 10, 17, 19]
+2026-08-27 13:29:46,195 - INFO - FedRS Round 124 selected clients: [8, 12, 4, 13, 10, 16, 9, 14]
+2026-08-27 13:29:53,385 - INFO - FedRS Round 125 selected clients: [1, 8, 19, 17, 13, 4, 5, 12]
+2026-08-27 13:30:00,524 - INFO - FedRS Round 126 selected clients: [8, 2, 16, 12, 13, 9, 15, 14]
+2026-08-27 13:30:07,672 - INFO - FedRS Round 127 selected clients: [17, 16, 11, 4, 18, 7, 15, 5]
+2026-08-27 13:30:14,844 - INFO - FedRS Round 128 selected clients: [12, 8, 19, 10, 15, 3, 6, 17]
+2026-08-27 13:30:22,146 - INFO - FedRS Round 129 selected clients: [4, 17, 7, 11, 10, 16, 6, 15]
+2026-08-27 13:30:29,389 - INFO - FedRS Round 130 selected clients: [14, 17, 6, 15, 9, 10, 0, 3]
+2026-08-27 13:30:38,172 - INFO - FedRS Round 130/200 | Accuracy=0.5970 | Best=0.5970
+2026-08-27 13:30:38,172 - INFO - FedRS Round 131 selected clients: [18, 3, 8, 9, 12, 0, 7, 14]
+2026-08-27 13:30:45,390 - INFO - FedRS Round 132 selected clients: [12, 1, 7, 5, 19, 15, 10, 13]
+2026-08-27 13:30:52,540 - INFO - FedRS Round 133 selected clients: [0, 15, 11, 1, 8, 9, 7, 16]
+2026-08-27 13:30:59,835 - INFO - FedRS Round 134 selected clients: [7, 19, 2, 18, 3, 16, 8, 10]
+2026-08-27 13:31:07,074 - INFO - FedRS Round 135 selected clients: [12, 13, 6, 19, 9, 0, 16, 14]
+2026-08-27 13:31:14,287 - INFO - FedRS Round 136 selected clients: [10, 18, 13, 5, 6, 15, 2, 3]
+2026-08-27 13:31:21,392 - INFO - FedRS Round 137 selected clients: [5, 1, 3, 19, 10, 9, 2, 13]
+2026-08-27 13:31:28,710 - INFO - FedRS Round 138 selected clients: [0, 18, 12, 7, 1, 16, 5, 8]
+2026-08-27 13:31:35,951 - INFO - FedRS Round 139 selected clients: [4, 14, 11, 12, 18, 6, 10, 5]
+2026-08-27 13:31:43,131 - INFO - FedRS Round 140 selected clients: [16, 6, 2, 19, 12, 8, 15, 14]
+2026-08-27 13:31:51,944 - INFO - FedRS Round 140/200 | Accuracy=0.6045 | Best=0.6045
+2026-08-27 13:31:51,944 - INFO - FedRS Round 141 selected clients: [19, 3, 12, 15, 5, 14, 1, 10]
+2026-08-27 13:31:59,061 - INFO - FedRS Round 142 selected clients: [17, 2, 0, 9, 1, 14, 4, 3]
+2026-08-27 13:32:06,077 - INFO - FedRS Round 143 selected clients: [8, 1, 16, 13, 3, 15, 6, 9]
+2026-08-27 13:32:13,268 - INFO - FedRS Round 144 selected clients: [8, 12, 15, 6, 5, 1, 10, 18]
+2026-08-27 13:32:20,325 - INFO - FedRS Round 145 selected clients: [7, 2, 4, 17, 18, 19, 0, 11]
+2026-08-27 13:32:27,464 - INFO - FedRS Round 146 selected clients: [6, 12, 0, 8, 13, 1, 14, 16]
+2026-08-27 13:32:34,551 - INFO - FedRS Round 147 selected clients: [12, 1, 10, 19, 2, 16, 4, 15]
+2026-08-27 13:32:41,722 - INFO - FedRS Round 148 selected clients: [10, 0, 17, 11, 8, 15, 18, 6]
+2026-08-27 13:32:48,880 - INFO - FedRS Round 149 selected clients: [7, 14, 1, 4, 2, 6, 3, 12]
+2026-08-27 13:32:55,887 - INFO - FedRS Round 150 selected clients: [12, 11, 19, 18, 14, 17, 7, 5]
+2026-08-27 13:33:04,495 - INFO - FedRS Round 150/200 | Accuracy=0.6040 | Best=0.6045
+2026-08-27 13:33:04,505 - INFO - FedRS Round 151 selected clients: [15, 14, 6, 5, 7, 10, 8, 1]
+2026-08-27 13:33:11,695 - INFO - FedRS Round 152 selected clients: [19, 18, 10, 1, 4, 9, 16, 15]
+2026-08-27 13:33:18,834 - INFO - FedRS Round 153 selected clients: [4, 19, 0, 10, 11, 1, 17, 18]
+2026-08-27 13:33:26,076 - INFO - FedRS Round 154 selected clients: [2, 18, 15, 9, 11, 8, 13, 4]
+2026-08-27 13:33:33,204 - INFO - FedRS Round 155 selected clients: [14, 1, 15, 5, 12, 11, 3, 13]
+2026-08-27 13:33:40,550 - INFO - FedRS Round 156 selected clients: [14, 2, 19, 4, 11, 10, 15, 5]
+2026-08-27 13:33:47,319 - INFO - FedRS Round 157 selected clients: [16, 18, 10, 11, 13, 7, 3, 14]
+2026-08-27 13:33:54,015 - INFO - FedRS Round 158 selected clients: [11, 17, 1, 0, 10, 2, 9, 8]
+2026-08-27 13:34:00,679 - INFO - FedRS Round 159 selected clients: [4, 19, 8, 10, 18, 15, 14, 13]
+2026-08-27 13:34:07,376 - INFO - FedRS Round 160 selected clients: [5, 2, 19, 12, 1, 0, 6, 14]
+2026-08-27 13:34:15,708 - INFO - FedRS Round 160/200 | Accuracy=0.6273 | Best=0.6273
+2026-08-27 13:34:15,708 - INFO - FedRS Round 161 selected clients: [17, 18, 14, 9, 11, 4, 8, 3]
+2026-08-27 13:34:22,309 - INFO - FedRS Round 162 selected clients: [15, 2, 7, 14, 19, 1, 16, 18]
+2026-08-27 13:34:28,901 - INFO - FedRS Round 163 selected clients: [6, 11, 17, 12, 10, 7, 13, 5]
+2026-08-27 13:34:35,435 - INFO - FedRS Round 164 selected clients: [13, 6, 10, 15, 0, 16, 12, 3]
+2026-08-27 13:34:41,995 - INFO - FedRS Round 165 selected clients: [17, 15, 7, 9, 13, 19, 11, 3]
+2026-08-27 13:34:48,639 - INFO - FedRS Round 166 selected clients: [14, 16, 12, 1, 11, 10, 17, 13]
+2026-08-27 13:34:55,297 - INFO - FedRS Round 167 selected clients: [18, 4, 9, 10, 3, 13, 7, 14]
+2026-08-27 13:35:01,830 - INFO - FedRS Round 168 selected clients: [3, 4, 0, 15, 1, 11, 14, 10]
+2026-08-27 13:35:08,382 - INFO - FedRS Round 169 selected clients: [9, 1, 0, 16, 18, 4, 7, 5]
+2026-08-27 13:35:14,989 - INFO - FedRS Round 170 selected clients: [11, 5, 14, 9, 6, 15, 18, 1]
+2026-08-27 13:35:23,268 - INFO - FedRS Round 170/200 | Accuracy=0.6204 | Best=0.6273
+2026-08-27 13:35:23,268 - INFO - FedRS Round 171 selected clients: [12, 6, 5, 7, 0, 8, 17, 9]
+2026-08-27 13:35:29,841 - INFO - FedRS Round 172 selected clients: [9, 10, 13, 11, 4, 18, 15, 17]
+2026-08-27 13:35:36,464 - INFO - FedRS Round 173 selected clients: [13, 16, 9, 4, 0, 10, 8, 7]
+2026-08-27 13:35:43,053 - INFO - FedRS Round 174 selected clients: [6, 15, 1, 3, 18, 13, 12, 4]
+2026-08-27 13:35:49,624 - INFO - FedRS Round 175 selected clients: [9, 2, 11, 8, 14, 4, 6, 1]
+2026-08-27 13:35:56,223 - INFO - FedRS Round 176 selected clients: [3, 12, 5, 1, 19, 11, 14, 13]
+2026-08-27 13:36:02,851 - INFO - FedRS Round 177 selected clients: [10, 18, 5, 8, 6, 3, 1, 9]
+2026-08-27 13:36:09,473 - INFO - FedRS Round 178 selected clients: [7, 5, 9, 6, 8, 2, 4, 11]
+2026-08-27 13:36:16,115 - INFO - FedRS Round 179 selected clients: [4, 13, 3, 7, 15, 0, 5, 19]
+2026-08-27 13:36:22,694 - INFO - FedRS Round 180 selected clients: [9, 3, 17, 10, 14, 12, 4, 6]
+2026-08-27 13:36:31,012 - INFO - FedRS Round 180/200 | Accuracy=0.6174 | Best=0.6273
+2026-08-27 13:36:31,012 - INFO - FedRS Round 181 selected clients: [14, 0, 18, 11, 16, 13, 15, 7]
+2026-08-27 13:36:37,746 - INFO - FedRS Round 182 selected clients: [17, 8, 18, 2, 5, 14, 9, 16]
+2026-08-27 13:36:44,421 - INFO - FedRS Round 183 selected clients: [8, 18, 12, 6, 19, 3, 1, 7]
+2026-08-27 13:36:51,028 - INFO - FedRS Round 184 selected clients: [18, 0, 9, 8, 6, 1, 15, 11]
+2026-08-27 13:36:57,673 - INFO - FedRS Round 185 selected clients: [8, 7, 12, 10, 13, 19, 0, 15]
+2026-08-27 13:37:04,390 - INFO - FedRS Round 186 selected clients: [10, 7, 14, 9, 11, 6, 2, 17]
+2026-08-27 13:37:11,052 - INFO - FedRS Round 187 selected clients: [19, 1, 5, 7, 8, 17, 9, 0]
+2026-08-27 13:37:17,658 - INFO - FedRS Round 188 selected clients: [14, 15, 12, 0, 18, 19, 6, 4]
+2026-08-27 13:37:24,296 - INFO - FedRS Round 189 selected clients: [2, 16, 8, 9, 17, 7, 19, 0]
+2026-08-27 13:37:30,905 - INFO - FedRS Round 190 selected clients: [1, 4, 8, 10, 7, 2, 12, 17]
+2026-08-27 13:37:39,137 - INFO - FedRS Round 190/200 | Accuracy=0.6171 | Best=0.6273
+2026-08-27 13:37:39,137 - INFO - FedRS Round 191 selected clients: [1, 10, 11, 9, 5, 12, 0, 4]
+2026-08-27 13:37:45,710 - INFO - FedRS Round 192 selected clients: [8, 0, 7, 3, 17, 15, 11, 9]
+2026-08-27 13:37:52,335 - INFO - FedRS Round 193 selected clients: [10, 1, 8, 5, 11, 13, 4, 15]
+2026-08-27 13:37:58,923 - INFO - FedRS Round 194 selected clients: [11, 10, 4, 18, 9, 12, 13, 16]
+2026-08-27 13:38:05,498 - INFO - FedRS Round 195 selected clients: [10, 13, 2, 18, 3, 4, 14, 8]
+2026-08-27 13:38:12,168 - INFO - FedRS Round 196 selected clients: [9, 1, 3, 18, 16, 5, 19, 14]
+2026-08-27 13:38:18,910 - INFO - FedRS Round 197 selected clients: [11, 18, 2, 0, 10, 8, 15, 6]
+2026-08-27 13:38:25,514 - INFO - FedRS Round 198 selected clients: [16, 2, 3, 5, 4, 12, 9, 6]
+2026-08-27 13:38:32,134 - INFO - FedRS Round 199 selected clients: [13, 14, 3, 1, 6, 9, 18, 2]
+2026-08-27 13:38:38,765 - INFO - FedRS Round 200 selected clients: [8, 14, 17, 19, 3, 10, 13, 1]
+2026-08-27 13:38:47,033 - INFO - FedRS Round 200/200 | Accuracy=0.6298 | Best=0.6298
+2026-08-27 13:38:48,737 - INFO - FedRS FINAL Accuracy=0.6298 | Best=0.6298
+2026-08-27 13:38:48,740 - INFO - ======================================================================
+2026-08-27 13:38:48,740 - INFO - START FEDIC
+2026-08-27 13:38:56,846 - INFO - FEDIC Round 1/200 | Accuracy=0.1825 | Best=0.1825
+2026-08-27 13:39:56,120 - INFO - FEDIC Round 10/200 | Accuracy=0.2562 | Best=0.2562
+2026-08-27 13:41:04,145 - INFO - FEDIC Round 20/200 | Accuracy=0.3079 | Best=0.3079
+2026-08-27 13:42:12,617 - INFO - FEDIC Round 30/200 | Accuracy=0.4084 | Best=0.4084
+2026-08-27 13:43:20,823 - INFO - FEDIC Round 40/200 | Accuracy=0.3906 | Best=0.4084
+2026-08-27 13:44:29,419 - INFO - FEDIC Round 50/200 | Accuracy=0.4621 | Best=0.4621
+2026-08-27 13:45:36,484 - INFO - FEDIC Round 60/200 | Accuracy=0.4217 | Best=0.4621
+2026-08-27 13:46:41,079 - INFO - FEDIC Round 70/200 | Accuracy=0.4932 | Best=0.4932
+2026-08-27 13:47:45,764 - INFO - FEDIC Round 80/200 | Accuracy=0.4646 | Best=0.4932
+2026-08-27 13:48:50,557 - INFO - FEDIC Round 90/200 | Accuracy=0.4779 | Best=0.4932
+2026-08-27 13:49:55,193 - INFO - FEDIC Round 100/200 | Accuracy=0.4954 | Best=0.4954
+2026-08-27 13:51:00,120 - INFO - FEDIC Round 110/200 | Accuracy=0.5465 | Best=0.5465
+2026-08-27 13:52:06,258 - INFO - FEDIC Round 120/200 | Accuracy=0.4537 | Best=0.5465
+2026-08-27 13:53:12,102 - INFO - FEDIC Round 130/200 | Accuracy=0.5356 | Best=0.5465
+2026-08-27 13:54:17,669 - INFO - FEDIC Round 140/200 | Accuracy=0.5787 | Best=0.5787
+2026-08-27 13:55:23,160 - INFO - FEDIC Round 150/200 | Accuracy=0.5495 | Best=0.5787
+2026-08-27 13:56:28,400 - INFO - FEDIC Round 160/200 | Accuracy=0.5626 | Best=0.5787
+2026-08-27 13:57:30,605 - INFO - FEDIC Round 170/200 | Accuracy=0.5537 | Best=0.5787
+2026-08-27 13:58:32,471 - INFO - FEDIC Round 180/200 | Accuracy=0.5691 | Best=0.5787
+2026-08-27 13:59:34,144 - INFO - FEDIC Round 190/200 | Accuracy=0.5236 | Best=0.5787
+2026-08-27 14:00:36,833 - INFO - FEDIC Round 200/200 | Accuracy=0.5436 | Best=0.5787
+2026-08-27 14:00:38,538 - INFO - FEDIC FINAL Accuracy=0.5436 | Best=0.5787
+2026-08-27 14:00:38,542 - INFO - ======================================================================
+2026-08-27 14:00:38,542 - INFO - START CReFF
+2026-08-27 14:00:47,536 - INFO - CReFF Round 1/200 | Accuracy=0.1433 | Best=0.1433
+2026-08-27 14:01:52,826 - INFO - CReFF Round 10/200 | Accuracy=0.2794 | Best=0.2794
+2026-08-27 14:03:10,602 - INFO - CReFF Round 20/200 | Accuracy=0.3329 | Best=0.3329
+2026-08-27 14:04:28,639 - INFO - CReFF Round 30/200 | Accuracy=0.4147 | Best=0.4147
+2026-08-27 14:05:46,025 - INFO - CReFF Round 40/200 | Accuracy=0.4027 | Best=0.4147
+2026-08-27 14:07:04,646 - INFO - CReFF Round 50/200 | Accuracy=0.4610 | Best=0.4610
+2026-08-27 14:08:20,173 - INFO - CReFF Round 60/200 | Accuracy=0.4239 | Best=0.4610
+2026-08-27 14:09:33,392 - INFO - CReFF Round 70/200 | Accuracy=0.5179 | Best=0.5179
+2026-08-27 14:10:45,759 - INFO - CReFF Round 80/200 | Accuracy=0.4433 | Best=0.5179
+2026-08-27 14:11:57,772 - INFO - CReFF Round 90/200 | Accuracy=0.4863 | Best=0.5179
+2026-08-27 14:13:10,109 - INFO - CReFF Round 100/200 | Accuracy=0.4561 | Best=0.5179
+2026-08-27 14:14:25,574 - INFO - CReFF Round 110/200 | Accuracy=0.5568 | Best=0.5568
+2026-08-27 14:15:40,579 - INFO - CReFF Round 120/200 | Accuracy=0.4852 | Best=0.5568
+2026-08-27 14:16:55,974 - INFO - CReFF Round 130/200 | Accuracy=0.5466 | Best=0.5568
+2026-08-27 14:18:10,961 - INFO - CReFF Round 140/200 | Accuracy=0.5827 | Best=0.5827
+2026-08-27 14:19:23,919 - INFO - CReFF Round 150/200 | Accuracy=0.5502 | Best=0.5827
+2026-08-27 14:20:35,818 - INFO - CReFF Round 160/200 | Accuracy=0.5882 | Best=0.5882
+2026-08-27 14:21:47,648 - INFO - CReFF Round 170/200 | Accuracy=0.5823 | Best=0.5882
+2026-08-27 14:22:59,781 - INFO - CReFF Round 180/200 | Accuracy=0.5943 | Best=0.5943
+2026-08-27 14:24:12,597 - INFO - CReFF Round 190/200 | Accuracy=0.5487 | Best=0.5943
+2026-08-27 14:25:30,170 - INFO - CReFF Round 200/200 | Accuracy=0.5884 | Best=0.5943
+2026-08-27 14:25:31,864 - INFO - CReFF FINAL Accuracy=0.5884 | Best=0.5943
+2026-08-27 14:25:31,868 - INFO - ======================================================================
+2026-08-27 14:25:31,868 - INFO - ALL BASELINES FINISHED
